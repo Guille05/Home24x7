@@ -6,12 +6,12 @@ class DataModelBuilderAvaliacaoPrestadorDeServicos extends DataModelBuilder<Data
   @override
   DataModelAvaliacaoPrestadorDeServico? createDataModel(Map<String, dynamic> json) {
     return DataModelAvaliacaoPrestadorDeServico(
-      idUsuario: json["idUsuario"],
-      codPrestadorDeServico: json["codPrestadorServico"],
-      nota: json["nota"].toDouble(),
-      comentario: json["comentario"],
-      data: formataDataDDMMYYYY(DateTime.parse(json["data"])),
-      emailUsuario: json["comentario"],
+      idUsuario: json["userid"],
+      codPrestadorDeServico: json["workerId"],
+      nota: json["rating"].toDouble(),
+      comentario: json["commentText"],
+      data: formataDataDDMMYYYY(DateTime.parse(json["date"])),
+      emailUsuario: json["commentText"],
     );
   }
 

@@ -1,12 +1,27 @@
 import '../../framework/dataModelBuilder.dart';
 import 'dataModelPrestadorDeServicos.dart';
 
+// name: json["name"],
+// phone: json["phone"],
+// workingHours: json["workingHours"],
+// description: json["description"],
+// profilePicture: json["profilePicture"],
+// city: List<String>.from(json['City']),
+// roles: List<int>.from(json["job"]),
+// numeroDeCliquesNoLigarOuWhatsApp: json["clickWhatsApp"],
+// dataVencimentoPlano: json["dueDate"].toDate(),
+// dataAberturaConta: json["opendate"].toDate(),
+// IdPrestador: json["IdWorker"],
+// tipoPlanoPrestador: json["typeOfPlan"],
+// cliquesNoPerfil: json["clickProfile"],
+// identityVerified: json["identityVerified"],
+
 class DataModelBuilderPrestadorDeServicos extends DataModelBuilder<DataModelPrestadorDeServicos> {
   @override
   DataModelPrestadorDeServicos? createDataModel(Map<String, dynamic> json) {
     return DataModelPrestadorDeServicos(
       codPrestadorServico: json["codPrestadorServico"],
-      nome: json["nome"],
+      nome: json["name"],
       telefone: json["telefone"],
       urlFoto: json["urlFoto"],
       nota: double.parse(json["nota"].toString()),

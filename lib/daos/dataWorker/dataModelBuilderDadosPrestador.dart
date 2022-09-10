@@ -12,14 +12,14 @@ class DataModelBuilderDadosPrestador
       workingHours: json["workingHours"],
       description: json["description"],
       profilePicture: json["profilePicture"],
-      city: List<String>.from(json['city']),
-      roles: List<int>.from(json["roles"]),
-      numeroDeCliquesNoLigarOuWhatsApp: json["numeroDeCliquesNoLigarOuWhatsApp"],
-      dataVencimentoPlano: json["dataVencimentoPlano"].toDate(),
-      dataAberturaConta: json["dataAberturaConta"].toDate(),
-      IdPrestador: json["IdPrestador"],
-      tipoPlanoPrestador: json["tipoPlanoPrestador"],
-      cliquesNoPerfil: json["numeroDePessoasViramPerfilDessePrestador"],
+      city: List<String>.from(json['City']),
+      roles: List<int>.from(json["job"]),
+      numeroDeCliquesNoLigarOuWhatsApp: json["clickWhatsApp"],
+      dataVencimentoPlano: json["dueDate"].toDate(),
+      dataAberturaConta: json["opendate"].toDate(),
+      IdPrestador: json["IdWorker"],
+      tipoPlanoPrestador: json["typeOfPlan"],
+      cliquesNoPerfil: json["clickProfile"],
       identityVerified: json["identityVerified"],
     );
   }
@@ -33,13 +33,13 @@ class DataModelBuilderDadosPrestador
       "workingHours": dataModel.workingHours,
       "description": dataModel.description,
       "profilePicture": dataModel.profilePicture,
-      "city": dataModel.city,
-      "roles": dataModel.roles,
-      "numeroDeCliquesNoLigarOuWhatsApp":
+      "City": dataModel.city,
+      "job": dataModel.roles,
+      "clickWhatsApp":
           dataModel.numeroDeCliquesNoLigarOuWhatsApp,
-      "dataVencimentoPlano": dataModel.dataVencimentoPlano,
-      "dataAberturaConta": dataModel.dataAberturaConta,
-      "IdPrestador": dataModel.IdPrestador,
+      "dueDate": dataModel.dataVencimentoPlano,
+      "opendate": dataModel.dataAberturaConta,
+      "IdWorker": dataModel.IdPrestador,
     };
   }
 }
