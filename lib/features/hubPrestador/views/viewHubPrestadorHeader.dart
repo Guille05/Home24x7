@@ -25,7 +25,7 @@ class ViewHubPrestadorHeader extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Olá,",
+              Text("Hello!,",
                   style: TextStyle(
                       color: Colors.grey[600],
                       fontWeight: FontWeight.bold,
