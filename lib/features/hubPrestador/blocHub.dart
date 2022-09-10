@@ -73,7 +73,9 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
             urlFoto: "",
             cidades: [],
             servicos: [],
-            workingHours: '');
+            workingHours: '',
+            cliquesNoPerfil: 0,
+            cliquesNoWhatsApp: 0);
 
     businessModelPrestadoresDeServicoPorCidadeTipoDeServico.prestadoresDeServico
         .forEach((element) {
@@ -134,6 +136,9 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
       roles: blocEvent.viewModel.prestador.roles,
       workingHours: blocEvent.viewModel.prestador.workingHours,
       tipoPlanoPrestador: blocEvent.viewModel.prestador.tipoPlanoPrestador,
+      cliquesNoWhatsApp: blocEvent.viewModel.prestador.cliquesNoWhatsApp,
+      cliquesNoPerfil: blocEvent.viewModel.prestador.cliquesNoPerfil,
+      identityVerified: blocEvent.viewModel.prestador.identityVerified,
     );
 
     ViewModelHubPrestador viewModelTmp = ViewModelHubPrestador(
@@ -148,21 +153,6 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
 
     //String urlFoto = await Providerprestador().getUrlFotoById(prestador.id);
 
-    BusinessModelDadosPrestador prestador = BusinessModelDadosPrestador(
-      profilePicture: blocEvent.viewModel.prestador.profilePicture,
-      IdPrestador: blocEvent.viewModel.prestador.IdPrestador,
-      dataAberturaConta: blocEvent.viewModel.prestador.dataAberturaConta,
-      dataVencimentoPlano: blocEvent.viewModel.prestador.dataVencimentoPlano,
-      name: blocEvent.viewModel.prestador.name,
-      numeroDeCliquesNoLigarOuWhatsApp:
-          blocEvent.viewModel.prestador.numeroDeCliquesNoLigarOuWhatsApp,
-      phone: blocEvent.viewModel.prestador.phone,
-      city: blocEvent.viewModel.prestador.city,
-      description: blocEvent.viewModel.prestador.description,
-      roles: blocEvent.viewModel.prestador.roles,
-      workingHours: blocEvent.viewModel.prestador.workingHours,
-      tipoPlanoPrestador: blocEvent.viewModel.prestador.tipoPlanoPrestador,
-    );
     debugPrint(blocEvent.viewModel.cidade[0].id);
   }
 }

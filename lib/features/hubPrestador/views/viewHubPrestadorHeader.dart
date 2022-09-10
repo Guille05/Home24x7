@@ -1,10 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:projeto_treinamento/businessModels/businessModelUsuario.dart';
-
 import '../../../businessModels/businessModelDadosPrestador.dart';
-import '../../perfilPrestadorDeServico/viewModelPerfilPrestadorDeServico.dart';
 import '../viewActionsHub.dart';
 import '../viewModelHub.dart';
 

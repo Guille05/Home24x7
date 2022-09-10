@@ -1,16 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/features/hubPrestador/presenterHub.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/viewActionsInfoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/viewActionsPerfilPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/viewModelPerfilPrestadorDeServico.dart';
+import '../../hubPrestador/presenterHub.dart';
+import '../viewActionsPerfilPrestadorDeServico.dart';
+import '../viewModelPerfilPrestadorDeServico.dart';
 
 class ButtonSavePerfilPrestadorDeServico extends StatefulWidget {
-  //final ViewActionsPerfilPrestadorDeServico viewActions;
-  //final ViewModelPerfilPrestadorDeServico viewModel;
+  final ViewActionsPerfilPrestadorDeServico viewActions;
+  final ViewModelPerfilPrestadorDeServico viewModel;
   const ButtonSavePerfilPrestadorDeServico({Key? key,
-    //required this.viewActions,
-    //required this.viewModel
+    required this.viewActions,
+    required this.viewModel
   }) : super(key: key);
 
   @override

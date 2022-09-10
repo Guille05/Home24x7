@@ -1,14 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:projeto_treinamento/features/hubPrestador/presenterHub.dart';
-import 'package:projeto_treinamento/features/logIn_SingUpUsuario/logInUsuario/views/logInBodyUsuario.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
 import '../../../../util/funcoesLogIn/funcaoPestadorLoginEmailNaoExiste.dart';
 import '../../../../util/libraryComponents/colors/colorGradient.dart';
-import '../../../../daos/firebase/authService.dart';
-import '../../../../util/libraryComponents/popUps/popUpEmailNaoExiste.dart';
+import '../../logInUsuario/views/logInBodyUsuario.dart';
 import 'backArrowEsqueceuSenhaUsuario.dart';
 
 

@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../viewActionsPesquisaTipoServico.dart';
 import '../viewModelPesquisaTipoServico.dart';
 import 'listItemPesquisaTipoServico.dart';

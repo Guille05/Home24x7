@@ -1,15 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/daos/firebase/authService.dart';
-import 'package:projeto_treinamento/features/hubUsuario/views/viewHubCidade.dart';
-import 'package:projeto_treinamento/features/hubUsuario/views/viewHubGridView.dart';
-import 'package:projeto_treinamento/features/hubUsuario/views/viewHubPrestador.dart';
-import 'package:projeto_treinamento/features/hubUsuario/views/viewHubServicos.dart';
-import 'package:projeto_treinamento/util/libraryComponents/colors/colorGradient.dart';
+import 'package:home24x7/features/hubUsuario/views/viewHubCidade.dart';
+import 'package:home24x7/features/hubUsuario/views/viewHubGridView.dart';
+import 'package:home24x7/features/hubUsuario/views/viewHubPrestador.dart';
+import 'package:home24x7/features/hubUsuario/views/viewHubServicos.dart';
+import '../../../daos/firebase/authService.dart';
+import '../../../util/libraryComponents/colors/colorGradient.dart';
 import '../../../util/libraryComponents/colors/colors.dart';
 import '../../logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
 import '../viewActionsHub.dart';
-import '../viewHub.dart';
 import '../viewModelHub.dart';
 
 class ViewHubBodyUsuario extends StatelessWidget {

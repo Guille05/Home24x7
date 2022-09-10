@@ -1,12 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/features/hubPrestador/presenterHub.dart';
-import 'package:projeto_treinamento/features/infoDadosPrestador/viewActionsInfoDadosPrestador.dart';
-import 'package:projeto_treinamento/features/infoDadosPrestador/viewModelInfoDadosPrestador.dart';
-import 'package:projeto_treinamento/framework/viewActions.dart';
-
 import '../../logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
+import '../viewActionsInfoDadosPrestador.dart';
+import '../viewModelInfoDadosPrestador.dart';
 
 class ButtonSaveInfoDadosPrestador extends StatefulWidget {
   final ViewActionsInfoDadosPrestador viewActions;

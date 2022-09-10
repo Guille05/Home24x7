@@ -1,8 +1,6 @@
-import 'package:projeto_treinamento/businessModels/businessModelUsuario.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/blocEventPerfilPrestadorDeServico.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
-import 'package:projeto_treinamento/providers/cidade/providerCidade.dart';
-import 'package:projeto_treinamento/providers/usuario/providerUsuario.dart';
+
+import '../../framework/bloc.dart';
+import 'blocEventPerfilPrestadorDeServico.dart';
 import 'viewModelPerfilPrestadorDeServico.dart';
 
 class BlocPerfilPrestadorDeServico extends Bloc<

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
+import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
 import 'package:substring_highlight/substring_highlight.dart';
 
 class listItemPesquisaTipoServico extends StatelessWidget {

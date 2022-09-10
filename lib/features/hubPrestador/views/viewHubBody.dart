@@ -1,10 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/features/hubPrestador/views/viewHubPrestadorHeader.dart';
-import 'package:projeto_treinamento/util/libraryComponents/colors/colorGradient.dart';
-import 'package:projeto_treinamento/widgets/custom_rating_bar.dart';
-import 'package:projeto_treinamento/widgets/linearPercentIndicator.dart';
-import '../../../businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
+import 'package:home24x7/features/hubPrestador/views/viewHubPrestadorHeader.dart';
+import '../../../util/libraryComponents/colors/colorGradient.dart';
 import '../../../util/libraryComponents/colors/colors.dart';
 import '../viewActionsHub.dart';
 import '../viewModelHub.dart';

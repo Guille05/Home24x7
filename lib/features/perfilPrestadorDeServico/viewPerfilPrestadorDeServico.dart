@@ -4,10 +4,6 @@ import 'package:home24x7/features/perfilPrestadorDeServico/views/buttonSalvarPer
 import 'package:home24x7/features/perfilPrestadorDeServico/views/perfilPrestadorDeServicoBody.dart';
 import 'package:home24x7/framework/view.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/views/buttonSalvarPerfilPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/views/perfilPrestadorDeServicoBody.dart';
-
-import 'package:projeto_treinamento/framework/view.dart';
 import 'viewActionsPerfilPrestadorDeServico.dart';
 import 'viewModelPerfilPrestadorDeServico.dart';
 
@@ -39,7 +35,7 @@ class ViewPerfilPrestadorDeServico extends View<
       bottomNavigationBar: BottomAppBar(
         child: Padding(
           padding: const EdgeInsets.all(12.0),
-          child: ButtonSavePerfilPrestadorDeServico(/*viewActions: viewActions, viewModel: viewModel,*/),
+          child: ButtonSavePerfilPrestadorDeServico(viewActions: viewActions, viewModel: viewModel!,),
         ),
       ),
     );
