@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../../businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
 import '../../../framework/viewActions.dart';
+import '../../../util/customRatingBar.dart';
 
 class ListItemAvaliacaoPrestadorDeServico extends StatelessWidget {
   final ViewActions viewActions;

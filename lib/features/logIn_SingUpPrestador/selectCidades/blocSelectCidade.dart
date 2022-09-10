@@ -1,11 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
+import '../../../businessModels/businessModelCidade.dart';
 import '../../../daos/firebase/updatePrestadorFirebase.dart';
-import '../../../providers/cidade/providerCidade.dart';
-import '../signUpPart2WorkerInformation/views/bodySignUpPart2WorkerInformation.dart';
+import '../../../framework/bloc.dart';
+import '../../../provider/cidade/providerCidade.dart';
 import 'blocEventSelectCidade.dart';
 import 'viewModelSelectCidade.dart';
 
@@ -41,7 +40,7 @@ class BlocSelectCidade
 
   void _selecionaCidade(
       BlocEventSelectCidadeAtualizaCidadesSelecionadas blocEvent) async {
-    List<BusinessModelCidade> novaListaCidadesSelecionadas =
+    List novaListaCidadesSelecionadas =
         blocEvent.viewModel.cidadesSelecionadas;
     bool removed = false;
 
@@ -60,8 +59,8 @@ class BlocSelectCidade
     }
 
     ViewModelSelectCidade viewModel = await _aplicaCidadeSelecionadaNoViewModel(
-      novaListaCidadesSelecionadas,
-      blocEvent.viewModel.cidades,
+      novaListaCidadesSelecionadas as List<BusinessModelCidade>,
+      blocEvent.viewModel.cidades ,
     );
     this.sendViewModelOut(viewModel);
   }

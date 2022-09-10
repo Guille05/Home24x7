@@ -8,6 +8,7 @@ import 'package:home24x7/util/getCodigoCidade.dart';
 import 'package:home24x7/util/prestador.dart';
 
 import '../../businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
+import '../../framework/bloc.dart';
 import 'blocEventInfoPrestadorDeServico.dart';
 import 'viewModelInfoPrestadorDeServico.dart';
 
@@ -58,7 +59,10 @@ class BlocInfoPrestadorDeServico extends Bloc<ViewModelInfoPrestadorDeServico,
         totalDeAvaliacoesNota4: prestador_.totalDeAvaliacoesNota4,
         totalDeAvaliacoesNota5: prestador_.totalDeAvaliacoesNota5,
         urlFoto: prestador_.urlFoto,
-        workingHours: prestador_.workingHours);
+        workingHours: prestador_.workingHours,
+        cliquesNoPerfil: prestador_.cliquesNoPerfil,
+        cliquesNoWhatsApp: prestador_.cliquesNoWhatsApp
+    );
     viewModel = ViewModelInfoPrestadorDeServico(
       prestadorDeServicos: prestadorDeServicos,
       listaAvaliacoesPrestadorDeServico: List.empty(growable: true),

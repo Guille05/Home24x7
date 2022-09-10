@@ -6,6 +6,8 @@ import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
 import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
 import 'package:home24x7/framework/viewModel.dart';
 
+import '../../businessModels/businessModelPrestadorDeServicos.dart';
+
 class ViewModelInfoPrestadorDeServico extends ViewModel {
   ViewModelInfoPrestadorDeServico({
     required this.prestadorDeServicos,

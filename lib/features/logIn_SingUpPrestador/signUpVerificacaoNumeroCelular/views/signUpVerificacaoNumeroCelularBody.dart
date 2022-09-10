@@ -3,7 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
-import 'package:projeto_treinamento/features/logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
+
+import '../../veryFirstScreen/veryFirstScreenUserType.dart';
 
 class SignUpVerificacaoNumeroCelularBody extends StatefulWidget {
   const SignUpVerificacaoNumeroCelularBody({Key? key}) : super(key: key);

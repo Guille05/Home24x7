@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';//
 import 'package:flutter/material.dart';//
-import 'package:projeto_treinamento/framework/view.dart';//
+import '../../../framework/view.dart';
 import '../../../util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
 import '../../../util/libraryComponents/colors/colorGradient.dart';//
 import '../../../util/libraryComponents/colors/colors.dart';//

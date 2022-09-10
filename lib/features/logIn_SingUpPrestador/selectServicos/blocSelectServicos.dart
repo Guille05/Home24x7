@@ -1,11 +1,9 @@
-import 'dart:convert';
-import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
+import '../../../businessModels/businessModelCidade.dart';
 import '../../../daos/firebase/updatePrestadorFirebase.dart';
-import '../../../daos/listaDeServicos/listaDeServicos.dart';
-import '../../../providers/cidade/providerCidade.dart';
+import '../../../daos/listaOfServices/listaDeServicos.dart';
+import '../../../framework/bloc.dart';
+import '../../../provider/cidade/providerCidade.dart';
 import 'blocEventSelectServicos.dart';
 import 'viewModelSelectServicos.dart';
 

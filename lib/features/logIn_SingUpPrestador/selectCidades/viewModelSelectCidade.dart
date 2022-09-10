@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
+import '../../../businessModels/businessModelCidade.dart';
 import '../../../framework/viewModelLista.dart';
 import 'featureModelSelectCidade.dart';
 

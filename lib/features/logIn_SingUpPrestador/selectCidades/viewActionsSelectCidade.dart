@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/framework/pipe.dart';
-import 'package:projeto_treinamento/framework/viewActions.dart';
+import '../../../framework/pipe.dart';
+import '../../../framework/viewActions.dart';
 import 'viewModelSelectCidade.dart';
 import 'blocEventSelectCidade.dart';
 

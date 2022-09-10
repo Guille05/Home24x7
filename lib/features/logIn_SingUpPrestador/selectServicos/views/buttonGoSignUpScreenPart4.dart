@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/util/libraryComponents/popUps/popUpListaSelectServicos.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
+import '../../../../util/libraryComponents/popUps/popUpListaSelectServicos.dart';
 import '../../signUpEplicandoTelaDocumentos/viewSignUpEplicandoTelaDocumentos.dart';
 import '../../singUpPart5PrestadorDocumentos/signUpPart5PrestadorDocumentos.dart';
 import '../viewActionsSelectServicos.dart';

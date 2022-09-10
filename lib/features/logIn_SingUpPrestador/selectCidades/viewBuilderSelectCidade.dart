@@ -1,5 +1,5 @@
-import 'package:projeto_treinamento/framework/viewBuilder.dart';
 
+import '../../../framework/viewBuilder.dart';
 import 'viewActionsSelectCidade.dart';
 import 'viewSelectCidade.dart';
 import 'viewModelSelectCidade.dart';

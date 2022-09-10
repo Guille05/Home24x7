@@ -5,9 +5,6 @@ import 'package:home24x7/features/listaPrestadoresDeServico/presenterListaPresta
 import 'package:home24x7/features/pesquisaTipoServico/presenterPesquisaTipoServico.dart';
 import 'package:home24x7/framework/pipe.dart';
 import 'package:home24x7/framework/viewActions.dart';
-import 'package:image_picker/image_picker.dart';
-
-
 import '../../util/getCodigoCidade.dart';
 
 import '../pesquisaCidade/presenterPesquisaCidade.dart';

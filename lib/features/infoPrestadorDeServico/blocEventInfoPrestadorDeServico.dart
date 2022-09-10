@@ -3,6 +3,8 @@ import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
 import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
 import 'package:home24x7/framework/blocEvent.dart';
 
+import '../../businessModels/businessModelPrestadorDeServicos.dart';
+
 
 abstract class BlocEventInfoPrestadorDeServico extends BlocEvent {}
 

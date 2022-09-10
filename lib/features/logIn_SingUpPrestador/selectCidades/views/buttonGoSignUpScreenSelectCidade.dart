@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:projeto_treinamento/util/libraryComponents/popUps/popUpListaSelectCidades.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
+import '../../../../util/libraryComponents/popUps/popUpListaSelectCidades.dart';
 import '../../selectCidades/viewActionsSelectCidade.dart';
 import '../../selectCidades/viewModelSelectCidade.dart';
 import '../../selectServicos/presenterSelectServicos.dart';

@@ -5,6 +5,8 @@ import 'package:home24x7/features/listaPrestadoresDeServico/viewActionsListaPres
 import 'package:home24x7/features/listaPrestadoresDeServico/viewModelListaPrestadoresDeServico.dart';
 import 'package:substring_highlight/substring_highlight.dart';
 
+import '../../../util/customRatingBar.dart';
+
 class ListItemListaPrestadoresDeServico extends StatelessWidget {
   final BusinessModelPrestadorDeServicos prestradorDeServico;
   final IconData iconeStatusOnline;

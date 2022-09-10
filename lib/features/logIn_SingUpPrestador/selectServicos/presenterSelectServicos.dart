@@ -1,4 +1,4 @@
-import 'package:projeto_treinamento/framework/presenter.dart';
+import '../../../framework/presenter.dart';
 import 'blocEventSelectServicos.dart';
 import 'blocSelectServicos.dart';
 import 'viewActionsSelectServicos.dart';

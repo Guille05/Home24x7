@@ -1,5 +1,5 @@
-import 'package:projeto_treinamento/framework/viewBuilder.dart';
 
+import '../../../framework/viewBuilder.dart';
 import 'viewActionsSelectServicos.dart';
 import 'viewSelectServicos.dart';
 import 'viewModelSelectServicos.dart';

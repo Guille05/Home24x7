@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/framework/viewModelLista.dart';
+
+import '../../businessModels/businessModelCidade.dart';
+import '../../businessModels/businessModelPrestadorDeServicos.dart';
+import '../../businessModels/businessModelTiposDeServico.dart';
+import '../../framework/viewModelLista.dart';
 
 class ViewModelListaPrestadoresDeServico extends ViewModelLista<BusinessModelPrestadorDeServicos> {
   final BusinessModelCidade cidade;

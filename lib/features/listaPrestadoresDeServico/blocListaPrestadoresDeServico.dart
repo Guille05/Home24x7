@@ -5,6 +5,7 @@ import 'package:home24x7/features/listaPrestadoresDeServico/blocEventListaPresta
 import 'package:home24x7/framework/bloc.dart';
 import 'package:home24x7/provider/prestadoresDeServicoPorCidadeTipoDeServico/providerPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 
+import '../../businessModels/businessModelPrestadorDeServicos.dart';
 import 'viewModelListaPrestadoresDeServico.dart';
 
 class BlocListaPrestadoresDeServico extends Bloc<

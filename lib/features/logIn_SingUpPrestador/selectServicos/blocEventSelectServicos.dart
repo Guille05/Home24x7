@@ -1,5 +1,7 @@
-import 'package:projeto_treinamento/features/logIn_SingUpPrestador/selectServicos/viewModelSelectServicos.dart';
-import 'package:projeto_treinamento/framework/blocEvent.dart';
+
+import 'package:home24x7/features/logIn_SingUpPrestador/selectServicos/viewModelSelectServicos.dart';
+
+import '../../../framework/blocEvent.dart';
 
 abstract class BlocEventSelectServicos extends BlocEvent {}
 

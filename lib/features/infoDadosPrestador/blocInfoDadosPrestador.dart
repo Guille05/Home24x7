@@ -56,9 +56,9 @@ class BlocInfoDadosPrestador
       description: viewModel.prestador.description,
       roles: viewModel.prestador.roles,
       tipoPlanoPrestador: viewModel.prestador.tipoPlanoPrestador,
-      cliquesNoWhatsApp: viewModel.prestador.,
-      cliquesNoPerfil: null,
-      identityVerified: '',
+      cliquesNoWhatsApp: viewModel.prestador.cliquesNoWhatsApp,
+      cliquesNoPerfil: viewModel.prestador.cliquesNoPerfil,
+      identityVerified: viewModel.prestador.identityVerified,
     );
     ProvideDadosPrestador().saveBusinessModel(businessModel);
   }
