@@ -295,6 +295,8 @@ class _SignUpUsuarioBody extends State<SignUpUsuarioBody> {
                                 ),
                               ),
                               onPressed: () async {
+                                _btnController.reset();
+
                                 final form =
                                     formKeyAuthentication.currentState!;
                                 if(_isChecked == false) {

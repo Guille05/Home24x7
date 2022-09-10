@@ -1,6 +1,3 @@
-
-
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,9 +7,10 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:home24x7/features/logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
-
 import 'daos/firebase/authService.dart';
 import 'daos/firebase/updatePrestadorFirebase.dart';
+import 'features/hubPrestador/presenterHub.dart';
+import 'features/hubUsuario/presenterHub.dart';
 
 
 final navigatorKey = GlobalKey<NavigatorState>();
@@ -21,6 +19,10 @@ final navigatorKey = GlobalKey<NavigatorState>();
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+
+  final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  //await firebaseAuth.signOut();
+
 
   final getIt = GetIt.instance;
   // await Cidades().getCidades();
@@ -47,9 +49,6 @@ void main() async {
 
 
 
-GoogleSignInAccount? _usuarioAtual;
-
-FacebookAuth? _facebookAuthUsuarioAtual;
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -59,7 +58,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          primarySwatch: MaterialColor(
+          primarySwatch: const MaterialColor(
             0xffF0F0F0,
             <int, Color>{
               50: Color(0xFFE1F5FE),
@@ -87,11 +86,10 @@ class MyApp extends StatelessWidget {
                 ),
               )),
         ),
-        home: ViewVeryFirstScreen()
-      /*StreamBuilder(
+        home: StreamBuilder( //PresenterSelectCidade.presenter(),
           stream: AuthService().firebaseAuth.authStateChanges(),
           builder: (context, AsyncSnapshot snapshot) {
-            if (snapshot.hasData ||_facebookAuthUsuarioAtual?.getUserData() != null) {
+            if (snapshot.hasData) {
               if(FirebaseAuth.instance.currentUser?.phoneNumber== null){
                 return PresenterHubUsuario.presenter();
               }else{
@@ -100,7 +98,7 @@ class MyApp extends StatelessWidget {
 
             }
             return ViewVeryFirstScreen();
-          }),*/
+          }),
       //SingUpPart2WorkerInformation(),
       //SignUpPart1(),
       //ViewPesquisaCidadeBodya(),=
