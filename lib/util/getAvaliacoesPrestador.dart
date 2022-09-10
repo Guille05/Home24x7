@@ -12,19 +12,19 @@ class GetAvaliacoesPrestador {
     List<BusinessModelAvaliacaoPrestadorDeServico> listaComentarios = [];
     QuerySnapshot query = await _instance
         .collection('comment')
-        .where('idPrestador', isEqualTo: idPrestador)
+        .where('IdWorker', isEqualTo: idPrestador)
         .get();
 
     List docs = query.docs;
     docs.forEach((element) {
       listaComentarios.add(
         BusinessModelAvaliacaoPrestadorDeServico(
-          codPrestadorDeServico: element['idPrestador'],
-          comentario: element['textoComentario'],
-          data: element['data'],
-          nota: int.parse(element['nota']),
-          idUsuario: element['idUsuario'],
-          emailUsuario: element['emailUsuario'],
+          codPrestadorDeServico: element['IdWorker'],
+          comentario: element['commentText'],
+          data: element['date'],
+          nota: int.parse(element['rating']),
+          idUsuario: element['userid'],
+          emailUsuario: element['userEmail'],
         ),
       );
     });

@@ -7,7 +7,7 @@ class DataModelBuilderTipoDeServico
   DataModelTipoDeServico? createDataModel(Map<String, dynamic> json) {
     return DataModelTipoDeServico(
       codTipoServico: json["codTipoServico"],
-      descricao: json["descricao"],
+      descricao: json["description"],
     );
   }
 
@@ -16,7 +16,7 @@ class DataModelBuilderTipoDeServico
     if (dataModel == null) return null;
     return {
       "codTipoServico": dataModel.codTipoServico,
-      "descricao": dataModel.descricao,
+      "description": dataModel.descricao,
     };
   }
 }

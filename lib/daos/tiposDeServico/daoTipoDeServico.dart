@@ -9,7 +9,7 @@ import 'firebaseinterfaceTiposDeServico.dart';
 class DaoTipoDeServico extends Dao<DataModelTipoDeServico> {
   FirebaseinterfaceTiposDeServico firebaseInterface =
       FirebaseinterfaceTiposDeServico(
-          tableName: 'listaServices',
+          tableName: 'listService',
           dataModelBuilder: DataModelBuilderTipoDeServico());
 
   @override

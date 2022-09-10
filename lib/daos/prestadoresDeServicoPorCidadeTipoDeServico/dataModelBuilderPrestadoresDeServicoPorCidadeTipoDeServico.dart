@@ -26,8 +26,8 @@ class DataModelBuilderPrestadoresDeServicoPorCidadeTipoDeServico extends DataMod
     //  }
 
     return DataModelPrestadoresDeServicoPorCidadeTipoDeServico(
-      cidade: DataModelBuilderCidade().createDataModel(json["cidade"])!,
-      tipoServico: DataModelBuilderTipoDeServico().createDataModel(json["tipoServico"])!,
+      cidade: DataModelBuilderCidade().createDataModel(json["City"])!,
+      tipoServico: DataModelBuilderTipoDeServico().createDataModel(json["typeService"])!,
       prestadoresServico: _getPrestadoresDeServicosoFromJson(json["prestadoresServico"]),
     );
   }

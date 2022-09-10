@@ -7,7 +7,6 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import '../../../../util/funcoesLogIn/funcaoPestadorEmailJaExisteOuNao.dart';
-import '../../../../util/getTermos.dart';
 import '../../../../util/libraryComponents/colors/colorGradient.dart';
 import '../../../../daos/firebase/authService.dart';
 import '../../../../util/libraryComponents/popUps/popUpAceiteAsPoliticasDePrivacidade.dart';
@@ -250,7 +249,6 @@ class _SignUpUsuarioBody extends State<SignUpUsuarioBody> {
                                     ],
                                   ),
                                   onTap: () async{
-                                    await _launchURLPoliticasDeprivacidade();
 
                                   }
                               ),
@@ -481,17 +479,6 @@ class _SignUpUsuarioBody extends State<SignUpUsuarioBody> {
 
     // Once signed in, return the UserCredential
     return await FirebaseAuth.instance.signInWithCredential(credential);
-  }
-  Future<String> _launchURLPoliticasDeprivacidade() async {
-    GetTermos getTermos = GetTermos();
-
-    var url = await getTermos.getTermos();
-    if (await canLaunchUrlString(url)) {
-      await launchUrlString(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-    return 'termos';
   }
 
   void _togglePasswordViewSenha() {
