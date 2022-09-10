@@ -1,5 +1,5 @@
 import '../framework/mixInDescricao.dart';
-
+import '../framework/businessModel.dart';
 class BusinessModelDadosPrestador extends BusinessModel with MixInDescricao {
   final String name;
   final String phone;

@@ -1,6 +1,7 @@
-import 'package:home24x7/daos/usuario/dataModelBuilderUsuario.dart';
-import 'package:home24x7/daos/usuario/dataModelUsuario.dart';
-import 'package:home24x7/framework/daoWebApi.dart';
+
+import 'package:projeto_treinamento/daos/usuario/dataModelBuilderUsuario.dart';
+import 'package:projeto_treinamento/daos/usuario/dataModelUsuario.dart';
+import 'package:projeto_treinamento/framework/daoWebApi.dart';
 
 
 class DaoUsuario extends DaoWebApi<DataModelUsuario, DataModelBuilderUsuario> {

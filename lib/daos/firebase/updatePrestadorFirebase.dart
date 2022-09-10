@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
+import 'package:home24x7/businessModels/businessModelDadosPrestador.dart';
+
 
 class SetPrestadorInformationCompleta {
   String name;

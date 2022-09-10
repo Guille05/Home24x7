@@ -1,6 +1,6 @@
-import 'package:projeto_treinamento/framework/businessModel.dart';
-import 'package:projeto_treinamento/framework/mixInDescricao.dart';
+import 'package:home24x7/framework/mixInDescricao.dart';
 
+import '../framework/businessModel.dart';
 class BusinessModelPrestadorDeServicos extends BusinessModel
     with MixInDescricao {
   final String codPrestadorServico;
