@@ -2,14 +2,13 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/utils.dart';
+import 'package:home24x7/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoDadosRating.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/viewModelInfoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoDadosRating.dart';
-import 'package:projeto_treinamento/util/libraryComponents/popUps/popUpWhatsAppNaoestaIntalado.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+import '../../../util/libraryComponents/popUps/popUpWhatsAppNaoestaIntalado.dart';
 import '../viewActionsInfoPrestadorDeServico.dart';
+import '../viewModelInfoPrestadorDeServico.dart';
 import 'comentariosInfoPrestadorDeServico.dart';
 
 class ViewInfoPrestadorDeServicoDados extends StatelessWidget {

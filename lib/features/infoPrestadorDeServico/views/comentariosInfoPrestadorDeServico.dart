@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/viewModelInfoPrestadorDeServico.dart';
-
 import '../../../daos/firebase/updatePrestadorFirebase.dart';
 import '../../../util/libraryComponents/colors/colors.dart';
+import '../viewModelInfoPrestadorDeServico.dart';
 
 class ComentariosInfoPrestadorDeServico extends StatefulWidget {
   final ViewModelInfoPrestadorDeServico viewModel;

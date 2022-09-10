@@ -2,17 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/src/platform/platform.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:projeto_treinamento/businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/hubPrestador/viewModelHub.dart';
 import 'package:url_launcher/url_launcher_string.dart';
-
+import '../../../businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
 import '../../../util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
 import '../../../util/libraryComponents/colors/colors.dart';
 import '../../../util/libraryComponents/popUps/popUpWhatsAppNaoestaIntalado.dart';
-import '../../../widgets/custom_rating_bar.dart';
-import '../../../widgets/linearPercentIndicator.dart';
 import '../../infoPrestadorDeServico/views/listItemAvaliacaoPrestadorDeServico.dart';
 import '../viewActionsHub.dart';
+import '../viewModelHub.dart';
 
 class ViewHubPrestadorInfoPrestador extends StatelessWidget {
   final ViewModelHubPrestador viewModel;

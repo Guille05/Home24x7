@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/viewModelInfoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/listaPrestadoresDeServico/viewActionsListaPrestadoresDeServico.dart';
-
 import '../viewActionsInfoPrestadorDeServico.dart';
+import '../viewModelInfoPrestadorDeServico.dart';
 import 'listItemAvaliacaoPrestadorDeServico.dart';
 
 class ListViewListaAvaliacaoPrestadorDeServico extends StatelessWidget {

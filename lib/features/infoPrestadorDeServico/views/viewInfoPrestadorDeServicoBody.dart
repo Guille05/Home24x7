@@ -1,12 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/viewModelInfoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoDados.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoHeader.dart';
-import 'package:projeto_treinamento/providers/icone/providerIcone.dart';
-
+import 'package:home24x7/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoDados.dart';
 import '../../../util/libraryComponents/colors/colors.dart';
 import '../viewActionsInfoPrestadorDeServico.dart';
+import '../viewModelInfoPrestadorDeServico.dart';
 import 'listViewListaAvaliacoesPrestadorDeServico.dart';
 
 class ViewInfoPrestadorDeServicoBody extends StatelessWidget {

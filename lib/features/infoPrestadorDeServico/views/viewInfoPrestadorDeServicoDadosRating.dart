@@ -1,10 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/viewModelInfoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/widgets/custom_rating_bar.dart';
-import 'package:projeto_treinamento/widgets/linearPercentIndicator.dart';
-
 import '../viewActionsInfoPrestadorDeServico.dart';
+import '../viewModelInfoPrestadorDeServico.dart';
 
 class ViewInfoPrestadorDeServicoDadosRating extends StatelessWidget {
   ViewInfoPrestadorDeServicoDadosRating({

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
 import '../../../businessModels/businessModelTiposDeServico.dart';
+import '../../../util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
 import '../viewActionsHub.dart';
 import '../viewModelHub.dart';
 
