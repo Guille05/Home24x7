@@ -1,4 +1,11 @@
 import 'package:flutter/cupertino.dart';
+import 'package:home24x7/framework/view.dart';
+import 'package:home24x7/framework/viewActions.dart';
+import 'package:home24x7/framework/viewBuilder.dart';
+import 'package:home24x7/framework/viewModel.dart';
+
+import 'bloc.dart';
+import 'blocEvent.dart';
 
 abstract class Presenter<V extends View, VM extends ViewModel, VA extends ViewActions, BE extends BlocEvent, B extends Bloc<VM, BE>, VB extends ViewBuilder<V, VM, VA>> extends StatelessWidget {
   final B bloc;
