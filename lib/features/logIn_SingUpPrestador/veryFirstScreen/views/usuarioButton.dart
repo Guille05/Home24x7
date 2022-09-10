@@ -23,7 +23,7 @@ class UsuarioButton extends StatelessWidget {
           constraints: BoxConstraints(maxWidth: 350.0, minHeight: 50.0),
           alignment: Alignment.center,
           child: Text(
-            'Contratatar um prestador',
+            'Hire a worker',
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: Colors.white,

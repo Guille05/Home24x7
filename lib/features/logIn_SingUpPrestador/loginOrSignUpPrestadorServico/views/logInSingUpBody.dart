@@ -61,7 +61,7 @@ class LogInOrSignUpPrestadorServicoBody extends StatelessWidget {
                     padding: const EdgeInsets.all(48),
                     child: Column(
                       children: [
-                        Text('Você irá se cadastrar ou ',
+                        Text('Would you like to register ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.black,
@@ -70,7 +70,7 @@ class LogInOrSignUpPrestadorServicoBody extends StatelessWidget {
                           ),),
                         const SizedBox(height: 24,),
 
-                        Text('''Fazer o login ?''',
+                        Text('''or log in?''',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Colors.black,

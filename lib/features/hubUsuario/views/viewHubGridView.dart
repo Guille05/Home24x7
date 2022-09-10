@@ -35,7 +35,7 @@ class ViewHubGridView extends StatelessWidget {
               SizedBox(
                 width: 11,
               ),
-              Text("Já escolheu a cidade? Pesquisa rápida",
+              Text("Already know which city? Quick search",
                   textAlign: TextAlign.start,
                   style: TextStyle(
                       color: Colors.black,
@@ -97,69 +97,4 @@ class ViewHubGridView extends StatelessWidget {
       ),
     );
   }
-
-/*
-  Widget gridViewSemInternet(BuildContext context){
-    return Container(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(width: 11,),
-          Row(
-            children: [
-              SizedBox(width: 11,),
-              Text(
-                  "Selecione o serviço desejado:",
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20)
-              ),
-            ],
-          ),
-          GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisSpacing: 0,
-              crossAxisSpacing: 0,
-            ),
-            shrinkWrap: true,
-            itemCount: 4,
-            itemBuilder: _buildBotaoServicoViewModelNull,
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildBotaoServicoViewModelNull(BuildContext context, int index) {
-    return Padding(
-
-      padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-            shadowColor: Colors.black,
-            primary: Colors.white, //[Colors.blue.shade900,Colors.blue.shade500,  Colors.blue.shade400]
-            shape: new RoundedRectangleBorder(
-              borderRadius: new BorderRadius.circular(20.0),
-            )
-        ),
-        onPressed: () {
-        },
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Icon(icons.wifi_off, size: 80, ),
-
-            Text('Conecte-se à internet'),
-          ],
-        ),
-      ),
-    );
-  }
-
-*/
-
 }

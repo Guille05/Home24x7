@@ -59,7 +59,7 @@ class ViewInfoPrestadorDeServicoDados extends StatelessWidget {
                                   )
                               ),
                               SizedBox(height: 6),
-                              _infoDoPrestadorDeServico(context, Icons.description, 'DESCRIÇÃO'),
+                              _infoDoPrestadorDeServico(context, Icons.description, 'DESCRIPTION'),
                               SizedBox(height: 6),
 
                             ],
@@ -136,7 +136,7 @@ class ViewInfoPrestadorDeServicoDados extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(width: 1,),
-                Text('Faça um comentário sobre esse prestador',
+                Text('Make a comment about this worker',
                 style: TextStyle(color: Colors.black, fontSize: 16),),
                 Icon(Icons.arrow_forward, color: Colors.black,),
                 SizedBox(width: 1,),
@@ -184,13 +184,13 @@ class ViewInfoPrestadorDeServicoDados extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50.0),
                       ))),
               onPressed: () {
-                launchUrlString('tel:+55 ${this.viewModel.prestadorDeServicos.telefone}');
+                launchUrlString('tel:+1 ${this.viewModel.prestadorDeServicos.telefone}');
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Icon(Icons.phone, color: Colors.white),
-                  Text("Ligar", style: TextStyle(color: Colors.white)),
+                  Text("Call", style: TextStyle(color: Colors.white)),
                 ],
               ),
             ),
@@ -224,8 +224,8 @@ class ViewInfoPrestadorDeServicoDados extends StatelessWidget {
 
   openwhatsapp(context) async{
 
-    var whatsapp ="+55${this.viewModel.prestadorDeServicos.telefone}";
-    var whatsappURl_android = "whatsapp://send?phone="+whatsapp+"&text=Olá tudo bem? encontrei o seu perfil no Quick Fix.";
+    var whatsapp ="+1${this.viewModel.prestadorDeServicos.telefone}";
+    var whatsappURl_android = "whatsapp://send?phone="+whatsapp+"&text= Hello, I've found you through Home24x7! Are you available?";
     var whatappURL_ios ="https://wa.me/$whatsapp?text=${Uri.parse("hello")}";
     if(GetPlatform.isIOS){
       // for iOS phone only

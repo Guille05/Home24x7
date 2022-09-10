@@ -18,7 +18,7 @@ class ViewPesquisaTipoServico extends View<ViewModelPesquisaTipoServico, ViewAct
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:   AppBar(title: Text("Selecione o tipo de serviço",
+      appBar:   AppBar(title: Text("Select service type",
         style: TextStyle(color: Colors.white),),
         backgroundColor: ColorAppBar,
         iconTheme: IconThemeData(

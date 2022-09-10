@@ -39,7 +39,7 @@ class _BodyViewsignUpEplicandoTelaDocumentos extends State<BodyViewsignUpEplican
                   SizedBox(child:
                     BackArrowSignUpPart2WorkerInformation(),
                   ),
-                  Text("Documentos",
+                  Text("Documents",
                     style: TextStyle(color: Colors.white, fontSize: 32),),
                 ],
               ),

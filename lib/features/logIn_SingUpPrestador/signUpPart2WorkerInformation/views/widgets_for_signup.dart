@@ -21,7 +21,7 @@ class NameWidget extends StatelessWidget {
           textInputAction: TextInputAction.next,
           validator: (nameController) {
             if (nameController!.isEmpty){
-              return "Digite um nome válido";
+              return "Enter a valid username";
             }else{
               return null;
             }
@@ -31,8 +31,8 @@ class NameWidget extends StatelessWidget {
               icon: Icon(Icons.close),
               onPressed: () => nameController.clear(),
             ),
-            hintText: 'Digite o seu nome completo',
-            labelText: 'Nome',
+            hintText: 'Enter your full name',
+            labelText: 'Name',
             labelStyle: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w500,
@@ -65,7 +65,7 @@ class PhoneWidget extends StatelessWidget {
           textInputAction: TextInputAction.next,
           validator: (phoneNumberController) {
             if (phoneNumberController!.isEmpty|| phoneNumberController.length !=11  || !RegExp(r'^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]+$').hasMatch(phoneNumberController)){
-              return "Digite um número válido: 27999999999";
+              return "Enter a valid phone number: (xxx)xxx-xxxx";
             } else{
               return null;
             }
@@ -75,8 +75,8 @@ class PhoneWidget extends StatelessWidget {
               icon: Icon(Icons.close),
               onPressed: () => phoneController.clear(),
             ),
-            hintText: 'Digite seu telofone (apenas números)',
-            labelText: 'Número de telefone',
+            hintText: 'Enter your phone number (only digits)',
+            labelText: 'Phone number',
             labelStyle: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w500,
@@ -112,8 +112,8 @@ class WorkingHoursWidget extends StatelessWidget {
               icon: Icon(Icons.close),
               onPressed: () => workingHoursController.clear(),
             ),
-            hintText: 'Trabalho de 7 às 18',
-            labelText: 'Horas de trabalho',
+            hintText: 'I work from 7 am to 6 pm',
+            labelText: 'Working hours',
             labelStyle: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w500,
@@ -148,7 +148,7 @@ class DescriptionWidget extends StatelessWidget {
           textInputAction: TextInputAction.next,
           validator: (nameController) {
             if (nameController!.isEmpty) {
-              return "A descrição do seu serviço não pode ser nula.";
+              return "A description of your services cannot be empty.";
             }else{
               return null;
             }
@@ -158,8 +158,8 @@ class DescriptionWidget extends StatelessWidget {
               icon: Icon(Icons.close),
               onPressed: () => descriptionController.clear(),
             ),
-            hintText: 'Faça uma descrição do seu serviço',
-            labelText: 'Descrição do seu serviço',
+            hintText: 'Enter a description of your service',
+            labelText: 'Describe your service',
             labelStyle: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.w500,

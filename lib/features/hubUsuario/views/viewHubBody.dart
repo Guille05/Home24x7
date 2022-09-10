@@ -85,7 +85,7 @@ class ViewHubBodyUsuario extends StatelessWidget {
                                     constraints: BoxConstraints(maxWidth: 200.0, minHeight: 50.0),
                                     alignment: Alignment.center,
                                     child: Text(
-                                      'Deslogar',
+                                      'Log out',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           color: Colors.white,

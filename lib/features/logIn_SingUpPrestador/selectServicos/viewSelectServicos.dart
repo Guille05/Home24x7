@@ -42,7 +42,7 @@ class ViewSelectServicos extends View<ViewModelSelectServicos, ViewActionsSelect
             ),
 
             toolbarHeight: 70,
-            title: Text('Escolha um ou mais serviços\nque pretende prestar',
+            title: Text('Choose or more services you\n are offering',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20,
@@ -74,7 +74,7 @@ class ViewSelectServicos extends View<ViewModelSelectServicos, ViewActionsSelect
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Selecione os serviços que você pretende prestar",
+                          "Select the services you will be offering",
                           style: Theme.of(context).textTheme.headline3!.copyWith(
                               fontSize: Theme.of(context)
                                   .textTheme
@@ -82,7 +82,7 @@ class ViewSelectServicos extends View<ViewModelSelectServicos, ViewActionsSelect
                                   .fontSize),
                         ),
                         Text(
-                          "Serviços selecionados: ${viewModel!.cidadesSelecionadas.length} ",
+                          "Selected services: ${viewModel!.cidadesSelecionadas.length} ",
                           textAlign: TextAlign.start,
                           style: Theme.of(context).textTheme.headline3!.copyWith(
                               fontSize: Theme.of(context)

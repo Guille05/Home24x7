@@ -28,7 +28,7 @@ class ViewHubCidade extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Selecione a sua cidade:",
+          Text("Select your city:",
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,

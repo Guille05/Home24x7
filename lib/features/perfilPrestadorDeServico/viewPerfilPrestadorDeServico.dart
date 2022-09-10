@@ -20,7 +20,7 @@ class ViewPerfilPrestadorDeServico extends View<
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Perfil',
+          'Profile',
           style: TextStyle(color: Colors.black, fontSize: 20),
         ),
         automaticallyImplyLeading: false,

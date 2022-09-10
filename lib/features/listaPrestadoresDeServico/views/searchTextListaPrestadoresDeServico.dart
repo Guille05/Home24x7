@@ -23,7 +23,7 @@ class SearchTextListaPrestadoresDeServico extends StatelessWidget {
       },
       decoration: new InputDecoration(
         prefixIcon: new Icon(Icons.search),
-        labelText: "Pesquisa prestador de serviço",
+        labelText: "Search worker",
         enabledBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
           borderSide: const BorderSide(

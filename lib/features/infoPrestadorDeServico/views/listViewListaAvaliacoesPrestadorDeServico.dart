@@ -21,7 +21,7 @@ class ListViewListaAvaliacaoPrestadorDeServico extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Center(
-              child: Text('Ainda não há avaliações para esse prestador',
+              child: Text('There are no ratings for this worker.',
                 style: Theme.of(context).textTheme.headline6!.copyWith(fontWeight: FontWeight.bold, color: Theme.of(context).textTheme.caption!.color, fontSize: 16),
               ),
             ),

@@ -84,7 +84,7 @@ class BlocSelectServicos
     viewModel.aplicaFiltroDePesquisa();
     if (viewModel.listaVisivel.isEmpty) {
 
-      viewModel.mensagemDeErro = "Não existem cidades que contenha a palavra '${viewModel.controlerFieldPesquisa.text}'";
+      viewModel.mensagemDeErro = "There are no services matching '${viewModel.controlerFieldPesquisa.text}'";
     } else {
       viewModel.mensagemDeErro = "";
 

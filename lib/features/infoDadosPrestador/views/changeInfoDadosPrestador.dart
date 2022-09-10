@@ -33,20 +33,20 @@ class ChangeInfoDadosPrestador extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       CustomEditPrestadorInformationNome(
-                        labelText: "Nome",
+                        labelText: "Name",
                         iconData: Icons.account_box,
                         item: this.viewModel.prestador.name,
-                        hintText: 'Digite o seu Nome',
+                        hintText: 'Enter your name',
                         onEditionComplete: (String novoNome) {
                           this.viewActions.onChangeName(novoNome, viewModel);
                         },
                       ),
                       Divider(),
                       CustomEditPrestadorInformationTelefone(
-                        labelText: "Número",
+                        labelText: "Phone number",
                         iconData: Icons.phone,
                         item: this.viewModel.prestador.phone,
-                        hintText: 'Digite o seu número',
+                        hintText: 'Enter your phone number',
                         onEditionComplete: (String novoTelefone) {
                           this
                               .viewActions
@@ -55,23 +55,12 @@ class ChangeInfoDadosPrestador extends StatelessWidget {
                       ),
                       Divider(),
 
-                      /*CustomEditPrestadorInformationServicosPrestados(
-                        labelText: "Servicos Prestados",
-                        iconData: Icons.work,
-                        item: this.viewModel.prestador.roles,
-                        hintText: 'Digite aqui',
-                        onEditionComplete: (String novoNome) {
-                           // this.viewActions.onChangeName(novoNome, viewModel);
-                        },
-                      ),
-                      Divider(
-                      ),*/
 
                       CustomEditPrestadorInformationHorasDeTrabaho(
-                        labelText: "Horas que você trabalha",
+                        labelText: "Working hours",
                         iconData: (Icons.lock_clock),
                         item: this.viewModel.prestador.workingHours,
-                        hintText: 'Digite aqui',
+                        hintText: 'Enter here',
                         onEditionComplete: (String novoHorario) {
                           this
                               .viewActions
@@ -80,10 +69,10 @@ class ChangeInfoDadosPrestador extends StatelessWidget {
                       ),
                       Divider(),
                       CustomEditPrestadorInformationDescricao(
-                        labelText: "Descrição",
+                        labelText: "Description",
                         iconData: Icons.description,
                         item: this.viewModel.prestador.description,
-                        hintText: 'Faça uma descrição',
+                        hintText: 'Write a description',
                         onEditionComplete: (String novaDesc) {
                           this
                               .viewActions
@@ -121,7 +110,7 @@ class ChangeInfoDadosPrestador extends StatelessWidget {
                             BoxConstraints(maxWidth: 200.0, minHeight: 50.0),
                         alignment: Alignment.center,
                         child: Text(
-                          'Sair da conta',
+                          'Exit account',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.white,

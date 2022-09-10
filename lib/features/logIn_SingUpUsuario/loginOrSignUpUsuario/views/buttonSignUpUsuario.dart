@@ -23,7 +23,7 @@ class ButtonSignUpUsuario extends StatelessWidget {
           constraints: BoxConstraints(maxWidth: 350.0, minHeight: 50.0),
           alignment: Alignment.center,
           child: Text(
-            'Cadastre-se aqui',
+            'Sign up here',
             textAlign: TextAlign.center,
             style: TextStyle(
                 color: Colors.white,

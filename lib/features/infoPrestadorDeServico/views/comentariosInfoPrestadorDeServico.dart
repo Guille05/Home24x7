@@ -32,7 +32,7 @@ class _ComentariosInfoPrestadorDeServicoState extends State<ComentariosInfoPrest
         centerTitle: false,
         titleSpacing: 0,
         // automaticallyImplyLeading: false,
-        title: Text('Faça um comentário', style: TextStyle(color: Colors.white),),
+        title: Text('Make a comment:', style: TextStyle(color: Colors.white),),
         backgroundColor: ColorAppBar,
         iconTheme: IconThemeData(
           color: Colors.white,
@@ -51,7 +51,7 @@ class _ComentariosInfoPrestadorDeServicoState extends State<ComentariosInfoPrest
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
-                  child: Text('Faça um comentário sobre\neste prestador',
+                  child: Text('Make a comment about \nthis worker',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -76,7 +76,7 @@ class _ComentariosInfoPrestadorDeServicoState extends State<ComentariosInfoPrest
                     keyboardType: TextInputType.multiline,
                     cursorColor: Colors.indigoAccent,
                     decoration: InputDecoration(
-                      hintText: 'Digite o seu comentário aqui',
+                      hintText: 'Enter your comment here',
                       hintStyle: TextStyle(
                         color: Colors.black,
                       ),
@@ -101,7 +101,7 @@ class _ComentariosInfoPrestadorDeServicoState extends State<ComentariosInfoPrest
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Avalie o prestador de 1 a 5'),
+                        Text('Rate your worker from 1 to 5'),
                         SizedBox(height: 8,),
 
                         RatingBar.builder(
@@ -121,7 +121,7 @@ class _ComentariosInfoPrestadorDeServicoState extends State<ComentariosInfoPrest
                         ),
                         SizedBox(height: 8,),
 
-                        Text('Sua nota foi $rating'),
+                        Text('Your rating was $rating'),
                       ],
                     ),
                   ),
@@ -143,7 +143,7 @@ class _ComentariosInfoPrestadorDeServicoState extends State<ComentariosInfoPrest
                 constraints: BoxConstraints(maxWidth: 350.0, minHeight: 50.0),
                 alignment: Alignment.center,
                 child: Text(
-                  'Salvar avaliacao',
+                  'Save rating',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.white,

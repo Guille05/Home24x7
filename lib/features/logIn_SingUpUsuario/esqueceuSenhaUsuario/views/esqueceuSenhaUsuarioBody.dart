@@ -39,7 +39,7 @@ class _EsqueceuSenhaUsuarioBody extends State<EsqueceuSenhaUsuarioBody> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const[
-                  Text("Altere a sua senha",style: TextStyle(color: Colors.white,fontSize: 32),),
+                  Text("Change your password",style: TextStyle(color: Colors.white,fontSize: 32),),
                 ],
               ),
             ),
@@ -57,7 +57,7 @@ class _EsqueceuSenhaUsuarioBody extends State<EsqueceuSenhaUsuarioBody> {
                     child: Column(
                       children: [
                         const SizedBox(height: 60,),
-                        Text("Digete o seu email de cadastro\npara recuperar sua senha",style: TextStyle(color: Colors.blue,fontSize: 22, fontWeight: FontWeight.bold),),
+                        Text("Enter your e-mail to \nrecover your password",style: TextStyle(color: Colors.blue,fontSize: 22, fontWeight: FontWeight.bold),),
                         const SizedBox(height: 20,),
 
                         Container(
@@ -124,7 +124,7 @@ class _EsqueceuSenhaUsuarioBody extends State<EsqueceuSenhaUsuarioBody> {
                                       maxWidth: 350.0, minHeight: 50.0),
                                   alignment: Alignment.center,
                                   child: Text(
-                                    'Salvar',
+                                    'Save',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Colors.white,

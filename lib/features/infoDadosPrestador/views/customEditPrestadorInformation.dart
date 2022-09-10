@@ -122,7 +122,7 @@ class _CustomEditPrestadorInformationNomeState
               textInputAction: TextInputAction.next,
               validator: (textEditingController) {
                 if (textEditingController!.isEmpty) {
-                  return "Digite um nome válido";
+                  return "Enter a valid username";
                 } else {
                   return null;
                 }
@@ -287,7 +287,7 @@ class _CustomEditPrestadorInformationTelefoneState
                     textEditingController.length != 10 ||
                     !RegExp(r'^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]+$')
                         .hasMatch(textEditingController)) {
-                  return "Digite um número de celular válido: 27999999999";
+                  return "Enter a valid phone number: (xxx) xxx-xxxx";
                 } else {
                   return null;
                 }
@@ -452,7 +452,7 @@ class _CustomEditPrestadorInformationDescricaoState
               textInputAction: TextInputAction.next,
               validator: (textEditingController) {
                 if (textEditingController!.isEmpty) {
-                  return "Digite uma descrição válido";
+                  return "Enter a valid description";
                 } else {
                   return null;
                 }
@@ -619,7 +619,7 @@ class _CustomEditPrestadorInformationHorasDeTrabahoState
               textInputAction: TextInputAction.next,
               validator: (textEditingController) {
                 if (textEditingController!.isEmpty) {
-                  return "Digite as horas que você trabalha";
+                  return "Enter your working hours";
                 } else {
                   return null;
                 }
@@ -783,7 +783,7 @@ class _CustomEditPrestadorInformationServicosPrestadosState
               validator: (textEditingController) {
                 if (textEditingController!.isEmpty ||
                     !RegExp(r'^[a-z A-Z]+$').hasMatch(textEditingController)) {
-                  return "Digite um nome válido";
+                  return "Enter a valid username";
                 } else {
                   return null;
                 }

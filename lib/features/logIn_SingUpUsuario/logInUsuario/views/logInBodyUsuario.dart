@@ -75,7 +75,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                     height: 10,
                   ),
                   Text(
-                    "Bem-vindo de volta",
+                    "Welcome back",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                 ],
@@ -128,7 +128,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                                     validator: (emailController) =>
                                         !EmailValidator.validate(
                                                 emailController!)
-                                            ? 'Email inválido'
+                                            ? 'Invalid E-mail'
                                             : null,
                                     decoration: InputDecoration(
                                         suffixIcon: IconButton(
@@ -136,7 +136,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                                           onPressed: () =>
                                               emailController.clear(),
                                         ),
-                                        hintText: "Email",
+                                        hintText: "E-mail",
                                         hintStyle:
                                             TextStyle(color: Colors.grey),
                                         border: InputBorder.none),
@@ -158,7 +158,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                                       if (passwordController!.isEmpty ||
                                           !RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$')
                                               .hasMatch(passwordController)) {
-                                        return "Sua senha deve conter uma letra maiúscula,\n minúscula e um número e pelo menos 8 caracteres";
+                                        return "Your password must contain an Upper Case letter, \n a lower case letter, a number and be at least 8 characters long";
                                       } else {
                                         return null;
                                       }
@@ -172,7 +172,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                                                 : Icons.visibility_off,
                                           ),
                                         ),
-                                        hintText: "Senha",
+                                        hintText: "Password",
                                         hintStyle:
                                             TextStyle(color: Colors.grey),
                                         border: InputBorder.none),
@@ -206,7 +206,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                                       maxWidth: 350.0, minHeight: 50.0),
                                   alignment: Alignment.center,
                                   child: Text(
-                                    'Continuar',
+                                    'Continue',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Colors.white,
@@ -246,7 +246,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                         ),
                         GestureDetector(
                           child: Text(
-                            'Esqueceu senha?',
+                            'Forgot your password?',
                             style: TextStyle(
                               decoration: TextDecoration.underline,
                               color: Colors.blue[600],
@@ -267,7 +267,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                'Não tem conta?',
+                                "Don't have an account?",
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 20,
@@ -275,7 +275,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                                 ),
                               ),
                               Text(
-                                'Cadastre-se',
+                                'Sign Up',
                                 style: TextStyle(
                                   decoration: TextDecoration.underline,
                                   color: Colors.blue[600],
@@ -319,7 +319,7 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                                           width: screenWidth * 0.03,
                                         ),
                                         Text(
-                                          'Cadrastre-se com Facebook',
+                                          'Sign-Up with Facebook',
                                           style: TextStyle(
                                               fontSize: screenWidth <348 ?15.5 :18,
                                               color: Colors.black),
@@ -331,45 +331,6 @@ class _LogInBodyUsuario extends State<LogInBodyUsuario> {
                               ),
                             )),
                             SizedBox(width: screenWidth * 0.02564 * .7),
-                         /*   Expanded(
-                                child: SizedBox(
-                              height: 50,
-                              child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  primary: Colors
-                                      .white, //[Colors.blue.shade900,Colors.blue.shade500,  Colors.blue.shade400]
-                                  shape: new RoundedRectangleBorder(
-                                    borderRadius:
-                                        new BorderRadius.circular(20.0),
-                                  ),
-                                ),
-                                onPressed: () {
-                                  signInWithGoogle();
-                                  setState(() {});
-                                },
-                                child: Center(
-                                  child: Container(
-                                    child: Row(
-                                      children: <Widget>[
-                                        Icon(
-                                          FontAwesomeIcons.google,
-                                          color: Colors.indigoAccent,
-                                        ),
-                                        SizedBox(
-                                          width: screenWidth * 0.02564,
-                                        ),
-                                        Text(
-                                          'Google',
-                                          style: TextStyle(
-                                              fontSize: 18,
-                                              color: Colors.black),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            )),*/
                           ],
                         ),
                       ],

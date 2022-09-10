@@ -132,7 +132,7 @@ class _BodySignUpPart2WorkerInformation extends State<BodySignUpPart2WorkerInfor
                     child: BackArrowSignUpPart2WorkerInformation(),
                   ),
                   Text(
-                    "Complete com seus dados",
+                    "Complete with your information",
                     style: TextStyle(color: Colors.white, fontSize: 24),
                   ),
                 ],
@@ -152,7 +152,7 @@ class _BodySignUpPart2WorkerInformation extends State<BodySignUpPart2WorkerInfor
                     child: Column(
                       children: [
                         Text(
-                          'Clique aqui para escolher uma\nimagem de perfil',
+                          'Click here to select \na profile picture',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.black,
@@ -249,7 +249,7 @@ class _BodySignUpPart2WorkerInformation extends State<BodySignUpPart2WorkerInfor
                                         maxWidth: 350.0, minHeight: 50.0),
                                     alignment: Alignment.center,
                                     child: Text(
-                                      'Continuar',
+                                      'Continue',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                           color: Colors.white,

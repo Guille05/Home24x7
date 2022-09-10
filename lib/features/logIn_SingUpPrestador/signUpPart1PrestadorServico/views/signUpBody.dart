@@ -73,12 +73,12 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Cadastre-se",
+                    "Sign up",
                     style: TextStyle(color: Colors.white, fontSize: 40),
                   ),
                   SizedBox(height: screenHeight * 0.011848),
                   Text(
-                    "Seja bem vindo ao Quick Fix",
+                    "Welcome to Home24x7",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                 ],
@@ -127,7 +127,7 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                     validator: (emailController) =>
                                         !EmailValidator.validate(
                                                 emailController!)
-                                            ? 'Email inválido'
+                                            ? 'E-mail invalid'
                                             : null,
                                     controller: emailController,
                                     cursorColor: Colors.indigoAccent,
@@ -137,7 +137,7 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                           onPressed: () =>
                                               emailController.clear(),
                                         ),
-                                        hintText: "Email",
+                                        hintText: "E-mail",
                                         hintStyle:
                                             TextStyle(color: Colors.grey),
                                         border: InputBorder.none),
@@ -159,7 +159,7 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                       if (passwordController!.isEmpty ||
                                           !RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$')
                                               .hasMatch(passwordController)) {
-                                        return "Sua senha deve conter uma letra maiúscula,\n minúscula e um número e pelo menos 8 caracteres";
+                                        return "Your password must contain an Upper Case letter, \n a lower case letter, a number and be at least 8 characters long";
                                       } else {
                                         return null;
                                       }
@@ -173,7 +173,7 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                                 : Icons.visibility_off,
                                           ),
                                         ),
-                                        hintText: "Senha",
+                                        hintText: "Password",
                                         hintStyle:
                                             TextStyle(color: Colors.grey),
                                         border: InputBorder.none),
@@ -191,7 +191,7 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                         passwordController.text !=
                                                 cofirmPasswordController
                                                     .toString()
-                                            ? 'As senhas precisam ser iguais'
+                                            ? 'The passwords must match'
                                             : null,
                                     controller: cofirmPasswordController,
                                     cursorColor: Colors.indigoAccent,
@@ -205,7 +205,7 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                                 : Icons.visibility_off,
                                           ),
                                         ),
-                                        hintText: "Confirme senha",
+                                        hintText: "Confirm password",
                                         hintStyle:
                                             TextStyle(color: Colors.grey),
                                         border: InputBorder.none),
@@ -232,12 +232,12 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Li e concordo com as',
+                                      "I've read and I agree with the",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold, fontSize: 14),
                                     ),
                                     Text(
-                                      'Políticas de privacidade',
+                                      'Privacy Policy',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           color: Colors.indigoAccent,
@@ -282,7 +282,7 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                       maxWidth: 350.0, minHeight: 50.0),
                                   alignment: Alignment.center,
                                   child: Text(
-                                    'Cadastre-se',
+                                    'Sign up',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Colors.white,
@@ -319,14 +319,14 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text('Já tem conta?',
+                              Text('Already have an account?',
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Text('Entrar',
+                              Text('Log in',
                                 style: TextStyle(
                                   decoration: TextDecoration.underline,
                                   color: Colors.blue[600],
@@ -370,7 +370,7 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                                               width: screenWidth * 0.03,
                                             ),
                                             Text(
-                                              'Cadrastre-se com Facebook',
+                                              'Sign up with Facebook',
                                               style: TextStyle(
                                                   fontSize: screenWidth <348 ?15.5 :18,
                                                   color: Colors.black),
@@ -383,46 +383,6 @@ class _SignUpPart1Body extends State<SignUpPart1Body> {
                               ),
                             ),
                             SizedBox(width: screenWidth * 0.02564 * .5),
-                            /*Expanded(
-                                child: SizedBox(
-                                  height: 50,
-                                  child: ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      primary: Colors
-                                          .white, //[Colors.blue.shade900,Colors.blue.shade500,  Colors.blue.shade400]
-                                      shape: new RoundedRectangleBorder(
-                                        borderRadius:
-                                            new BorderRadius.circular(20.0),
-                                      ),
-                                    ),
-                                    onPressed: () {
-                                      signInWithGoogle();
-                                      setState(() {});
-                                    },
-                                    child: Center(
-                                      child: Container(
-                                        child: Row(
-                                          children: <Widget>[
-                                            Icon(
-                                              FontAwesomeIcons.google,
-                                              color: Colors.indigoAccent,
-                                            ),
-                                            SizedBox(
-                                              width: screenWidth * 0.02564,
-                                            ),
-                                            Text(
-                                              'Google',
-                                              style: TextStyle(
-                                                  fontSize: 18,
-                                                  color: Colors.black),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),*/
                           ],
                         ),
                       ],

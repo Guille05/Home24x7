@@ -39,7 +39,7 @@ class _EsqueceuSenhaPrestadorBody extends State<EsqueceuSenhaPrestadorBody> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const[
-                  Text("Altere a sua senha",style: TextStyle(color: Colors.white,fontSize: 32),),
+                  Text("Change your password",style: TextStyle(color: Colors.white,fontSize: 32),),
                 ],
               ),
             ),
@@ -57,7 +57,7 @@ class _EsqueceuSenhaPrestadorBody extends State<EsqueceuSenhaPrestadorBody> {
                     child: Column(
                       children: [
                         const SizedBox(height: 60,),
-                        Text("Digete o seu email de cadastro\npara recuperar sua senha",style: TextStyle(color: Colors.blue,fontSize: 22, fontWeight: FontWeight.bold),),
+                        Text("Enter your email\n to recover your password",style: TextStyle(color: Colors.blue,fontSize: 22, fontWeight: FontWeight.bold),),
                         const SizedBox(height: 20,),
 
                         Container(
@@ -87,7 +87,7 @@ class _EsqueceuSenhaPrestadorBody extends State<EsqueceuSenhaPrestadorBody> {
                                         icon: Icon(Icons.close),
                                         onPressed: () => emailController.clear(),
                                       ),
-                                        hintText: "Email",
+                                        hintText: "E-mail",
                                         hintStyle: TextStyle(color: Colors.grey),
                                         border: InputBorder.none
                                     ),
@@ -124,7 +124,7 @@ class _EsqueceuSenhaPrestadorBody extends State<EsqueceuSenhaPrestadorBody> {
                                       maxWidth: 350.0, minHeight: 50.0),
                                   alignment: Alignment.center,
                                   child: Text(
-                                    'Salvar',
+                                    'Save',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         color: Colors.white,

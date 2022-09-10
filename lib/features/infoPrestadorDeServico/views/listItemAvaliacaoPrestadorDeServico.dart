@@ -70,7 +70,7 @@ class ListItemAvaliacaoPrestadorDeServico extends StatelessWidget {
               ),
               SizedBox(height: 8),
               Text(
-                dia+' de '+getMonth(month)+' de '+ano+ ' às '+horaMinSegundo,
+                dia+' of '+getMonth(month)+' , '+ano+ ' at '+horaMinSegundo,
                 overflow: TextOverflow.ellipsis,
                 softWrap: false,
                 maxLines: 20,
@@ -83,18 +83,18 @@ class ListItemAvaliacaoPrestadorDeServico extends StatelessWidget {
       );
     }
   String getMonth(String month){
-    if(month == '01') return 'Janeiro';
-    if(month == '02') return 'Fevereiro';
-    if(month == '03') return 'Março';
-    if(month == '04') return 'Abril';
-    if(month == '05') return 'Maio';
-    if(month == '06') return 'Junho';
-    if(month == '07') return 'Julho';
-    if(month == '08') return 'Agosto';
-    if(month == '09') return 'Setembro';
-    if(month == '10') return 'Outubro';
-    if(month == '11') return 'Novembro';
-    if(month == '12') return 'Dezembro';
-    return 'Agosto';
+    if(month == '01') return 'January';
+    if(month == '02') return 'February';
+    if(month == '03') return 'March';
+    if(month == '04') return 'April';
+    if(month == '05') return 'May';
+    if(month == '06') return 'June';
+    if(month == '07') return 'July';
+    if(month == '08') return 'August';
+    if(month == '09') return 'September';
+    if(month == '10') return 'October';
+    if(month == '11') return 'November';
+    if(month == '12') return 'December';
+    return 'September';
   }
 }
