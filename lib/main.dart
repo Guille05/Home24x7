@@ -17,6 +17,5 @@ class MyApp extends StatelessWidget {
         centerTitle: true,
       ),
     );
-
   }
 }
