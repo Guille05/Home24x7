@@ -1,5 +1,3 @@
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/providers/city/providerCidade.dart';
 
 class Cidades {
   static final Cidades _singleton = Cidades._internal();

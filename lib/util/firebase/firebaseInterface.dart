@@ -1,10 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:projeto_treinamento/daos/dataWorker/dataModelDadosPrestador.dart';
-import 'package:projeto_treinamento/framework/dataModel.dart';
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
-import 'package:projeto_treinamento/daos/dataWorker/dataModelBuilderDadosPrestador.dart';
+
+import '../../framework/dataModel.dart';
+import '../../framework/dataModelBuilder.dart';
+import '../resposta_processamento.dart';
 
 class FirebaseInterface<D extends DataModel, DB extends DataModelBuilder<D>> {
   final FirebaseAuth auth = FirebaseAuth.instance;
