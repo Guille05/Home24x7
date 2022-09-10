@@ -1,6 +1,6 @@
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/providers/city/providerCidade.dart';
-import 'package:projeto_treinamento/util/city.dart';
+
+import '../businessModels/businessModelCidade.dart';
+import 'cidade.dart';
 
 class GetCodCidade {
   String nomeCidade;

@@ -1,7 +1,7 @@
-import 'package:projeto_treinamento/daos/dataWorker/dataModelDadosPrestador.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
 import '../../framework/dao.dart';
+import '../../util/resposta_processamento.dart';
 import 'dataModelBuilderDadosPrestador.dart';
+import 'dataModelDadosPrestador.dart';
 import 'firebaseInterfaceDadosPrestador.dart';
 
 class DaoDadosPrestador extends Dao<DataModelDadosPrestador> {

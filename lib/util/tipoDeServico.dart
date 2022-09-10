@@ -1,8 +1,5 @@
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/providers/city/providerCidade.dart';
-import 'package:projeto_treinamento/providers/dataWorker/providerDadosPrestador.dart';
-import 'package:projeto_treinamento/providers/tiposDeServico/providerTiposDeServico.dart';
+
+import '../businessModels/businessModelTiposDeServico.dart';
 
 class TipoDeServico {
   static final TipoDeServico _singleton = TipoDeServico._internal();
