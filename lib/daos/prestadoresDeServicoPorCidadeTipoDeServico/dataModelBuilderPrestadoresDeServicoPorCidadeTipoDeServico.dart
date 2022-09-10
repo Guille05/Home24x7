@@ -1,8 +1,8 @@
-import 'package:projeto_treinamento/daos/cidade/dataModelBuilderCidade.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicos/dataModelBuilderPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicos/dataModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelBuilderTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
+import 'package:home24x7/daos/city/dataModelBuilderCidade.dart';
+import 'package:home24x7/daos/worker/dataModelBuilderPrestadorDeServicos.dart';
+import 'package:home24x7/daos/worker/dataModelPrestadorDeServicos.dart';
+import 'package:home24x7/framework/dataModelBuilder.dart';
+
 
 import 'dataModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 
