@@ -61,7 +61,7 @@ class LogInOrSignUpUsuarioBody extends StatelessWidget {
                     padding: const EdgeInsets.all(48),
                     child: Column(
                       children: [
-                        Text('Would you like to sign up or ',
+                        Text('Would you like to sign up ',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.black,
@@ -70,7 +70,7 @@ class LogInOrSignUpUsuarioBody extends StatelessWidget {
                           ),),
                         const SizedBox(height: 24,),
 
-                        Text('''log in?''',
+                        Text('''or log in?''',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Colors.black,
