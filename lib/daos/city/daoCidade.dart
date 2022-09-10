@@ -1,5 +1,6 @@
-import 'package:projeto_treinamento/daos/city/dataModelBuilderCidade.dart';
-import 'package:projeto_treinamento/framework/daoWebApi.dart';
+import 'package:home24x7/daos/city/dataModelBuilderCidade.dart';
+import 'package:home24x7/framework/daoWebApi.dart';
+
 
 import 'dataModelCidade.dart';
 

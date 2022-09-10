@@ -1,4 +1,5 @@
-import 'package:projeto_treinamento/framework/dataModel.dart';
+import 'package:home24x7/framework/dataModel.dart';
+
 
 class DataModelCidade extends DataModel {
   final int codCidade;
