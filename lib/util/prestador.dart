@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/providers/city/providerCidade.dart';
-import 'package:projeto_treinamento/providers/dataWorker/providerDadosPrestador.dart';
+
+import '../businessModels/businessModelDadosPrestador.dart';
+import '../provider/dadosPrestador/providerDadosPrestador.dart';
 
 class Prestador {
   static final Prestador _singleton = Prestador._internal();

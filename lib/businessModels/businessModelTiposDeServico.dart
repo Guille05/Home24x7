@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:projeto_treinamento/framework/businessModel.dart';
-import 'package:projeto_treinamento/framework/mixInDescricao.dart';
+import '../framework/mixInDescricao.dart';
 
 class BusinessModelTiposDeServico extends BusinessModel with MixInDescricao {
   final int codTipoServico;
