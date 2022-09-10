@@ -1,4 +1,6 @@
 
+import 'package:home24x7/framework/pipe.dart';
+
 abstract class Bloc<VM extends ViewModel, BE extends BlocEvent> {
   Pipe<BE> pipeIn = Pipe();
   Pipe<VM> pipeOut = Pipe();

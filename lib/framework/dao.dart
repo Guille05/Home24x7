@@ -1,4 +1,5 @@
 import '../util/resposta_processamento.dart';
+import 'dataModel.dart';
 
 abstract class Dao<DM extends DataModel> {
   Future<DM?> getDataModel(String id);

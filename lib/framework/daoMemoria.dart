@@ -1,5 +1,6 @@
 import '../util/resposta_processamento.dart';
 import 'dao.dart';
+import 'dataModel.dart';
 
 abstract class DaoMemoria<DM extends DataModel> extends Dao<DM> {
   final List<DM> dados;

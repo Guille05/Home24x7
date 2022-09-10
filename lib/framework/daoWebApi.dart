@@ -3,6 +3,8 @@ import 'package:http/http.dart' as http;
 
 import '../util/resposta_processamento.dart';
 import 'dao.dart';
+import 'dataModel.dart';
+import 'dataModelBuilder.dart';
 
 abstract class DaoWebApi<DM extends DataModel, DB extends DataModelBuilder<DM>> extends Dao<DM> {
   final String server;
