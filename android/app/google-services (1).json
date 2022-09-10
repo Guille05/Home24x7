@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "160445690959",
+    "project_id": "home24x7-ceacb",
+    "storage_bucket": "home24x7-ceacb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160445690959:android:bcf09b7530a5af2ebaa63a",
+        "android_client_info": {
+          "package_name": "com.example.home24x7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160445690959-ab40gfebeivm2kju2kb2hpamb5dnd6q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwxaQ9UeBymhN8N08mWF244tMJLZMQUFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160445690959-ab40gfebeivm2kju2kb2hpamb5dnd6q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
