@@ -7,7 +7,7 @@ import 'firebaseInterfaceDadosPrestador.dart';
 class DaoDadosPrestador extends Dao<DataModelDadosPrestador> {
   FirebaseinterfaceDadosPrestador firebaseInterface =
       FirebaseinterfaceDadosPrestador(
-    tableName: 'dataWorker',
+    tableName: 'worker',
     dataModelBuilder: DataModelBuilderDadosPrestador(),
   );
 

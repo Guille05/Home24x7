@@ -9,7 +9,7 @@ class DataModelBuilderPrincipaisTipoDeServicoCidade extends DataModelBuilder<Dat
   @override
   DataModelPrincipaisTiposDeServicoCidade? createDataModel(Map<String, dynamic> json) {
     return DataModelPrincipaisTiposDeServicoCidade(
-      cidade: DataModelBuilderCidade().createDataModel(json["cidade"])!,
+      cidade: DataModelBuilderCidade().createDataModel(json["City"])!,
       tiposDeServico: _getTiposDeServicoFromJson(json["tiposDeServico"] as List<dynamic>),
     );
   }

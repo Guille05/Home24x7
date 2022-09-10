@@ -9,12 +9,12 @@ class GetPrestadoresDeServicoPorTipoSeervicoECidade {
 
   Future<int> action() async {
     QuerySnapshot query = await _instance
-        .collection('dataWorker')
-        .where('city', arrayContainsAny: [idCidade]).get();
+        .collection('workers')
+        .where('City', arrayContainsAny: [idCidade]).get();
 
     List docs = query.docs;
     docs.removeWhere((element) {
-      return !(element['roles'] as List).contains(idServico);
+      return !(element['job'] as List).contains(idServico);
     });
 
       docs.map( (documentSnapshot) {

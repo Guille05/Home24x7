@@ -35,6 +35,21 @@ class SetPrestadorInformationCompleta {
   });
 }
 
+// name: json["name"],
+// phone: json["phone"],
+// workingHours: json["workingHours"],
+// description: json["description"],
+// profilePicture: json["profilePicture"],
+// city: List<String>.from(json['City']),
+// roles: List<int>.from(json["job"]),
+// numeroDeCliquesNoLigarOuWhatsApp: json["clickWhatsApp"],
+// dataVencimentoPlano: json["dueDate"].toDate(),
+// dataAberturaConta: json["opendate"].toDate(),
+// IdPrestador: json["IdWorker"],
+// tipoPlanoPrestador: json["typeOfPlan"],
+// cliquesNoPerfil: json["clickProfile"],
+// identityVerified: json["identityVerified"],
+
 class UpdateDadosPrestador {
   final FirebaseAuth auth = FirebaseAuth.instance;
 
@@ -49,7 +64,7 @@ class UpdateDadosPrestador {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   updateDadosPrestador() async {
-    await firestore.collection('dadosPrestador').doc(await getUserId()).update({
+    await firestore.collection('workers').doc(await getUserId()).update({
       'description': prestador.description,
       'name': prestador.name,
       'phone': prestador.phone,
@@ -76,8 +91,8 @@ class UpdateCidadePrestador {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   updateCidadePrestador() async {
-    await firestore.collection('dadosPrestador').doc(await getUserId()).update({
-      'city': cidades,
+    await firestore.collection('workers').doc(await getUserId()).update({
+      'City': cidades,
     });
   }
 
@@ -98,8 +113,8 @@ class UpdateServicoPrestador {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   updateServicosPrestador() async {
-    await firestore.collection('dadosPrestador').doc(await getUserId()).update({
-      'roles': servicos,
+    await firestore.collection('workers').doc(await getUserId()).update({
+      'job': servicos,
     });
   }
 
@@ -122,8 +137,8 @@ class UpdateIdentidadePrestador {
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   updateIdentidadePrestador() async {
-    await firestore.collection('dadosPrestador').doc(await getUserId()).update({
-      'brazilianIDPicture': identidade,
+    await firestore.collection('workers').doc(await getUserId()).update({
+      'idPicture': identidade,
     });
   }
 
@@ -134,9 +149,9 @@ class UpdateIdentidadePrestador {
 
 class UpdateComentarioAvaliacao {
   CollectionReference dadosPrestador =
-      FirebaseFirestore.instance.collection('dadosPrestador');
+      FirebaseFirestore.instance.collection('workers');
   CollectionReference dadosUsuarios =
-      FirebaseFirestore.instance.collection('usuarios');
+      FirebaseFirestore.instance.collection('users');
 
   final FirebaseAuth auth = FirebaseAuth.instance;
 
@@ -151,16 +166,29 @@ class UpdateComentarioAvaliacao {
   final String textoComentario;
   final String idPrestador;
 
+  // commentText
+  // "love this guys from miami"
+  // date
+  // "10-12-2022"
+  // rating
+  // "5"
+  // userEmail
+  // "gbsc@gmail.com"
+  // userid
+  // "123@gmail.com"
+  // workerId
+  // "fefef"
+
   CollectionReference firestore =
-      FirebaseFirestore.instance.collection('comentarios');
+      FirebaseFirestore.instance.collection('comment');
   updateComentarioAvaliacao() async {
     await firestore.add({
-      'data': dataDoComentario,
-      'nota': nota.toStringAsPrecision(1),
-      'textoComentario': textoComentario,
-      'emailUsuario': await FirebaseAuth.instance.currentUser?.email,
-      'idPrestador': this.idPrestador,
-      'idUsuario': await FirebaseAuth.instance.currentUser?.email,
+      'date': dataDoComentario,
+      'rating': nota.toStringAsPrecision(1),
+      'commentText': textoComentario,
+      'userEmail': await FirebaseAuth.instance.currentUser?.email,
+      'workerId': this.idPrestador,
+      'userid': await FirebaseAuth.instance.currentUser?.email,
     });
   }
 
@@ -182,19 +210,19 @@ class UpdateNumerosDeVisitasPerfil{
   UpdateNumerosDeVisitasPerfil({required this.idPrestador});
 
 
-  CollectionReference numeroDeVissitas = FirebaseFirestore.instance.collection('dadosPrestador');
+  CollectionReference numeroDeVissitas = FirebaseFirestore.instance.collection('workers');
 
   Future<int> getNumeroDeVisitasPerfil() async{
     DocumentSnapshot snapshot = await numeroDeVissitas.doc(idPrestador).get();
     var data = snapshot.data() as Map<String, dynamic>;
-    var numeroVisitas = data['numeroDePessoasViramPerfilDessePrestador'];
+    var numeroVisitas = data['clickProfile'];
     return numeroVisitas;
 
   }
 
   Future<void> aumentarUmVisitas() async{
     await numeroDeVissitas.doc(idPrestador).update({
-      'numeroDePessoasViramPerfilDessePrestador': await getNumeroDeVisitasPerfil() + 1,
+      'clickProfile': await getNumeroDeVisitasPerfil() + 1,
     });
   }
 }
@@ -205,18 +233,18 @@ class UpdateNumerosCliquesWhatsAppLigar{
   final String idPrestador;
   UpdateNumerosCliquesWhatsAppLigar({required this.idPrestador});
 
-  CollectionReference numeroDeVissitas = FirebaseFirestore.instance.collection('dadosPrestador');
+  CollectionReference numeroDeVissitas = FirebaseFirestore.instance.collection('workers');
 
   Future<int> getNumeroDeVisitasPerfil() async{
     DocumentSnapshot snapshot = await numeroDeVissitas.doc(idPrestador).get();
     var data = snapshot.data() as Map<String, dynamic>;
-    var numeroVisitas = data['numeroDeCliquesNoLigarOuWhatsApp'];
+    var numeroVisitas = data['clickWhatsApp'];
     return numeroVisitas;
   }
 
   Future<void> aumentarUmClick() async{
     await numeroDeVissitas.doc(idPrestador).update({
-      'numeroDeCliquesNoLigarOuWhatsApp': await getNumeroDeVisitasPerfil() + 1,
+      'clickWhatsApp': await getNumeroDeVisitasPerfil() + 1,
     });
   }
 

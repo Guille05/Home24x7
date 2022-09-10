@@ -10,12 +10,12 @@ class DataModelBuilderPrestadorInfomation {
   DataModelPrestadorInformation? createDataModel(Map<String, dynamic> json) {
     return DataModelPrestadorInformation(
       phone: json['phone'],
-      city: json['city'],
+      city: json['City'],
       description:  json['description'],
-      roles: json['roles'],
+      roles: json['job'],
       workingHours: json['workingHours'],
-      brazilianID: json['brazilianID'],
-      brazilianIDPicture: json['brazilianIDPicture'],
+      brazilianID: json['idWorker'],
+      brazilianIDPicture: json['idPicture'],
       profilePicture: json['profilePicture'],
       name: json['name'],
       IdUsuario: IdUsuario,
@@ -26,12 +26,12 @@ class DataModelBuilderPrestadorInfomation {
   Map<String, dynamic>? createJson(DataModelPrestadorInformation? dataModel) {
     if (dataModel == null) return null;
     return {"phone": dataModel.phone,
-      "city": dataModel.city,
+      "City": dataModel.city,
       "description": dataModel.description,
-      "roles": dataModel.roles,
+      "job": dataModel.roles,
       "workingHours": dataModel.workingHours,
-      "brazilianID": dataModel.brazilianID,
-      "brazilianIDPicture": dataModel.brazilianIDPicture,
+      "idWorker": dataModel.brazilianID,
+      "idPicture": dataModel.brazilianIDPicture,
       "profilePicture": dataModel.profilePicture,
       "name": dataModel.name,
     };

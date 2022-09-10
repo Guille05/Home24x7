@@ -7,7 +7,7 @@ class DataModelBuilderUsuario extends DataModelBuilder<DataModelUsuario> {
   DataModelUsuario? createDataModel(Map<String, dynamic> json) {
     return DataModelUsuario(
       email: json["email"],
-      nome: json["nome"],
+      nome: json["name"],
 
     );
   }
@@ -15,6 +15,6 @@ class DataModelBuilderUsuario extends DataModelBuilder<DataModelUsuario> {
   @override
   Map<String, dynamic>? createJson(DataModelUsuario? dataModel) {
     if (dataModel == null) return null;
-    return {"email": dataModel.email, "nome": dataModel.nome,};
+    return {"email": dataModel.email, "name": dataModel.nome,};
   }
 }
