@@ -62,7 +62,7 @@ class _LogInBodyPrestador extends State<LogInBodyPrestador> {
                 children: const[
                   Text("Login",style: TextStyle(color: Colors.white,fontSize: 40),),
                   SizedBox(height: 10,),
-                  Text("Bem-vindo de volta",style: TextStyle(color: Colors.white,fontSize: 20),),
+                  Text("Welcome Back",style: TextStyle(color: Colors.white,fontSize: 20),),
                 ],
               ),
             ),
@@ -104,14 +104,14 @@ class _LogInBodyPrestador extends State<LogInBodyPrestador> {
                                     controller: emailController,
                                     cursorColor: Colors.indigoAccent,
                                     validator: (emailController) => !EmailValidator.validate(emailController!)
-                                        ? 'Email inválido'
+                                        ? 'E-mail invalid'
                                         : null,
                                     decoration: InputDecoration(
                                       suffixIcon: IconButton(
                                         icon: Icon(Icons.close),
                                         onPressed: () => emailController.clear(),
                                       ),
-                                        hintText: "Email",
+                                        hintText: "E-mail",
                                         hintStyle: TextStyle(color: Colors.grey),
                                         border: InputBorder.none
                                     ),
@@ -129,7 +129,7 @@ class _LogInBodyPrestador extends State<LogInBodyPrestador> {
                                     obscureText: _estaEscondido,
                                     validator: (passwordController) {
                                       if (passwordController!.isEmpty || !RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$').hasMatch(passwordController)){
-                                        return "Sua senha deve conter uma letra maiúscula,\n minúscula e um número e pelo menos 8 caracteres";
+                                        return "Your password must contain an Upper Case letter, \n a lower case letter, a number and be at least 8 characters long";
                                       }else{
                                         return null;
                                       }
@@ -143,7 +143,7 @@ class _LogInBodyPrestador extends State<LogInBodyPrestador> {
                                                   : Icons.visibility_off,
                                             ),
                                           ),
-                                        hintText: "Senha",
+                                        hintText: "Password",
                                         hintStyle: TextStyle(color: Colors.grey),
                                         border: InputBorder.none
                                     ),
@@ -220,7 +220,7 @@ class _LogInBodyPrestador extends State<LogInBodyPrestador> {
                         ),
                         SizedBox(height: 16,),
                         GestureDetector(
-                          child: Text('Esqueceu senha?',
+                          child: Text('Forgot your password?',
                           style: TextStyle(
                             decoration: TextDecoration.underline,
                             color: Colors.blue[600],
@@ -237,14 +237,14 @@ class _LogInBodyPrestador extends State<LogInBodyPrestador> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text('Não tem conta?',
+                              Text("Don't have an account?",
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              Text('Cadastre-se',
+                              Text('Sign up',
                                 style: TextStyle(
                                   decoration: TextDecoration.underline,
                                   color: Colors.blue[600],
@@ -282,7 +282,7 @@ class _LogInBodyPrestador extends State<LogInBodyPrestador> {
                                             Icon(FontAwesomeIcons.facebook, color: Colors.indigoAccent,),
 
                                             SizedBox(width: screenWidth*0.03,),
-                                            Text('Cadrastre-se com Facebook',
+                                            Text('Sign up with Facebook',
                                               style: TextStyle(
                                                   fontSize: screenWidth <348 ?15.5 :18,
                                                   color: Colors.black

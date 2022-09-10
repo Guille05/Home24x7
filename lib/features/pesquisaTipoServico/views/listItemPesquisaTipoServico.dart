@@ -41,7 +41,7 @@ class listItemPesquisaTipoServico extends StatelessWidget {
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(this.tipoServico.qtdePrestadoresDeServico.toString() + " Prestadores nessa cidade"),
+                Text(this.tipoServico.qtdePrestadoresDeServico.toString() + " Workers in this city"),
                 // ???
               ],
             ),

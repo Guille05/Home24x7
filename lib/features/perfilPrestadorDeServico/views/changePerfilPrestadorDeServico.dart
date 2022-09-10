@@ -41,20 +41,20 @@ class ChangePerfilPrestadorDeServico extends StatelessWidget {
                       ),*/
                       Divider(),
                       CustomEditPrestadorInformationNome(
-                        labelText: "Nome",
+                        labelText: "Name",
                         iconData: Icons.account_box,
                         item: this.viewModel.prestadorInformation.nome,
-                        hintText: 'Digite o seu Nome',
+                        hintText: 'Enter your name',
                         onEditionComplete: (String novoNome) {
                           this.viewActions.onChangeName(novoNome, viewModel);
                         },
                       ),
                       Divider(),
                       CustomEditPrestadorInformationTelefone(
-                        labelText: "numero",
+                        labelText: "Phone number",
                         iconData: Icons.phone,
                         item: this.viewModel.prestadorInformation.phone,
-                        hintText: 'Digite o seu Numero',
+                        hintText: 'Enter your phone number',
                         onEditionComplete: (String novoNumero) {
                           this.viewActions.onChangeNumero(
                               novoNumero, viewModel);
@@ -62,10 +62,10 @@ class ChangePerfilPrestadorDeServico extends StatelessWidget {
                       ),
                       Divider(),
                       CustomEditPrestadorInformationServicosPrestados(
-                        labelText: "Servicos Prestados",
+                        labelText: "Services offered",
                         iconData: Icons.work,
                         item: this.viewModel.prestadorInformation.roles,
-                        hintText: 'Digite aqui',
+                        hintText: 'Enter here',
                         onEditionComplete: (String novosServicos) {
                           this.viewActions.onChangeServicosPrestados(
                               novosServicos, viewModel);
@@ -73,10 +73,10 @@ class ChangePerfilPrestadorDeServico extends StatelessWidget {
                       ),
                       Divider(),
                       CustomEditPrestadorInformationHorasDeTrabaho(
-                        labelText: "Horas que trabalha",
+                        labelText: "Working hours",
                         iconData: Icons.lock_clock,
                         item: this.viewModel.prestadorInformation.workingHours,
-                        hintText: 'Digite aqui',
+                        hintText: 'Enter here',
                         onEditionComplete: (String novasHoras) {
                           this.viewActions.onChangeHorasTrabalhadas(
                               novasHoras, viewModel);
@@ -84,10 +84,10 @@ class ChangePerfilPrestadorDeServico extends StatelessWidget {
                       ),
                       Divider(),
                       CustomEditPrestadorInformationDescricao(
-                        labelText: "Descricao",
+                        labelText: "Description",
                         iconData: Icons.description,
                         item: this.viewModel.prestadorInformation.description,
-                        hintText: 'Faca uma descricao',
+                        hintText: 'Write a description',
                         onEditionComplete: (String novaDescricao) {
                           this.viewActions.onChangeDescricao(
                               novaDescricao, viewModel);

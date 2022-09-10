@@ -30,7 +30,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 width: 16,
               ),
               Text(
-                'Minha conta',
+                'My Account',
                 style: TextStyle(
                   color: Colors.blueAccent,
                 ),
@@ -57,7 +57,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 children: [
                   //SizedBox(width: 10,),
                   Text(
-                    'Meu nome completo',
+                    'My full name',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -94,7 +94,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 children: [
                   //SizedBox(width: 10,),
                   Text(
-                    'Meu número de telefone',
+                    'My phone number',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -130,7 +130,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Em quais horas eu trabalho',
+                    'My work hours',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -165,7 +165,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'A descrição dos meus serviços',
+                    'A description of my services',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -209,7 +209,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'As cidades em que eu trabalho',
+                    'My work locations',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -235,7 +235,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                             ),
                           
                         )
-                      : Text("Nenhuma cidade cadastrada"),
+                      : Text("No city registered."),
                 ],
               ),
             ),
@@ -259,7 +259,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Os trabalhos que eu presto',
+                    'The services I provide',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -286,7 +286,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                               }),
                             ),
                         )
-                      : Text("Nenhum tipo de serviço"),
+                      : Text("No services provided."),
                 ],
               ),
             ),
@@ -310,7 +310,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'O tipo do meu plano',
+                    'My job title',
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -335,7 +335,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
             height: 8,
           ),
           Text(
-            'Veja como os usuários verão o seu perfil',
+            'Preview your page as a customer',
             style: TextStyle(
                 color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),
           ),
@@ -359,7 +359,7 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
                 constraints: BoxConstraints(maxWidth: 240.0, minHeight: 50.0),
                 alignment: Alignment.center,
                 child: Text(
-                  'Ver Perfil ',
+                  'Look at profile ',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.white,
@@ -392,11 +392,11 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
   }
 
   String getplanoPrestador(int tipoDeplano) {
-    if (tipoDeplano == 0) return 'Você ainda está no período gratuito';
-    if (tipoDeplano == 1) return 'O seu plano é Premium';
-    if (tipoDeplano == 2) return 'O seu plano é o normal';
+    if (tipoDeplano == 0) return "Your trial period is still active";
+    if (tipoDeplano == 1) return 'You have the Premium plan';
+    if (tipoDeplano == 2) return 'You have the Normal plan';
     if (tipoDeplano == 3)
-      return 'Você não está aparecendo para os usuários,\ncontrate um dos planos o quanto antes\npara conseguir serviços';
+      return "Your profile is not being shown to our users, \n subscribe to one of our plans to continue \n making use of our services";
     return 'sssd';
   }
 }

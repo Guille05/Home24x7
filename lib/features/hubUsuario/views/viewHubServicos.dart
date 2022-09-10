@@ -28,7 +28,7 @@ class ViewHubServicos extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Pesquise pelo serviço desejado",
+                Text("Search for your desired service",
                     style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
@@ -54,7 +54,7 @@ class ViewHubServicos extends StatelessWidget {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.all(12.0),
-                                child: Text('Pesquisar serviço',
+                                child: Text('Search service',
                                     style: TextStyle(
                                         color: Colors.blue[800],
                                         fontWeight: FontWeight.bold,

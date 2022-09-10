@@ -21,7 +21,7 @@ class _SignUpVerificacaoNumeroCelularBody extends State<SignUpVerificacaoNumeroC
   double bottom = 0;
 
   String otpPin = " ";
-  String countryDial = "+55";
+  String countryDial = "+1";
   String verID = " ";
 
   int screenState = 0;

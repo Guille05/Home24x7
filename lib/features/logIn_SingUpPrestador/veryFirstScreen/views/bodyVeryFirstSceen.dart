@@ -62,7 +62,7 @@ class _Sample1State extends State<BodyVeryFirstScreen> {
                     child: Column(
                       children: [
 
-                        Text('Escolha uma opção?',
+                        Text('Choose an option',
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Colors.black,
@@ -80,7 +80,7 @@ class _Sample1State extends State<BodyVeryFirstScreen> {
                                 child: PrestadorDeServicoButton(),
                               ),
                               SizedBox(height: 2,),
-                              Text('Eu quero prestar serviços e ganhar dinheiro!', style: TextStyle(fontSize: 12),),
+                              Text('I want to offer my services and earn money!', style: TextStyle(fontSize: 12),),
                               SizedBox(
                                 height: 50,
                               ),
@@ -88,7 +88,7 @@ class _Sample1State extends State<BodyVeryFirstScreen> {
                                 child: UsuarioButton(),
                               ),
                               SizedBox(height: 2,),
-                              Text('Eu quero contratar alguém!', style: TextStyle(fontSize: 12),),
+                              Text('I want to hire someone!', style: TextStyle(fontSize: 12),),
 
                               SizedBox(
                                 height: 50,

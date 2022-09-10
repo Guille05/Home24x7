@@ -98,7 +98,7 @@ class ViewHubPrestadorInfoPrestador extends StatelessWidget {
                                         _infoDoPrestadorDeServico(
                                             context,
                                             Icons.description,
-                                            'DESCRIÇÃO'),
+                                            'DESCRIPTION'),
                                         SizedBox(height: 6),
                                       ],
                                     ),
@@ -224,7 +224,7 @@ class ViewHubPrestadorInfoPrestador extends StatelessWidget {
                                         viewModel.prestadorDeServicos
                                                 .totalDeAvaliacoes
                                                 .toString() +
-                                            " avaliações",
+                                            " ratings",
                                         style: Theme.of(context)
                                             .textTheme
                                             .headline6!

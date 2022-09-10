@@ -43,7 +43,7 @@ class ViewSelectCidade extends View<ViewModelSelectCidade, ViewActionsSelectCida
             ),
 
             toolbarHeight: 70,
-            title: Text('Escolha uma ou mais\ncidades onde irá trabalhar',
+            title: Text('Choose one or more cities \nto work in',
               style: TextStyle(
               color: Colors.white,
               fontSize: 20,
@@ -75,7 +75,7 @@ class ViewSelectCidade extends View<ViewModelSelectCidade, ViewActionsSelectCida
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Selecione as cidades que voce pretende trabalhar",
+                          "Select the cities where you will work in",
                           style: Theme.of(context).textTheme.headline3!.copyWith(
                               fontSize: Theme.of(context)
                                   .textTheme
@@ -83,7 +83,7 @@ class ViewSelectCidade extends View<ViewModelSelectCidade, ViewActionsSelectCida
                                   .fontSize),
                         ),
                         Text(
-                          "Cidades selecionadas: ${viewModel!.cidadesSelecionadas.length} ",
+                          "Selected cities: ${viewModel!.cidadesSelecionadas.length} ",
                           textAlign: TextAlign.start,
                           style: Theme.of(context).textTheme.headline3!.copyWith(
                               fontSize: Theme.of(context)

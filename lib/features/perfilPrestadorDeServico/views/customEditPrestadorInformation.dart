@@ -572,7 +572,7 @@ class _CustomEditPrestadorInformationHorasDeTrabahoState
               textInputAction: TextInputAction.next,
               validator: (textEditingController) {
                 if (textEditingController!.isEmpty) {
-                  return "Digite as horas que voce trabalha";
+                  return "Enter your work hours";
                 } else {
                   return null;
                 }

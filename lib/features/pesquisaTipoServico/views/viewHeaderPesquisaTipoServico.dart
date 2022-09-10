@@ -30,7 +30,7 @@ class ViewHeaderPesquisaTipoServico extends StatelessWidget {
             prefixIcon: new Icon(Icons.search,
               color: Colors.blue.shade800,
             ),
-            labelText: "Pesquisa prestador de serviço",
+            labelText: "Search worker",
             labelStyle: TextStyle(
               color: Colors.blue.shade800,
             ),

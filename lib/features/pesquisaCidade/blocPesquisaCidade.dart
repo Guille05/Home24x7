@@ -33,7 +33,7 @@ class BlocPesquisaCidade
     viewModel.aplicaFiltroDePesquisa();
     if (viewModel.listaVisivel.isEmpty) {
       viewModel.mensagemDeErro =
-          "Não existem cidades que contenha a palavra '${viewModel.controlerFieldPesquisa.text}'";
+          "There are no cities matching '${viewModel.controlerFieldPesquisa.text}'";
     } else {
       viewModel.mensagemDeErro = "";
     }

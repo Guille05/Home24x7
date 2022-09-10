@@ -25,7 +25,7 @@ class ViewInfoDadosPrestador
       appBar: AppBar(
         backgroundColor: ColorAppBar,
         title: Text(
-          'Edite o seu perfil',
+          'Edit your profile',
           style: TextStyle(color: Colors.white, fontSize: 20),
         ),
         automaticallyImplyLeading: false,

@@ -51,7 +51,7 @@ class ViewInfoPrestadorDeServicoDadosRating extends StatelessWidget {
               height: 5,
             ),
             Text(
-              viewModel.prestadorDeServicos.totalDeAvaliacoes.toString() + " avaliações",
+              viewModel.prestadorDeServicos.totalDeAvaliacoes.toString() + " Ratings",
               style: Theme.of(context).textTheme.headline6!.copyWith(fontWeight: FontWeight.bold, color: Theme.of(context).textTheme.caption!.color, fontSize: 12),
             ),
           ],

@@ -37,7 +37,7 @@ class ViewPesquisaCidade extends View<ViewModelPesquisaCidade, ViewActionsPesqui
               color: Colors.white, size: 30, //change your color here
             ),
             toolbarHeight: 70,
-            title: Text("Selecione a cidade em que \nnservico sera preatado", style: TextStyle(color: Colors.white),),
+            title: Text("Select the city in which \nthe service will be required", style: TextStyle(color: Colors.white),),
             centerTitle: true,
           backgroundColor: ColorAppBar,
         ),
@@ -62,7 +62,7 @@ class ViewPesquisaCidade extends View<ViewModelPesquisaCidade, ViewActionsPesqui
                       child: Padding(
                         padding: const EdgeInsets.all(2.0),
                         child: Text(
-                          "Selecione uma cidade:", textAlign: TextAlign.start,
+                          "Select a city:", textAlign: TextAlign.start,
                           style: Theme.of(context).textTheme.headline3!.copyWith(
                               fontSize:
                               Theme.of(context).textTheme.bodyText2!.fontSize),
