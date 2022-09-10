@@ -305,7 +305,7 @@ class ViewHubPrestadorInfoPrestador extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: Center(
                           child: Text(
-                            'Ainda não há avaliações para esse prestador',
+                            'This worker does not have open spots at the moment',
                             style: Theme.of(context)
                                 .textTheme
                                 .headline6!
@@ -424,7 +424,7 @@ class ViewHubPrestadorInfoPrestador extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Icon(Icons.phone, color: Colors.white),
-                  Text("Ligar", style: TextStyle(color: Colors.white)),
+                  Text("Call", style: TextStyle(color: Colors.white)),
                 ],
               ),
             ),
@@ -508,11 +508,11 @@ class ViewHubPrestadorInfoPrestador extends StatelessWidget {
             SizedBox(height: 8),
             Text(
               dia +
-                  ' de ' +
+                  ' of ' +
                   getMonth(month) +
-                  ' de ' +
+                  ',  ' +
                   ano +
-                  ' às ' +
+                  ' at ' +
                   horaMinSegundo,
               overflow: TextOverflow.ellipsis,
               softWrap: false,
@@ -527,23 +527,23 @@ class ViewHubPrestadorInfoPrestador extends StatelessWidget {
   }
 
   String getMonth(String month) {
-    if (month == '01') return 'Janeiro';
-    if (month == '02') return 'Fevereiro';
-    if (month == '03') return 'Março';
-    if (month == '04') return 'Abril';
-    if (month == '05') return 'Maio';
-    if (month == '06') return 'Junho';
-    if (month == '07') return 'Julho';
+    if (month == '01') return 'January';
+    if (month == '02') return 'February';
+    if (month == '03') return 'March';
+    if (month == '04') return 'April';
+    if (month == '05') return 'May';
+    if (month == '06') return 'June';
+    if (month == '07') return 'July';
     if (month == '08') return 'Agosto';
-    if (month == '09') return 'Setembro';
-    if (month == '10') return 'Outubro';
-    if (month == '11') return 'Novembro';
-    if (month == '12') return 'Dezembro';
-    return 'Agosto';
+    if (month == '09') return 'September';
+    if (month == '10') return 'October';
+    if (month == '11') return 'November';
+    if (month == '12') return 'December';
+    return 'September';
   }
 
   openwhatsapp(context) async {
-    var whatsapp = "+55${this.viewModel.prestadorDeServicos.telefone}";
+    var whatsapp = "+1${this.viewModel.prestadorDeServicos.telefone}";
     var whatsappURl_android = "whatsapp://send?phone=" + whatsapp + "&text=";
     var whatappURL_ios = "https://wa.me/$whatsapp?text=${Uri.parse("hello")}";
     if (GetPlatform.isIOS) {
