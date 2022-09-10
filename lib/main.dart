@@ -10,7 +10,6 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:home24x7/features/logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
-import 'package:home24x7/features/veryFirstScreen/veryFirstScreenUserType.dart';
 
 import 'daos/firebase/authService.dart';
 import 'daos/firebase/updatePrestadorFirebase.dart';
