@@ -1,11 +1,9 @@
-import 'package:projeto_treinamento/daos/dadosPrestador/daoDadosPrestador.dart';
-import 'package:projeto_treinamento/daos/dadosPrestador/dataModelDadosPrestador.dart';
-import 'package:projeto_treinamento/framework/provider.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
 import '../../businessModels/businessModelDadosPrestador.dart';
-import '../../businessModels/businessModelPrestadorInfomation.dart';
-import 'adapterDadosPrestador.dart';
+import '../../daos/dataWorker/daoDadosPrestador.dart';
+import '../../daos/dataWorker/dataModelDadosPrestador.dart';
+import '../../framework/provider.dart';
+import '../../util/resposta_processamento.dart';
+
 
 class ProvideDadosPrestador extends Provider<BusinessModelDadosPrestador> {
   @override
@@ -37,6 +35,9 @@ class ProvideDadosPrestador extends Provider<BusinessModelDadosPrestador> {
           roles: element.roles,
           workingHours: element.workingHours,
         tipoPlanoPrestador: element.tipoPlanoPrestador,
+        cliquesNoWhatsApp: element.numeroDeCliquesNoLigarOuWhatsApp,
+        cliquesNoPerfil: element.cliquesNoPerfil,
+        identityVerified: element.identityVerified,
       ));
     });
 

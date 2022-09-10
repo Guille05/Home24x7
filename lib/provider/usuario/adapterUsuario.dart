@@ -1,6 +1,7 @@
-import 'package:projeto_treinamento/businessModels/businessModelUsuario.dart';
-import 'package:projeto_treinamento/daos/usuario/dataModelUsuario.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
+
+import '../../businessModels/businessModelUsuario.dart';
+import '../../daos/usuario/dataModelUsuario.dart';
+import '../../framework/adapter.dart';
 
 class AdapterUsuario extends Adapter<BusinessModelUsuario, DataModelUsuario> {
   @override

@@ -1,13 +1,14 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXCidade/daoPrestadorDeServicoXCidade.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXTipoDeServico/daoPrestadorDeServicoXTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXTipoDeServico/dataModelPrestadorDeServicoXTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicos/daoPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicos/dataModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/providers/prestadorDeServico/adapterPrestadorDeServico.dart';
-import 'package:projeto_treinamento/providers/prestadorDeServicoXTipoDeServico/providerPrestadorDeServicoXTipoDeServico.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
+
+import '../../businessModels/businessModelPrestadorDeServicos.dart';
+import '../../daos/prestadorDeServicoXCidade/daoPrestadorDeServicoXCidade.dart';
+import '../../daos/prestadorDeServicoXTipoDeServico/daoPrestadorDeServicoXTipoDeServico.dart';
+import '../../daos/prestadorDeServicoXTipoDeServico/dataModelPrestadorDeServicoXTipoDeServico.dart';
+import '../../daos/worker/daoPrestadorDeServicos.dart';
+import '../../daos/worker/dataModelPrestadorDeServicos.dart';
+import '../../framework/providerDireto.dart';
+import '../../util/resposta_processamento.dart';
+import '../prestadorDeServicoXTipoDeServico/providerPrestadorDeServicoXTipoDeServico.dart';
+import 'adapterPrestadorDeServico.dart';
 
 class ProviderPrestadorDeServicos extends ProviderDireto<
     DataModelPrestadorDeServicos,
@@ -42,7 +43,7 @@ class ProviderPrestadorDeServicos extends ProviderDireto<
       getBusinessModelsByCodTipoDeServicoCidade(
           int codTipoDeServico, int codCidade) async {
     List<BusinessModelPrestadorDeServicos> list = List.empty(growable: true);
-    List<DataModelPrestadorDeServicoXTipoDeServico>
+    List
         listaDeDataModelsPrestadoresDeServicoxTipoDeServico =
         ProviderPrestadorDeServicoXTipoDeServico()
             .getDataModelsByTipoDeServico(codTipoDeServico);

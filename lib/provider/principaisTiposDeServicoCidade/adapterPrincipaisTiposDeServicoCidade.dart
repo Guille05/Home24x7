@@ -1,10 +1,11 @@
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/daos/principaisTiposDeServicoCidade/dataModelPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
-import 'package:projeto_treinamento/providers/cidade/adapterCidade.dart';
-import 'package:projeto_treinamento/providers/tiposDeServico/adapterTipoDeServico.dart';
+
+import '../../businessModels/businessModelCidade.dart';
+import '../../businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
+import '../../businessModels/businessModelTiposDeServico.dart';
+import '../../daos/principaisTiposDeServicoCidade/dataModelPrincipaisTiposDeServicoCidade.dart';
+import '../../framework/adapter.dart';
+import '../cidade/adapterCidade.dart';
+import '../tiposDeServico/adapterTipoDeServico.dart';
 
 class AdapterPrincipaisTiposDeServicoCidade extends Adapter<BusinessModelPrincipaisTiposDeServicoCidade, DataModelPrincipaisTiposDeServicoCidade> {
   @override

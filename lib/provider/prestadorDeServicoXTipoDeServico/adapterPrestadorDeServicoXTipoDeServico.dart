@@ -1,6 +1,7 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicoxTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXTipoDeServico/dataModelPrestadorDeServicoXTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
+
+import '../../businessModels/businessModelPrestadorDeServicoxTipoDeServico.dart';
+import '../../daos/prestadorDeServicoXTipoDeServico/dataModelPrestadorDeServicoXTipoDeServico.dart';
+import '../../framework/adapter.dart';
 
 class AdapterPrestadorDeServicoXTipoDeServico extends Adapter<BusinessModelPrestadorDeServicoXTipoDeServico, DataModelPrestadorDeServicoXTipoDeServico> {
   @override

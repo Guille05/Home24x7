@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/daos/icone/dataModelIcone.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
+
+import '../../businessModels/businessModelIcone.dart';
+import '../../daos/icon/dataModelIcone.dart';
+import '../../framework/adapter.dart';
 
 class AdapterIcone extends Adapter<BusinessModelIcone, DataModelIcone> {
   @override

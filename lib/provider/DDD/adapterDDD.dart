@@ -1,6 +1,6 @@
-import 'package:projeto_treinamento/businessModels/businessModelDDD.dart';
-import 'package:projeto_treinamento/daos/ddd/dataModelDDD.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
+import '../../businessModels/businessModelDDD.dart';
+import '../../daos/ddd/dataModelDDD.dart';
+import '../../framework/adapter.dart';
 
 class AdapterDDD extends Adapter<BusinessModelDDD, DataModelDDD> {
   @override

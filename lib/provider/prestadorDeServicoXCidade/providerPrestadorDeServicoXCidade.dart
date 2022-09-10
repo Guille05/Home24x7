@@ -1,8 +1,7 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicoxCidade.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXCidade/daoPrestadorDeServicoXCidade.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXCidade/dataModelPrestadorDeServicoXCidade.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-
+import '../../businessModels/businessModelPrestadorDeServicoxCidade.dart';
+import '../../daos/prestadorDeServicoXCidade/daoPrestadorDeServicoXCidade.dart';
+import '../../daos/prestadorDeServicoXCidade/dataModelPrestadorDeServicoXCidade.dart';
+import '../../framework/providerDireto.dart';
 import 'adapterPrestadorDeServicoXCidade.dart';
 
 class ProviderPrestadorDeServicoXCidade extends ProviderDireto<DataModelPrestadorDeServicoXCidade, BusinessModelPrestadorDeServicoXCidade, DaoPrestadorDeServicoXCidade, AdapterPrestadorDeServicoXCidade> {

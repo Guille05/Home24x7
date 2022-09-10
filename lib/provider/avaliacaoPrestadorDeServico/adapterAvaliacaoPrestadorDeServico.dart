@@ -1,6 +1,7 @@
-import 'package:projeto_treinamento/businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/daos/avaliacaoPrestadorDeServico/dataModelAvaliacaoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
+
+import '../../businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
+import '../../daos/evaluationWorker/dataModelAvaliacaoPrestadorDeServico.dart';
+import '../../framework/adapter.dart';
 
 class AdapterAvaliacaoPrestadorDeServico extends Adapter<BusinessModelAvaliacaoPrestadorDeServico, DataModelAvaliacaoPrestadorDeServico> {
   @override

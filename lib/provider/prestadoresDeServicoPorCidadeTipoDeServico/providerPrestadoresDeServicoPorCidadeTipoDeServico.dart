@@ -1,23 +1,16 @@
-import 'package:projeto_treinamento/businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/daos/prestadoresDeServicoPorCidadeTipoDeServico/daoPrestadoresDeServicoPorCidadeTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/prestadoresDeServicoPorCidadeTipoDeServico/dataModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/providers/avaliacaoPrestadorDeServico/providerAvaliacaoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/providers/cidade/providerCidade.dart';
-import 'package:projeto_treinamento/providers/dadosPrestador/providerDadosPrestador.dart';
-import 'package:projeto_treinamento/providers/prestadorDeServico/providerPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/providers/tiposDeServico/providerTiposDeServico.dart';
-import 'package:projeto_treinamento/util/getAvaliacoesPrestador.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
-
+import '../../businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
+import '../../businessModels/businessModelCidade.dart';
+import '../../businessModels/businessModelDadosPrestador.dart';
+import '../../businessModels/businessModelPrestadorDeServicos.dart';
+import '../../businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
+import '../../businessModels/businessModelTiposDeServico.dart';
 import '../../framework/provider.dart';
+import '../../util/getAvaliacoesPrestador.dart';
 import '../../util/prestador.dart';
-import 'adapterPrestadoresDeServicoPorCidadeTipoDeServico.dart';
+import '../../util/resposta_processamento.dart';
+import '../cidade/providerCidade.dart';
+import '../dadosPrestador/providerDadosPrestador.dart';
+import '../tiposDeServico/providerTiposDeServico.dart';
 
 
 class ProviderPrestadoresDeServicoPorCidadeTipoDeServico
@@ -106,6 +99,8 @@ class ProviderPrestadoresDeServicoPorCidadeTipoDeServico
         cidades: prestador.city,
         servicos: prestador.roles,
         workingHours: prestador.workingHours,
+        cliquesNoPerfil: prestador.cliquesNoPerfil,
+        cliquesNoWhatsApp: prestador.cliquesNoWhatsApp,
       ));
     }
 

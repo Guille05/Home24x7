@@ -1,6 +1,7 @@
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/daos/cidade/dataModelCidade.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
+
+import '../../businessModels/businessModelCidade.dart';
+import '../../daos/city/dataModelCidade.dart';
+import '../../framework/adapter.dart';
 
 class AdapterCidade extends Adapter<BusinessModelCidade, DataModelCidade> {
   @override

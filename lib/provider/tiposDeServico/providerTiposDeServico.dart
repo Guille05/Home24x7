@@ -1,14 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/framework/provider.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/providers/tiposDeServico/adapterTipoDeServico.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
-import 'package:projeto_treinamento/util/tipoDeServico.dart';
 
 import '../../businessModels/businessModelTiposDeServico.dart';
 import '../../daos/tiposDeServico/daoTipoDeServico.dart';
 import '../../daos/tiposDeServico/dataModelTipoDeServico.dart';
+import '../../framework/provider.dart';
 import '../../util/getIconeTipoServico.dart';
+import '../../util/resposta_processamento.dart';
+import '../../util/tipoDeServico.dart';
 
 class ProviderTiposDeServico extends Provider<BusinessModelTiposDeServico> {
   DaoTipoDeServico dao = DaoTipoDeServico();

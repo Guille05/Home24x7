@@ -1,7 +1,6 @@
-import 'package:projeto_treinamento/framework/adapter.dart';
 import '../../businessModels/businessModelDadosPrestador.dart';
-import '../../businessModels/businessModelPrestadorInfomation.dart';
-import '../../daos/dadosPrestador/dataModelDadosPrestador.dart';
+import '../../daos/dataWorker/dataModelDadosPrestador.dart';
+import '../../framework/adapter.dart';
 
 class AdapterDadosPrestador
     extends Adapter<BusinessModelDadosPrestador, DataModelDadosPrestador> {
@@ -24,6 +23,9 @@ class AdapterDadosPrestador
         numeroDeCliquesNoLigarOuWhatsApp: dataModel.numeroDeCliquesNoLigarOuWhatsApp,
         profilePicture: dataModel.name,
         tipoPlanoPrestador: dataModel.tipoPlanoPrestador,
+        cliquesNoWhatsApp: dataModel.numeroDeCliquesNoLigarOuWhatsApp,
+        cliquesNoPerfil: dataModel.cliquesNoPerfil,
+        identityVerified: dataModel.identityVerified,
       );
   }
 
@@ -43,6 +45,8 @@ class AdapterDadosPrestador
       dataVencimentoPlano: businessModel.dataVencimentoPlano,
       numeroDeCliquesNoLigarOuWhatsApp: businessModel.numeroDeCliquesNoLigarOuWhatsApp,
       tipoPlanoPrestador: businessModel.tipoPlanoPrestador,
+      cliquesNoPerfil: businessModel.cliquesNoPerfil,
+      identityVerified: businessModel.identityVerified,
     );
   }
 }

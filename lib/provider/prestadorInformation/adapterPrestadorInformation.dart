@@ -1,7 +1,6 @@
-import 'package:projeto_treinamento/daos/prestadorInformation/dataModePrestadorInformation.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
-
 import '../../businessModels/businessModelPrestadorInfomation.dart';
+import '../../daos/prestadorInformation/dataModePrestadorInformation.dart';
+import '../../framework/adapter.dart';
 
 class AdapterPrestadorInformation extends Adapter<
     BusinessModelPrestadorInformation, DataModelPrestadorInformation> {

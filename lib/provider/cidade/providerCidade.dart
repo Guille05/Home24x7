@@ -1,16 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:material_design_icons_flutter/icon_map.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/daos/cidade/daoCidade.dart';
-import 'package:projeto_treinamento/daos/cidade/dataModelCidade.dart';
-import 'package:projeto_treinamento/framework/provider.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
 
-import '../../util/getQtdePrestadoresDeServicoPorCidade.dart';
-import 'adapterCidade.dart';
+import '../../businessModels/businessModelCidade.dart';
+import '../../framework/provider.dart';
+import '../../util/resposta_processamento.dart';
 
 class ProviderCidade extends Provider<BusinessModelCidade> {
   @override

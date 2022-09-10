@@ -1,11 +1,11 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicos/dataModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/daos/prestadoresDeServicoPorCidadeTipoDeServico/dataModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
-import 'package:projeto_treinamento/providers/cidade/adapterCidade.dart';
-import 'package:projeto_treinamento/providers/prestadorDeServico/adapterPrestadorDeServico.dart';
-import 'package:projeto_treinamento/providers/tiposDeServico/adapterTipoDeServico.dart';
+import '../../businessModels/businessModelPrestadorDeServicos.dart';
+import '../../businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
+import '../../daos/prestadoresDeServicoPorCidadeTipoDeServico/dataModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
+import '../../daos/worker/dataModelPrestadorDeServicos.dart';
+import '../../framework/adapter.dart';
+import '../cidade/adapterCidade.dart';
+import '../prestadorDeServico/adapterPrestadorDeServico.dart';
+import '../tiposDeServico/adapterTipoDeServico.dart';
 
 class AdapterPrestadoresDeServicoPorCidadeTipoDeServico extends Adapter<BusinessModelPrestadoresDeServicoPorCidadeTipoDeServico, DataModelPrestadoresDeServicoPorCidadeTipoDeServico> {
   Future<BusinessModelPrestadoresDeServicoPorCidadeTipoDeServico> createBusinessModel(DataModelPrestadoresDeServicoPorCidadeTipoDeServico? dataModelPrestadorDeServicos) async {

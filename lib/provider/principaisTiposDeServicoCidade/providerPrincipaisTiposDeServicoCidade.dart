@@ -1,24 +1,15 @@
-import 'dart:collection';
 
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicoxCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/daos/principaisTiposDeServicoCidade/daoPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelBuilderTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/provider.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/providers/cidade/providerCidade.dart';
-import 'package:projeto_treinamento/providers/dadosPrestador/providerDadosPrestador.dart';
-import 'package:projeto_treinamento/providers/tiposDeServico/providerTiposDeServico.dart';
-import 'package:projeto_treinamento/util/cidade.dart';
-import 'package:projeto_treinamento/util/prestador.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
-
+import '../../businessModels/businessModelCidade.dart';
+import '../../businessModels/businessModelDadosPrestador.dart';
+import '../../businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
+import '../../businessModels/businessModelTiposDeServico.dart';
+import '../../framework/provider.dart';
+import '../../util/cidade.dart';
 import '../../util/getQtdePrestadoresDeServicoPorTipoSeervicoECidade.dart';
+import '../../util/prestador.dart';
+import '../../util/resposta_processamento.dart';
+import '../tiposDeServico/providerTiposDeServico.dart';
 
 class ProviderPrincipaisTiposDeServicoCidade
     extends Provider<BusinessModelPrincipaisTiposDeServicoCidade> {

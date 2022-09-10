@@ -1,9 +1,10 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicoxTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXCidade/daoPrestadorDeServicoXCidade.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXTipoDeServico/daoPrestadorDeServicoXTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXTipoDeServico/dataModelPrestadorDeServicoXTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/providers/prestadorDeServicoXTipoDeServico/adapterPrestadorDeServicoXTipoDeServico.dart';
+
+import '../../businessModels/businessModelPrestadorDeServicoxTipoDeServico.dart';
+import '../../daos/prestadorDeServicoXCidade/daoPrestadorDeServicoXCidade.dart';
+import '../../daos/prestadorDeServicoXTipoDeServico/daoPrestadorDeServicoXTipoDeServico.dart';
+import '../../daos/prestadorDeServicoXTipoDeServico/dataModelPrestadorDeServicoXTipoDeServico.dart';
+import '../../framework/providerDireto.dart';
+import 'adapterPrestadorDeServicoXTipoDeServico.dart';
 
 class ProviderPrestadorDeServicoXTipoDeServico extends ProviderDireto<DataModelPrestadorDeServicoXTipoDeServico, BusinessModelPrestadorDeServicoXTipoDeServico, DaoPrestadorDeServicoXTipoDeServico, AdapterPrestadorDeServicoXTipoDeServico> {
   ProviderPrestadorDeServicoXTipoDeServico() : super(adapter: AdapterPrestadorDeServicoXTipoDeServico(), dao: DaoPrestadorDeServicoXTipoDeServico());

@@ -1,8 +1,9 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicos/dataModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/daos/statusPrestadorDeServicos/daoStatusPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/daos/statusPrestadorDeServicos/dataModelStatusPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
+
+import '../../businessModels/businessModelPrestadorDeServicos.dart';
+import '../../daos/statusPrestadorDeServicos/daoStatusPrestadorDeServicos.dart';
+import '../../daos/statusPrestadorDeServicos/dataModelStatusPrestadorDeServicos.dart';
+import '../../daos/worker/dataModelPrestadorDeServicos.dart';
+import '../../framework/adapter.dart';
 
 class AdapterPrestadorDeServico extends Adapter<BusinessModelPrestadorDeServicos, DataModelPrestadorDeServicos> {
   Future<BusinessModelPrestadorDeServicos> createBusinessModel(DataModelPrestadorDeServicos? dataModelPrestadorDeServicos) async {
@@ -41,6 +42,8 @@ class AdapterPrestadorDeServico extends Adapter<BusinessModelPrestadorDeServicos
       cidades: dataModelPrestadorDeServicos.cidades,
       servicos: dataModelPrestadorDeServicos.servicos,
       workingHours: dataModelPrestadorDeServicos.workingHours,
+      cliquesNoPerfil: dataModelPrestadorDeServicos.cliquesNoPerfil,
+      cliquesNoWhatsApp: dataModelPrestadorDeServicos.cliquesNoWhatsApp,
     );
   }
 
@@ -62,6 +65,8 @@ class AdapterPrestadorDeServico extends Adapter<BusinessModelPrestadorDeServicos
       cidades: businessModel.cidades,
       servicos: businessModel.servicos,
       workingHours: businessModel.workingHours,
+      cliquesNoPerfil: businessModel.cliquesNoPerfil,
+      cliquesNoWhatsApp: businessModel.cliquesNoWhatsApp,
     );
   }
 }

@@ -1,6 +1,7 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicoxCidade.dart';
-import 'package:projeto_treinamento/daos/prestadorDeServicoXCidade/dataModelPrestadorDeServicoXCidade.dart';
-import 'package:projeto_treinamento/framework/adapter.dart';
+
+import '../../businessModels/businessModelPrestadorDeServicoxCidade.dart';
+import '../../daos/prestadorDeServicoXCidade/dataModelPrestadorDeServicoXCidade.dart';
+import '../../framework/adapter.dart';
 
 class AdapterPrestadorDeServicoXCidade extends Adapter<BusinessModelPrestadorDeServicoXCidade, DataModelPrestadorDeServicoXCidade> {
   @override

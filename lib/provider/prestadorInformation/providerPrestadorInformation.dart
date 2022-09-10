@@ -1,12 +1,7 @@
-import 'package:projeto_treinamento/daos/prestadorInformation/dataModePrestadorInformation.dart';
-import 'package:projeto_treinamento/framework/provider.dart';
-
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/providers/prestadorInformation/adapterPrestadorInformation.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
 
 import '../../businessModels/businessModelPrestadorInfomation.dart';
-import '../../daos/prestadorInformation/daoPrestadorInformatio.dart';
+import '../../framework/provider.dart';
+import '../../util/resposta_processamento.dart';
 
 class ProviderPrestadorInformation
     extends Provider<BusinessModelPrestadorInformation> {

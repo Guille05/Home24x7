@@ -1,8 +1,9 @@
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/daos/icone/daoIcone.dart';
-import 'package:projeto_treinamento/daos/icone/dataModelIcone.dart';
-import 'package:projeto_treinamento/framework/providerDireto.dart';
-import 'package:projeto_treinamento/providers/icone/adapterIcone.dart';
+
+import '../../businessModels/businessModelIcone.dart';
+import '../../daos/icon/daoIcone.dart';
+import '../../daos/icon/dataModelIcone.dart';
+import '../../framework/providerDireto.dart';
+import 'adapterIcone.dart';
 
 class ProviderIcone extends ProviderDireto<DataModelIcone, BusinessModelIcone, DaoIcone, AdapterIcone> {
   ProviderIcone()
