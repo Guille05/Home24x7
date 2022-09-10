@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/features/pesquisaTipoServico/views/viewHeaderPesquisaTipoServico.dart';
-import 'package:projeto_treinamento/features/pesquisaTipoServico/views/viewListaTipoServico.dart';
+import 'package:home24x7/features/pesquisaTipoServico/views/viewHeaderPesquisaTipoServico.dart';
+import 'package:home24x7/features/pesquisaTipoServico/views/viewListaTipoServico.dart';
+
 
 import '../viewActionsPesquisaTipoServico.dart';
 import '../viewModelPesquisaTipoServico.dart';

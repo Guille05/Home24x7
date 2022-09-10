@@ -1,6 +1,8 @@
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/features/pesquisaTipoServico/viewModelPesquisaTipoServico.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
+
+
+import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
+import 'package:home24x7/features/pesquisaTipoServico/viewModelPesquisaTipoServico.dart';
+import 'package:home24x7/framework/bloc.dart';
 
 import 'blocEventPesquisaTipoServico.dart';
 

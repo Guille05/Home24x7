@@ -4,11 +4,6 @@ import 'package:home24x7/features/pesquisaCidade/views/viewListaPesquisaCidades.
 import 'package:home24x7/framework/view.dart';
 import 'package:home24x7/util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
 import 'package:home24x7/util/libraryComponents/colors/colors.dart';
-import 'package:projeto_treinamento/features/pesquisaCidade/views/viewListaPesquisaCidades.dart';
-import 'package:projeto_treinamento/framework/view.dart';//
-import 'package:projeto_treinamento/util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
-import '../../../util/libraryComponents/colors/colorGradient.dart';//
-import '../../../util/libraryComponents/colors/colors.dart';//
 import 'viewActionsPesquisaCidade.dart';//
 import 'viewModelPesquisaCidade.dart';//
 import 'views/viewHeaderPesquisaCidade.dart';
