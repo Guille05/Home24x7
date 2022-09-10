@@ -11,7 +11,7 @@ class GetAvaliacoesPrestador {
       String idPrestador) async {
     List<BusinessModelAvaliacaoPrestadorDeServico> listaComentarios = [];
     QuerySnapshot query = await _instance
-        .collection('comentarios')
+        .collection('comment')
         .where('idPrestador', isEqualTo: idPrestador)
         .get();
 
