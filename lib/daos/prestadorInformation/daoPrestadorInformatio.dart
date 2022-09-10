@@ -1,18 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:home24x7/daos/prestadorInformation/dataModePrestadorInformation.dart';
 import 'package:home24x7/daos/prestadorInformation/dataModelBuilderPrestadorInformation.dart';
 import 'package:home24x7/framework/dao.dart';
 import 'package:home24x7/framework/dataModel.dart';
 import 'package:home24x7/util/resposta_processamento.dart';
-import 'package:projeto_treinamento/framework/dao.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
-import 'package:projeto_treinamento/framework/dataModel.dart';
-import '../../framework/daoWebApi.dart';
-import '../usuario/dataModelBuilderUsuario.dart';
-import '../usuario/dataModelUsuario.dart';
 import 'dataModePrestadorInformation.dart';
 import 'dataModelBuilderPrestadorInformation.dart';
 

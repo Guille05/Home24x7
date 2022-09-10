@@ -1,6 +1,7 @@
-import 'package:projeto_treinamento/daos/cidade/dataModelCidade.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/dataModel.dart';
+
+import '../../framework/dataModel.dart';
+import '../city/dataModelCidade.dart';
+import '../tiposDeServico/dataModelTipoDeServico.dart';
 
 class DataModelPrincipaisTiposDeServicoCidade extends DataModel {
   final DataModelCidade cidade;

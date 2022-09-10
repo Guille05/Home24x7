@@ -1,4 +1,5 @@
-import 'package:projeto_treinamento/framework/businessModel.dart';
+
+import '../framework/businessModel.dart';
 
 class BusinessModelPrestadorDeServicoXTipoDeServico extends BusinessModel {
   final int codPrestadorDeServico;

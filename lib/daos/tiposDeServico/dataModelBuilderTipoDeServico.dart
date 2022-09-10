@@ -1,6 +1,5 @@
-import 'package:projeto_treinamento/daos/icone/dataModelBuilderIcone.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
+import '../../framework/dataModelBuilder.dart';
+import 'dataModelTipoDeServico.dart';
 
 class DataModelBuilderTipoDeServico
     extends DataModelBuilder<DataModelTipoDeServico> {

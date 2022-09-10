@@ -1,5 +1,6 @@
 
 import '../businessModels/businessModelTiposDeServico.dart';
+import '../provider/tiposDeServico/providerTiposDeServico.dart';
 
 class TipoDeServico {
   static final TipoDeServico _singleton = TipoDeServico._internal();

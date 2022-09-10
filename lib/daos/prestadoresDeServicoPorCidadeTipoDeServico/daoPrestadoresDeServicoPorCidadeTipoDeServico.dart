@@ -1,5 +1,5 @@
-import 'package:projeto_treinamento/framework/daoWebApi.dart';
 
+import '../../framework/daoWebApi.dart';
 import 'dataModelBuilderPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 import 'dataModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 

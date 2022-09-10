@@ -1,5 +1,6 @@
 
 import '../framework/mixInDescricao.dart';
+import '../framework/businessModel.dart';
 
 class BusinessModelUsuario extends BusinessModel with MixInDescricao {
   final String email;

@@ -1,6 +1,3 @@
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
-
-import 'daoPrestadorInformatio.dart';
 import 'dataModePrestadorInformation.dart';
 
 

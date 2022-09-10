@@ -1,5 +1,5 @@
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
 
+import '../../framework/dataModelBuilder.dart';
 import 'dataModelUsuario.dart';
 
 class DataModelBuilderUsuario extends DataModelBuilder<DataModelUsuario> {

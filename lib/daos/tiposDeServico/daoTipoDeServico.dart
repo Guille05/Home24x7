@@ -1,11 +1,9 @@
-import 'package:projeto_treinamento/daos/listaDeServicos/listaDeServicos.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelBuilderTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/firebaseinterfaceTiposDeServico.dart';
-import 'package:projeto_treinamento/framework/dao.dart';
-import 'package:projeto_treinamento/framework/daoWebApi.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
-
+import '../../framework/dao.dart';
+import '../../util/resposta_processamento.dart';
+import '../listaOfServices/listaDeServicos.dart';
+import 'dataModelBuilderTipoDeServico.dart';
 import 'dataModelTipoDeServico.dart';
+import 'firebaseinterfaceTiposDeServico.dart';
 
 //class DaoDadosPrestador extends Dao<DataModelDadosPrestador> {
 class DaoTipoDeServico extends Dao<DataModelTipoDeServico> {

@@ -1,6 +1,5 @@
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
-import 'package:projeto_treinamento/util/dateTimeUtils.dart';
-
+import '../../framework/dataModelBuilder.dart';
+import '../../util/dateTimeUtils.dart';
 import 'dataModelAvaliacaoPrestadorDeServico.dart';
 
 class DataModelBuilderAvaliacaoPrestadorDeServicos extends DataModelBuilder<DataModelAvaliacaoPrestadorDeServico> {

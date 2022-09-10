@@ -1,6 +1,5 @@
-import 'package:projeto_treinamento/framework/daoPadrao.dart';
-import 'package:projeto_treinamento/util/resposta_processamento.dart';
-
+import '../../framework/daoPadrao.dart';
+import '../../util/resposta_processamento.dart';
 import 'dataModelPrestadorDeServicoXTipoDeServico.dart';
 
 class DaoPrestadorDeServicoXTipoDeServico

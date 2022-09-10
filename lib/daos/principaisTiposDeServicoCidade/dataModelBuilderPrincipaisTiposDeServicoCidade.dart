@@ -1,8 +1,9 @@
-import 'package:projeto_treinamento/daos/cidade/dataModelBuilderCidade.dart';
-import 'package:projeto_treinamento/daos/principaisTiposDeServicoCidade/dataModelPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelBuilderTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelTipoDeServico.dart';
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
+
+import '../../framework/dataModelBuilder.dart';
+import '../city/dataModelBuilderCidade.dart';
+import '../tiposDeServico/dataModelBuilderTipoDeServico.dart';
+import '../tiposDeServico/dataModelTipoDeServico.dart';
+import 'dataModelPrincipaisTiposDeServicoCidade.dart';
 
 class DataModelBuilderPrincipaisTipoDeServicoCidade extends DataModelBuilder<DataModelPrincipaisTiposDeServicoCidade> {
   @override

@@ -1,4 +1,4 @@
-import 'package:projeto_treinamento/framework/dataModel.dart';
+import '../../framework/dataModel.dart';
 
 class DataModelPrestadorDeServicoXCidade extends DataModel {
   final int codPrestadorDeServico;

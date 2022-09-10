@@ -1,5 +1,6 @@
-import 'package:projeto_treinamento/framework/businessModel.dart';
-import 'package:projeto_treinamento/framework/mixInDescricao.dart';
+
+import '../framework/mixInDescricao.dart';
+import '../framework/businessModel.dart';
 
 class BusinessModelPrestadorInformation extends BusinessModel
     with MixInDescricao {

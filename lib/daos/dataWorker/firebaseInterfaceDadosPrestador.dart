@@ -1,6 +1,7 @@
-import 'package:projeto_treinamento/daos/dataWorker/dataModelBuilderDadosPrestador.dart';
-import 'package:projeto_treinamento/daos/dataWorker/dataModelDadosPrestador.dart';
-import 'package:projeto_treinamento/util/firebase/firebaseInterface.dart';
+
+import '../../util/firebase/firebaseInterface.dart';
+import 'dataModelBuilderDadosPrestador.dart';
+import 'dataModelDadosPrestador.dart';
 
 class FirebaseinterfaceDadosPrestador extends FirebaseInterface<DataModelDadosPrestador, DataModelBuilderDadosPrestador>{
 

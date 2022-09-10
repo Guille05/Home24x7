@@ -1,4 +1,5 @@
 import '../framework/mixInDescricao.dart';
+import '../framework/businessModel.dart';
 
 class BusinessModelCidade extends BusinessModel with MixInDescricao {
   final int codCidade;

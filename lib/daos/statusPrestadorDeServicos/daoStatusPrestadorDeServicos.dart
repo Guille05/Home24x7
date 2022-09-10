@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:home24x7/framework/dao.dart';
-import 'package:projeto_treinamento/framework/dao.dart';
 import 'dataModelStatusPrestadorDeServicos.dart';
 
 class DaoStatusPrestadorDeServicos extends Dao<DataModelStatusPrestadorDeServicos> {

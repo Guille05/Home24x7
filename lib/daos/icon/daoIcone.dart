@@ -1,7 +1,4 @@
 import 'package:home24x7/framework/daoWebApi.dart';
-import 'package:projeto_treinamento/framework/daoWebApi.dart';
-
-
 import 'dataModelBuilderIcone.dart';
 import 'dataModelIcone.dart';
 

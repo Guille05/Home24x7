@@ -4,6 +4,7 @@ import 'package:home24x7/daos/worker/dataModelPrestadorDeServicos.dart';
 import 'package:home24x7/framework/dataModelBuilder.dart';
 
 
+import '../tiposDeServico/dataModelBuilderTipoDeServico.dart';
 import 'dataModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 
 class DataModelBuilderPrestadoresDeServicoPorCidadeTipoDeServico extends DataModelBuilder<DataModelPrestadoresDeServicoPorCidadeTipoDeServico> {

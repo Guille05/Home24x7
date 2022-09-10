@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_treinamento/framework/dataModel.dart';
+
+import '../../framework/dataModel.dart';
 
 class DataModelIcone extends DataModel {
   final int codePoint;

@@ -1,5 +1,4 @@
 import 'package:home24x7/framework/dataModelBuilder.dart';
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
 import 'dataModelDadosPrestador.dart';
 
 class DataModelBuilderDadosPrestador

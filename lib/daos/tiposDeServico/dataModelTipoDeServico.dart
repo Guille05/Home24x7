@@ -1,5 +1,5 @@
-import 'package:projeto_treinamento/daos/icone/dataModelIcone.dart';
-import 'package:projeto_treinamento/framework/dataModel.dart';
+
+import '../../framework/dataModel.dart';
 
 class DataModelTipoDeServico extends DataModel {
   final int codTipoServico;

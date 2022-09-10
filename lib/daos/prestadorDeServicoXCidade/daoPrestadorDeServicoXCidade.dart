@@ -1,5 +1,5 @@
-import 'package:projeto_treinamento/framework/daoPadrao.dart';
 
+import '../../framework/daoPadrao.dart';
 import 'dataModelPrestadorDeServicoXCidade.dart';
 
 class DaoPrestadorDeServicoXCidade extends DaoPadrao<DataModelPrestadorDeServicoXCidade> {

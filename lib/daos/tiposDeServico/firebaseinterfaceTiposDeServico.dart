@@ -1,9 +1,7 @@
-import 'package:projeto_treinamento/daos/dadosPrestador/dataModelBuilderDadosPrestador.dart';
-import 'package:projeto_treinamento/daos/dadosPrestador/dataModelDadosPrestador.dart';
-import 'package:projeto_treinamento/daos/principaisTiposDeServicoCidade/dataModelPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelBuilderTipoDeServico.dart';
-import 'package:projeto_treinamento/daos/tiposDeServico/dataModelTipoDeServico.dart';
-import 'package:projeto_treinamento/util/firebase/firebaseInterface.dart';
+
+import '../../util/firebase/firebaseInterface.dart';
+import 'dataModelBuilderTipoDeServico.dart';
+import 'dataModelTipoDeServico.dart';
 
 class FirebaseinterfaceTiposDeServico extends FirebaseInterface<
     DataModelTipoDeServico, DataModelBuilderTipoDeServico> {

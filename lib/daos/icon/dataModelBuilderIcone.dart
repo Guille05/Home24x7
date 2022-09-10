@@ -1,5 +1,4 @@
-import 'package:projeto_treinamento/framework/dataModelBuilder.dart';
-
+import '../../framework/dataModelBuilder.dart';
 import 'dataModelIcone.dart';
 
 class DataModelBuilderIcone extends DataModelBuilder<DataModelIcone> {

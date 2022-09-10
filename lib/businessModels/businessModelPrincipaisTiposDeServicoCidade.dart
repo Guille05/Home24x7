@@ -1,7 +1,7 @@
-import 'package:projeto_treinamento/framework/businessModel.dart';
 
-import '../../../quickfix/lib/daos/businessModelCidade.dart';
-import '../../../quickfix/lib/daos/businessModelTiposDeServico.dart';
+import '../framework/businessModel.dart';
+import 'businessModelCidade.dart';
+import 'businessModelTiposDeServico.dart';
 
 class BusinessModelPrincipaisTiposDeServicoCidade extends BusinessModel {
   final BusinessModelCidade cidade;

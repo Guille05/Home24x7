@@ -11,7 +11,7 @@ class Cidades {
   }
 
   Future<void> getCidades() async {
-    listaDeTodasAsCidades = await ProviderCidade().getBusinessModels();
+    listaDeTodasAsCidades = await ProviderCidade().getBusinessModels() as List<BusinessModelCidade>;
   }
 
   Cidades._internal();
