@@ -2,8 +2,6 @@ import 'package:home24x7/businessModels/businessModelPrestadorInfomation.dart';
 import 'package:home24x7/features/perfilPrestadorDeServico/blocEventPerfilPrestadorDeServico.dart';
 import 'package:home24x7/features/perfilPrestadorDeServico/blocPerfilPrestadorDeServico.dart';
 import 'package:home24x7/framework/presenter.dart';
-
-
 import 'viewActionsPerfilPrestadorDeServico.dart';
 import 'viewBuilderPerfilPrestadorDeServico.dart';
 import 'viewPerfilPrestadorDeServico.dart';

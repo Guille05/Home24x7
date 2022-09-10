@@ -1,5 +1,7 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/framework/presenter.dart';
+
+
+import 'package:home24x7/businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
+import 'package:home24x7/framework/presenter.dart';
 
 import 'blocEventPesquisaTipoServico.dart';
 import 'blocPesquisaTipoServico.dart';

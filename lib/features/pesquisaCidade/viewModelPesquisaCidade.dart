@@ -3,6 +3,7 @@ import 'package:home24x7/businessModels/businessModelCidade.dart';
 import 'package:home24x7/framework/viewModelLista.dart';
 
 
+import '../../businessModels/businessModelCidade.dart';
 import 'featureModelPesquisaCidade.dart';
 
 

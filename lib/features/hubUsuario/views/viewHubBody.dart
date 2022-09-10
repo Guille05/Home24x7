@@ -9,7 +9,6 @@ import '../../../util/libraryComponents/colors/colorGradient.dart';
 import '../../../util/libraryComponents/colors/colors.dart';
 import '../../logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
 import '../viewActionsHub.dart';
-import '../viewHub.dart';
 import '../viewModelHub.dart';
 
 class ViewHubBodyUsuario extends StatelessWidget {

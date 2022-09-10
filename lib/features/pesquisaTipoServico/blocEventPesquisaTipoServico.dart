@@ -1,6 +1,8 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/features/pesquisaTipoServico/viewModelPesquisaTipoServico.dart';
-import 'package:projeto_treinamento/framework/blocEvent.dart';
+
+
+import 'package:home24x7/businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
+import 'package:home24x7/features/pesquisaTipoServico/viewModelPesquisaTipoServico.dart';
+import 'package:home24x7/framework/blocEvent.dart';
 
 abstract class BlocEventPesquisaTipoServico extends BlocEvent {}
 

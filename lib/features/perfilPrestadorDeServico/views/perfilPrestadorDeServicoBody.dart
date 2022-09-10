@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/views/headerPerfilPrestadorDeServico.dart';
 import '../viewActionsPerfilPrestadorDeServico.dart';
 import '../viewModelPerfilPrestadorDeServico.dart';
+import 'headerPerfilPrestadorDeServico.dart';
 
 class PerfilPrestadorDeServicoBody extends StatelessWidget {
   const PerfilPrestadorDeServicoBody(

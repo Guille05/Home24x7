@@ -1,4 +1,5 @@
 import 'package:home24x7/features/perfilPrestadorDeServico/viewModelPerfilPrestadorDeServico.dart';
+import 'package:home24x7/features/perfilPrestadorDeServico/viewModelPerfilPrestadorDeServico.dart';
 import 'package:home24x7/framework/blocEvent.dart';
 
 

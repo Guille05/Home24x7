@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/framework/viewModelLista.dart';
+import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
+import 'package:home24x7/framework/viewModelLista.dart';
+
+import '../../framework/viewModelLista.dart';
+
 
 
 class ViewModelPesquisaTipoServico extends ViewModelLista<BusinessModelTiposDeServico> {

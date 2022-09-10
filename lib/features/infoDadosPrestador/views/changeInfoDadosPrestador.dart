@@ -1,8 +1,5 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import '../../../businessModels/businessModelCidade.dart';
 import '../../../daos/firebase/authService.dart';
 import '../../logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
 import 'customEditPrestadorInformation.dart';

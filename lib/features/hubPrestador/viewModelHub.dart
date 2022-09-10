@@ -1,16 +1,8 @@
 import 'package:home24x7/businessModels/businessModelDadosPrestador.dart';
 import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
 import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/util/tipoDeServico.dart';
-
 import '../../businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
 import '../../businessModels/businessModelCidade.dart';
-import '../../businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
-import '../../businessModels/businessModelUsuario.dart';
 import '../../framework/viewModel.dart';
 
 class ViewModelHubPrestador extends ViewModel {

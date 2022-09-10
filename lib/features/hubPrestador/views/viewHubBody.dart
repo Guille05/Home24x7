@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:home24x7/features/hubPrestador/views/viewHubPrestadorHeader.dart';
-import '../../../businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
 import '../../../util/libraryComponents/colors/colorGradient.dart';
 import '../../../util/libraryComponents/colors/colors.dart';
 import '../viewActionsHub.dart';
