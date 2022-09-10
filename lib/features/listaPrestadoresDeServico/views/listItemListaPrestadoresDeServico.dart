@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/features/listaPrestadoresDeServico/viewActionsListaPrestadoresDeServico.dart';
-import 'package:projeto_treinamento/features/listaPrestadoresDeServico/viewModelListaPrestadoresDeServico.dart';
-import 'package:projeto_treinamento/widgets/custom_rating_bar.dart';
+import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
+import 'package:home24x7/features/listaPrestadoresDeServico/viewActionsListaPrestadoresDeServico.dart';
+import 'package:home24x7/features/listaPrestadoresDeServico/viewModelListaPrestadoresDeServico.dart';
 import 'package:substring_highlight/substring_highlight.dart';
 
 class ListItemListaPrestadoresDeServico extends StatelessWidget {

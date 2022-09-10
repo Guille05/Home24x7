@@ -1,9 +1,9 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
-import 'package:projeto_treinamento/features/listaPrestadoresDeServico/blocEventListaPrestadoresDeServico.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
-import 'package:projeto_treinamento/providers/icone/providerIcone.dart';
-import 'package:projeto_treinamento/providers/prestadoresDeServicoPorCidadeTipoDeServico/providerPrestadoresDeServicoPorCidadeTipoDeServico.dart';
+
+
+import 'package:home24x7/businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
+import 'package:home24x7/features/listaPrestadoresDeServico/blocEventListaPrestadoresDeServico.dart';
+import 'package:home24x7/framework/bloc.dart';
+import 'package:home24x7/provider/prestadoresDeServicoPorCidadeTipoDeServico/providerPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 
 import 'viewModelListaPrestadoresDeServico.dart';
 

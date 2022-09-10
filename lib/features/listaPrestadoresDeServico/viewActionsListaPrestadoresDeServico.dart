@@ -1,11 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/presenterInfoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/listaPrestadoresDeServico/viewModelListaPrestadoresDeServico.dart';
-import 'package:projeto_treinamento/framework/pipe.dart';
-import 'package:projeto_treinamento/framework/viewActions.dart';
-import 'package:projeto_treinamento/framework/viewModel.dart';
+import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
+import 'package:home24x7/features/infoPrestadorDeServico/presenterInfoPrestadorDeServico.dart';
+import 'package:home24x7/features/listaPrestadoresDeServico/viewModelListaPrestadoresDeServico.dart';
+import 'package:home24x7/framework/pipe.dart';
+import 'package:home24x7/framework/viewActions.dart';
 
 import 'blocEventListaPrestadoresDeServico.dart';
 

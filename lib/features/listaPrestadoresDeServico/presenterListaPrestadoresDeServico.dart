@@ -1,4 +1,4 @@
-import 'package:projeto_treinamento/framework/presenter.dart';
+import 'package:home24x7/framework/presenter.dart';
 import 'blocEventListaPrestadoresDeServico.dart';
 import 'blocListaPrestadoresDeServico.dart';
 import 'viewActionsListaPrestadoresDeServico.dart';

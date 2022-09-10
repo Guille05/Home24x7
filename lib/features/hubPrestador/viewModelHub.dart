@@ -1,3 +1,6 @@
+import 'package:home24x7/businessModels/businessModelDadosPrestador.dart';
+import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
+import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
 import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
 import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
 import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';

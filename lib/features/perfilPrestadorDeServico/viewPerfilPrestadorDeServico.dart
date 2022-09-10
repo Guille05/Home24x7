@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:home24x7/features/perfilPrestadorDeServico/views/buttonSalvarPerfilPrestadorDeServico.dart';
+import 'package:home24x7/features/perfilPrestadorDeServico/views/perfilPrestadorDeServicoBody.dart';
+import 'package:home24x7/framework/view.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:projeto_treinamento/features/perfilPrestadorDeServico/views/buttonSalvarPerfilPrestadorDeServico.dart';
 import 'package:projeto_treinamento/features/perfilPrestadorDeServico/views/perfilPrestadorDeServicoBody.dart';

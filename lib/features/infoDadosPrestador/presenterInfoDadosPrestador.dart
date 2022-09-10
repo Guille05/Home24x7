@@ -1,7 +1,9 @@
-import 'package:projeto_treinamento/features/infoDadosPrestador/blocInfoDadosPrestador.dart';
-import 'package:projeto_treinamento/features/infoDadosPrestador/viewActionsInfoDadosPrestador.dart';
-import 'package:projeto_treinamento/features/infoDadosPrestador/viewBuilderInfoDadosPrestador.dart';
-import 'package:projeto_treinamento/framework/presenter.dart';
+
+import 'package:home24x7/features/infoDadosPrestador/blocInfoDadosPrestador.dart';
+import 'package:home24x7/features/infoDadosPrestador/viewActionsInfoDadosPrestador.dart';
+import 'package:home24x7/features/infoDadosPrestador/viewBuilderInfoDadosPrestador.dart';
+import 'package:home24x7/framework/presenter.dart';
+
 import 'blocEventInfoDadosPrestador.dart';
 import 'viewInfoDadosPrestador.dart';
 import 'viewModelInfoDadosPrestador.dart';

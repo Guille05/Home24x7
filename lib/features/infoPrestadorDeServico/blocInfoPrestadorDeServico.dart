@@ -1,16 +1,13 @@
-import 'package:projeto_treinamento/businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
-import 'package:projeto_treinamento/providers/avaliacaoPrestadorDeServico/providerAvaliacaoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/providers/icone/providerIcone.dart';
-import 'package:projeto_treinamento/util/getAvaliacoesPrestador.dart';
-import 'package:projeto_treinamento/util/getCodigoCidade.dart';
-import 'package:projeto_treinamento/util/prestador.dart';
+
+
+import 'package:home24x7/businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
+import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
+import 'package:home24x7/provider/prestadoresDeServicoPorCidadeTipoDeServico/providerPrestadoresDeServicoPorCidadeTipoDeServico.dart';
+import 'package:home24x7/util/getAvaliacoesPrestador.dart';
+import 'package:home24x7/util/getCodigoCidade.dart';
+import 'package:home24x7/util/prestador.dart';
 
 import '../../businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
-import '../../providers/prestadoresDeServicoPorCidadeTipoDeServico/providerPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 import 'blocEventInfoPrestadorDeServico.dart';
 import 'viewModelInfoPrestadorDeServico.dart';
 

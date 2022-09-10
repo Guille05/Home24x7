@@ -1,3 +1,4 @@
+import 'package:home24x7/framework/presenter.dart';
 import 'package:projeto_treinamento/framework/presenter.dart';
 import 'blocEventPesquisaCidade.dart';
 import 'blocPesquisaCidade.dart';

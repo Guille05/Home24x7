@@ -1,5 +1,6 @@
-import 'package:projeto_treinamento/features/hubPrestador/viewModelHub.dart';
-import 'package:projeto_treinamento/framework/blocEvent.dart';
+import 'package:home24x7/features/hubPrestador/viewModelHub.dart';
+import 'package:home24x7/framework/blocEvent.dart';
+
 
 abstract class BlocEventHubPrestador extends BlocEvent {}
 

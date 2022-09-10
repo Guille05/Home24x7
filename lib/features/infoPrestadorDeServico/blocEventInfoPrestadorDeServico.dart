@@ -1,7 +1,8 @@
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/framework/blocEvent.dart';
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
+import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
+import 'package:home24x7/framework/blocEvent.dart';
+
 
 abstract class BlocEventInfoPrestadorDeServico extends BlocEvent {}
 

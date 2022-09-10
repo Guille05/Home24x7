@@ -1,7 +1,8 @@
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorInfomation.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/blocEventPerfilPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/blocPerfilPrestadorDeServico.dart';
-import 'package:projeto_treinamento/framework/presenter.dart';
+import 'package:home24x7/businessModels/businessModelPrestadorInfomation.dart';
+import 'package:home24x7/features/perfilPrestadorDeServico/blocEventPerfilPrestadorDeServico.dart';
+import 'package:home24x7/features/perfilPrestadorDeServico/blocPerfilPrestadorDeServico.dart';
+import 'package:home24x7/framework/presenter.dart';
+
 
 import 'viewActionsPerfilPrestadorDeServico.dart';
 import 'viewBuilderPerfilPrestadorDeServico.dart';

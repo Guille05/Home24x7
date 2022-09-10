@@ -1,8 +1,7 @@
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/features/pesquisaCidade/viewModelPesquisaCidade.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
-import 'package:projeto_treinamento/providers/cidade/providerCidade.dart';
-import 'package:projeto_treinamento/util/cidade.dart';
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/features/pesquisaCidade/viewModelPesquisaCidade.dart';
+import 'package:home24x7/framework/bloc.dart';
+import 'package:home24x7/util/cidade.dart';
 import 'blocEventPesquisaCidade.dart';
 import 'featureModelPesquisaCidade.dart';
 

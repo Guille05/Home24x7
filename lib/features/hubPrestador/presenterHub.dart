@@ -1,4 +1,5 @@
-import 'package:projeto_treinamento/framework/presenter.dart';
+import 'package:home24x7/framework/presenter.dart';
+
 
 import 'blocEventHub.dart';
 import 'blocHub.dart';

@@ -1,5 +1,6 @@
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/viewModelPerfilPrestadorDeServico.dart';
-import 'package:projeto_treinamento/framework/blocEvent.dart';
+import 'package:home24x7/features/perfilPrestadorDeServico/viewModelPerfilPrestadorDeServico.dart';
+import 'package:home24x7/framework/blocEvent.dart';
+
 
 abstract class BlocEventPerfilPrestadorDeServico extends BlocEvent {}
 

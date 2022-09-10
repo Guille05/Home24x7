@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoBody.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoHeader.dart';
-import 'package:projeto_treinamento/framework/view.dart';
+import 'package:home24x7/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoBody.dart';
+import 'package:home24x7/features/infoPrestadorDeServico/views/viewInfoPrestadorDeServicoHeader.dart';
+import 'package:home24x7/framework/view.dart';
+
 
 import '../../util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
 import '../../util/libraryComponents/colors/colors.dart';

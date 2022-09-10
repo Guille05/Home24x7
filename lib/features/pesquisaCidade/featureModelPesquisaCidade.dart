@@ -1,5 +1,6 @@
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/framework/mixInDescricao.dart';
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/framework/mixInDescricao.dart';
+
 
 class FeatureModelPesquisaCidade with MixInDescricao {
   final BusinessModelCidade cidade;

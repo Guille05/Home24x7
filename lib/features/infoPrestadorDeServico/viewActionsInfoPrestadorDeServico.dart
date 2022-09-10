@@ -1,7 +1,8 @@
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/viewModelInfoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/framework/pipe.dart';
-import 'package:projeto_treinamento/framework/viewActions.dart';
-import 'package:projeto_treinamento/util/prestador.dart';
+
+import 'package:home24x7/features/infoPrestadorDeServico/viewModelInfoPrestadorDeServico.dart';
+import 'package:home24x7/framework/pipe.dart';
+import 'package:home24x7/framework/viewActions.dart';
+
 import 'blocEventInfoPrestadorDeServico.dart';
 
 class ViewActionsInfoPrestadorDeServico

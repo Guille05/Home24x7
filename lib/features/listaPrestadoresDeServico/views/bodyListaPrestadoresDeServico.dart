@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_treinamento/features/listaPrestadoresDeServico/views/listViewListaPrestadoresDeServico.dart';
-import 'package:projeto_treinamento/features/listaPrestadoresDeServico/views/searchTextListaPrestadoresDeServico.dart';
+import 'package:home24x7/features/listaPrestadoresDeServico/views/listViewListaPrestadoresDeServico.dart';
+import 'package:home24x7/features/listaPrestadoresDeServico/views/searchTextListaPrestadoresDeServico.dart';
 
 import '../../../util/libraryComponents/colors/colors.dart';
 import '../viewActionsListaPrestadoresDeServico.dart';

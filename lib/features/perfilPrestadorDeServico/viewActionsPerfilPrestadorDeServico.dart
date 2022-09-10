@@ -1,15 +1,15 @@
 import 'dart:typed_data';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/businessModels/businessModelPrestadorInfomation.dart';
+import 'package:home24x7/features/perfilPrestadorDeServico/blocEventPerfilPrestadorDeServico.dart';
+import 'package:home24x7/features/perfilPrestadorDeServico/viewModelPerfilPrestadorDeServico.dart';
+import 'package:home24x7/framework/pipe.dart';
+import 'package:home24x7/framework/viewActions.dart';
+import 'package:home24x7/provider/cidade/providerCidade.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorInfomation.dart';
-import 'package:projeto_treinamento/businessModels/businessModelUsuario.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/blocEventPerfilPrestadorDeServico.dart';
-import 'package:projeto_treinamento/features/perfilPrestadorDeServico/viewModelPerfilPrestadorDeServico.dart';
-import 'package:projeto_treinamento/framework/pipe.dart';
-import 'package:projeto_treinamento/framework/viewActions.dart';
-import 'package:projeto_treinamento/providers/cidade/providerCidade.dart';
+
 
 class ViewActionsPerfilPrestadorDeServico
     extends ViewActions<BlocEventPerfilPrestadorDeServico> {

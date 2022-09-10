@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/framework/viewModelLista.dart';
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/framework/viewModelLista.dart';
+
 
 import 'featureModelPesquisaCidade.dart';
 

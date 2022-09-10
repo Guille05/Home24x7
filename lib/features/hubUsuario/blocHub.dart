@@ -1,15 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
-import 'package:projeto_treinamento/framework/viewModel.dart';
-import 'package:projeto_treinamento/providers/cidade/providerCidade.dart';
-import 'package:projeto_treinamento/providers/principaisTiposDeServicoCidade/providerPrincipaisTiposDeServicoCidade.dart';
-import 'package:projeto_treinamento/util/cidade.dart';
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/businessModels/businessModelPrincipaisTiposDeServicoCidade.dart';
+import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
+import 'package:home24x7/framework/bloc.dart';
+import 'package:home24x7/provider/principaisTiposDeServicoCidade/providerPrincipaisTiposDeServicoCidade.dart';
+import 'package:home24x7/util/cidade.dart';
+import 'package:home24x7/util/tipoDeServico.dart';
 
-import 'package:projeto_treinamento/util/tipoDeServico.dart';
 
 import 'blocEventHub.dart';
 import 'viewModelHub.dart';

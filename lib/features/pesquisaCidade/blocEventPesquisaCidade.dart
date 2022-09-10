@@ -1,3 +1,5 @@
+import 'package:home24x7/features/pesquisaCidade/viewModelPesquisaCidade.dart';
+import 'package:home24x7/framework/blocEvent.dart';
 import 'package:projeto_treinamento/features/pesquisaCidade/viewModelPesquisaCidade.dart';
 import 'package:projeto_treinamento/framework/blocEvent.dart';
 

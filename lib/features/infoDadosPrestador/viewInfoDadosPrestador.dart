@@ -1,10 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:home24x7/features/infoDadosPrestador/views/InfoDadosPrestadorBody.dart';
+import 'package:home24x7/features/infoDadosPrestador/views/buttonSalvarInfoUsuario.dart';
+import 'package:home24x7/framework/view.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:projeto_treinamento/features/infoDadosPrestador/views/InfoDadosPrestadorBody.dart';
-import 'package:projeto_treinamento/features/infoDadosPrestador/views/buttonSalvarInfoUsuario.dart';
-import 'package:projeto_treinamento/framework/view.dart';
 import '../../util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
 import '../../util/libraryComponents/colors/colors.dart';
 import '../logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';

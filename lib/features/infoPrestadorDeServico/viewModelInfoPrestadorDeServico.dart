@@ -1,11 +1,10 @@
-import 'package:projeto_treinamento/businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelIcone.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicos.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicoxCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelPrestadorDeServicoxTipoDeServico.dart';
-import 'package:projeto_treinamento/businessModels/businessModelTiposDeServico.dart';
-import 'package:projeto_treinamento/framework/viewModel.dart';
+
+
+import 'package:home24x7/businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
+import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
+import 'package:home24x7/framework/viewModel.dart';
 
 class ViewModelInfoPrestadorDeServico extends ViewModel {
   ViewModelInfoPrestadorDeServico({

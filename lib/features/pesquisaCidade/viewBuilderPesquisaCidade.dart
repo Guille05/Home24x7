@@ -1,5 +1,6 @@
 
-import 'package:projeto_treinamento/framework/viewBuilder.dart';
+import 'package:home24x7/framework/viewBuilder.dart';
+
 
 import 'viewActionsPesquisaCidade.dart';
 import 'viewModelPesquisaCidade.dart';

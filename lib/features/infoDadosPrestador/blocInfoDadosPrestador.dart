@@ -1,9 +1,10 @@
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/framework/bloc.dart';
-import 'package:projeto_treinamento/providers/cidade/providerCidade.dart';
-import '../../providers/dadosPrestador/providerDadosPrestador.dart';
+
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/businessModels/businessModelDadosPrestador.dart';
+import 'package:home24x7/framework/bloc.dart';
+import 'package:home24x7/provider/cidade/providerCidade.dart';
+import 'package:home24x7/provider/dadosPrestador/providerDadosPrestador.dart';
+
 import 'blocEventInfoDadosPrestador.dart';
 import 'viewModelInfoDadosPrestador.dart';
 

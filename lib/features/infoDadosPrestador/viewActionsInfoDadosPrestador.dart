@@ -1,13 +1,12 @@
 import 'dart:typed_data';
 import 'package:flutter/cupertino.dart';
+import 'package:home24x7/businessModels/businessModelCidade.dart';
+import 'package:home24x7/businessModels/businessModelDadosPrestador.dart';
+import 'package:home24x7/features/infoDadosPrestador/viewModelInfoDadosPrestador.dart';
+import 'package:home24x7/framework/pipe.dart';
+import 'package:home24x7/framework/viewActions.dart';
+import 'package:home24x7/provider/cidade/providerCidade.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:projeto_treinamento/businessModels/businessModelCidade.dart';
-import 'package:projeto_treinamento/businessModels/businessModelDadosPrestador.dart';
-import 'package:projeto_treinamento/features/infoDadosPrestador/viewModelInfoDadosPrestador.dart';
-import 'package:projeto_treinamento/features/infoPrestadorDeServico/blocEventInfoPrestadorDeServico.dart';
-import 'package:projeto_treinamento/framework/pipe.dart';
-import 'package:projeto_treinamento/framework/viewActions.dart';
-import 'package:projeto_treinamento/providers/cidade/providerCidade.dart';
 import 'blocEventInfoDadosPrestador.dart';
 
 class ViewActionsInfoDadosPrestador

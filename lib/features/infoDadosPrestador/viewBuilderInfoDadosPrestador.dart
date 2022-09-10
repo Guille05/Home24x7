@@ -1,5 +1,5 @@
-import 'package:projeto_treinamento/features/infoDadosPrestador/viewActionsInfoDadosPrestador.dart';
-import 'package:projeto_treinamento/framework/viewBuilder.dart';
+import 'package:home24x7/features/infoDadosPrestador/viewActionsInfoDadosPrestador.dart';
+import 'package:home24x7/framework/viewBuilder.dart';
 import 'viewInfoDadosPrestador.dart';
 import 'viewModelInfoDadosPrestador.dart';
 

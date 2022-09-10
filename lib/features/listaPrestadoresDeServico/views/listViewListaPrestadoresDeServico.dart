@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:projeto_treinamento/features/listaPrestadoresDeServico/viewActionsListaPrestadoresDeServico.dart';
+import 'package:home24x7/features/listaPrestadoresDeServico/viewActionsListaPrestadoresDeServico.dart';
+
 
 import '../viewModelListaPrestadoresDeServico.dart';
 import 'listItemListaPrestadoresDeServico.dart';
