@@ -1,5 +1,6 @@
 
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:home24x7/businessModels/businessModelAvaliacaoPrestadorDeServico.dart';
 import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
 import 'package:home24x7/provider/prestadoresDeServicoPorCidadeTipoDeServico/providerPrestadoresDeServicoPorCidadeTipoDeServico.dart';
@@ -7,6 +8,7 @@ import 'package:home24x7/util/getAvaliacoesPrestador.dart';
 import 'package:home24x7/util/getCodigoCidade.dart';
 import 'package:home24x7/util/prestador.dart';
 
+import '../../businessModels/businessModelDadosPrestador.dart';
 import '../../businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 import '../../framework/bloc.dart';
 import '../../provider/dadosPrestador/providerDadosPrestador.dart';
@@ -21,10 +23,56 @@ class BlocInfoPrestadorDeServico extends Bloc<ViewModelInfoPrestadorDeServico,
       _inicializaViewModel(blocEvent);
   }
 
+
+  List<BusinessModelDadosPrestador> listaTodosPrestadores = [];
+
+
+  Future<void> getPrestadores() async {
+    listaTodosPrestadores = await ProvideDadosPrestador().getBusinessModels();
+  }
+
+  Future<BusinessModelDadosPrestador> getPrestadorLogado() async {
+    final FirebaseAuth auth = FirebaseAuth.instance;
+    Future<String?> getUserId() async {
+      final User? user = await auth.currentUser;
+      final userId = user?.uid.toString();
+      return userId;
+    }
+
+    BusinessModelDadosPrestador prestadorRetorno = BusinessModelDadosPrestador(
+        name: 'name',
+        phone: 'phone',
+        workingHours: 'workingHours',
+        description: 'description',
+        profilePicture: 'profilePicture',
+        city: ['colatina - ES'],
+        roles: [1, 2],
+        numeroDeCliquesNoLigarOuWhatsApp: 0,
+        dataVencimentoPlano: DateTime.now(),
+        dataAberturaConta: DateTime.now(),
+        IdPrestador: 'IdPrestador',
+        tipoPlanoPrestador: 10,
+        cliquesNoWhatsApp: 0,
+        cliquesNoPerfil: 0,
+        identityVerified: 'wdw');
+    ;
+
+    String? userId = await getUserId();
+    if (userId != null) {
+      listaTodosPrestadores.forEach((element) {
+        if (element.IdPrestador == userId) {
+          prestadorRetorno = element;
+        }
+      });
+    }
+
+    return prestadorRetorno;
+  }
+
   void _inicializaViewModel(
       BlocEventInfoPrestadorDeServicoInicializaViewModel blocEvent) async {
     ViewModelInfoPrestadorDeServico viewModel;
-    await ProvideDadosPrestador().getBusinessModels();
+    await getPrestadorLogado();
     int newcodCidade =
         await GetCodCidade(nomeCidade: blocEvent.cidade.nome).action();
     BusinessModelPrestadoresDeServicoPorCidadeTipoDeServico businessModel =

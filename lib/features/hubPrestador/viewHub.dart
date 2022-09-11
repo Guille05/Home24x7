@@ -26,15 +26,9 @@ class ViewHubPrestador
   }
 
   _buildBody(BuildContext context) {
-    //print("prestador"+ viewModel!.prestador.toString()); //
-
-    print("prestadorDeServicos"+viewModel!.prestadorDeServicos.toString());
-    print("listaAvaliacoesPrestadorDeServico"+viewModel!.listaAvaliacoesPrestadorDeServico.toString());
-    print("tiposDeServico"+viewModel!.tiposDeServico.toString());
-    print("cidade"+viewModel!.cidade.toString());
 
     if (viewModel == null) {
-      return Center(
+      return const Center(
         child: CircularProgressIndicatorPersonalizado(),
       );
     } else {

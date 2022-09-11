@@ -18,10 +18,17 @@ class BlocInfoDadosPrestador
       _atualizaViewModel(blocEvent);
   }
 
+  Future<List<BusinessModelCidade>> getCidades() async {
+    List<BusinessModelCidade> listaDeTodasAsCidades = [];
+
+    listaDeTodasAsCidades = await ProviderCidade().getBusinessModels();
+    return listaDeTodasAsCidades;
+  }
+
+
   void _inicializaViewModel(
       BlocEventInfoDadosPrestadorInicializaViewModel blocEvent) async {
-    List<BusinessModelCidade> cidades =
-        await ProviderCidade().getBusinessModels();
+    List<BusinessModelCidade> cidades = await getCidades();
 
     ViewModelInfoDadosPrestador viewModel = ViewModelInfoDadosPrestador(
       prestador: blocEvent.viewModel.prestador,

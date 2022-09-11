@@ -146,8 +146,14 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
       }
     });
 
-    List<BusinessModelTiposDeServico> tiposServico =
-    await ProviderTiposDeServico().getBusinessModels();
+    Future<List<BusinessModelTiposDeServico>> getTiposDeServico() async {
+      List<BusinessModelTiposDeServico> listaTodosPrestadores = [];
+
+      listaTodosPrestadores = await ProviderTiposDeServico().getBusinessModels();
+      return listaTodosPrestadores;
+    }
+
+    List<BusinessModelTiposDeServico> tiposServico = await getTiposDeServico();
     List<BusinessModelTiposDeServico> _tiposServico = [];
 
     tiposServico.forEach((element) {
@@ -156,8 +162,7 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
       }
     });
 
-    List<BusinessModelAvaliacaoPrestadorDeServico>
-        listaAvaliacoesPrestadorDeServico =
+    List<BusinessModelAvaliacaoPrestadorDeServico>listaAvaliacoesPrestadorDeServico =
         (await GetAvaliacoesPrestador().action(prestador.IdPrestador))
             .cast<BusinessModelAvaliacaoPrestadorDeServico>();
 

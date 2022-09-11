@@ -10,7 +10,7 @@ import '../../util/libraryComponents/circularProgressIndicatorPersonalizado.dart
 import 'viewActionsHub.dart';
 
 class ViewHubUsuario extends View<ViewModelHubUsuario, ViewActionsHubUsuario> {
-  ViewHubUsuario({
+  const ViewHubUsuario({
     Key? key,
     ViewModelHubUsuario? viewModel,
     required ViewActionsHubUsuario viewActions,
@@ -24,11 +24,9 @@ class ViewHubUsuario extends View<ViewModelHubUsuario, ViewActionsHubUsuario> {
   }
 
   _buildBody(BuildContext context) {
-    print("cidade:"+viewModel!.cidade.toString());
-    print("tipos:"+viewModel!.principaisTiposDeServicoCidade.toString());
 
     if (viewModel == null) {
-      return Center(
+      return const Center(
         child: CircularProgressIndicatorPersonalizado(),
       );
     } else {

@@ -65,11 +65,27 @@ class BlocHub extends Bloc<ViewModelHubUsuario, BlocEventHubUsuario> {
     this.sendViewModelOut(viewModel);
   }
 
-  void _selecionaCidade(BlocEventHubSelecionaCidade blocEvent) async {
-    List<BusinessModelCidade> cidades = ProviderTiposDeServico().getBusinessModels() as List<BusinessModelCidade>;
+  Future<List<BusinessModelCidade>> getCidades() async {
+    List<BusinessModelCidade> listaDeTodasAsCidades = [];
 
-    List<BusinessModelTiposDeServico> tiposDeServico =
-    await ProviderTiposDeServico().getBusinessModels();
+    listaDeTodasAsCidades = await ProviderCidade().getBusinessModels();
+    return listaDeTodasAsCidades;
+  }
+
+  Future<List<BusinessModelTiposDeServico>> getTiposDeServico() async {
+    List<BusinessModelTiposDeServico> listaTodosPrestadores = [];
+
+    listaTodosPrestadores = await ProviderTiposDeServico().getBusinessModels();
+    return listaTodosPrestadores;
+  }
+
+
+
+  void _selecionaCidade(BlocEventHubSelecionaCidade blocEvent) async {
+    List<BusinessModelCidade> cidades = await getCidades();
+
+    List<BusinessModelTiposDeServico> tiposDeServico = await getTiposDeServico();
+
     ViewModelHubUsuario _viewModel = ViewModelHubUsuario(
       cidade: cidades[int.parse(blocEvent.codCidade.toString())],
       principaisTiposDeServicoCidade:
