@@ -2,11 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
+import '../../../../businessModels/businessModelTiposDeServico.dart';
+import '../../../../provider/tiposDeServico/providerTiposDeServico.dart';
 import '../../../../util/libraryComponents/popUps/popUpListaSelectCidades.dart';
 import '../../selectCidades/viewActionsSelectCidade.dart';
 import '../../selectCidades/viewModelSelectCidade.dart';
-import '../../selectServicos/presenterSelectServicos.dart';
-import '../../selectServicos/views/buttonGoSignUpScreenPart4.dart';
+import '../../selectCities/stepTwo.dart';
 
 class ButtonGoSignUpScreenSelectCidade extends StatelessWidget {
     final ViewActionsSelectCidade viewActions;
@@ -19,8 +20,21 @@ class ButtonGoSignUpScreenSelectCidade extends StatelessWidget {
   }) : super(key: key);
   final RoundedLoadingButtonController _btnController = RoundedLoadingButtonController();
 
+
+  // late var providerTiposDeServico;
+  //
+  //   @override
+  //   void initState() {
+  //     ProviderTiposDeServico  providerTiposDeServico = ProviderTiposDeServico();
+  //     super.initState();
+  //   }
+    ProviderTiposDeServico? providerTiposDeServico;
+
+
   @override
   Widget build(BuildContext context) {
+    //ProviderTiposDeServico providerTiposDeServico = ProviderTiposDeServico();
+
     return Container(
       height: 50,
       margin: EdgeInsets.symmetric(horizontal: 50),
@@ -59,15 +73,15 @@ class ButtonGoSignUpScreenSelectCidade extends StatelessWidget {
                 ),
               ),
             ),
-            onPressed: ()  {
-              this.viewActions.savarListaSelecionadaFirebase(viewModel);
-              if(viewModel.cidadesSelecionadas.length < 1){
-                mostrarErroEmailInvalido(context);
-              }
-              else{
+            onPressed: () async  {
+
+
+
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => PresenterSelectServicos.presenter()));
-              }
+                    builder: (context) =>StepTwo(
+
+                    )));
+
               _btnController.reset();
             },
           ),

@@ -4,8 +4,6 @@ import 'package:home24x7/features/pesquisaTipoServico/viewActionsPesquisaTipoSer
 import 'package:home24x7/features/pesquisaTipoServico/viewModelPesquisaTipoServico.dart';
 import 'package:home24x7/features/pesquisaTipoServico/views/viewPesquisaTipoServicoBody.dart';
 import 'package:home24x7/framework/view.dart';
-
-
 import '../../util/libraryComponents/colors/colors.dart';
 
 class ViewPesquisaTipoServico extends View<ViewModelPesquisaTipoServico, ViewActionsPesquisaTipoServico> {

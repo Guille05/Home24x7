@@ -8,7 +8,7 @@ class GetQtdePrestadoresDeServicoPorCidade {
 
   Future<int> numeroPrestadorPorCidade() async {
     QuerySnapshot query = await _instance
-        .collection('worker')
+        .collection('workers')
         .where('City', arrayContainsAny: [idCidade]).get();
 
     List docs = query.docs;

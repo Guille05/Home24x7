@@ -24,6 +24,9 @@ class ViewHubUsuario extends View<ViewModelHubUsuario, ViewActionsHubUsuario> {
   }
 
   _buildBody(BuildContext context) {
+    print("cidade:"+viewModel!.cidade.toString());
+    print("tipos:"+viewModel!.principaisTiposDeServicoCidade.toString());
+
     if (viewModel == null) {
       return Center(
         child: CircularProgressIndicatorPersonalizado(),

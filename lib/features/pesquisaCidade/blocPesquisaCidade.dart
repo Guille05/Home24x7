@@ -2,6 +2,7 @@ import 'package:home24x7/businessModels/businessModelCidade.dart';
 import 'package:home24x7/features/pesquisaCidade/viewModelPesquisaCidade.dart';
 import 'package:home24x7/framework/bloc.dart';
 import 'package:home24x7/util/cidade.dart';
+import '../../provider/tiposDeServico/providerTiposDeServico.dart';
 import 'blocEventPesquisaCidade.dart';
 import 'featureModelPesquisaCidade.dart';
 
@@ -43,7 +44,7 @@ class BlocPesquisaCidade
   Future<List<FeatureModelPesquisaCidade>>
       _buscaListaFeatureModelCidade() async {
     List<BusinessModelCidade> listaBusinessModelTiposDeServico =
-        Cidades().listaDeTodasAsCidades;
+    ProviderTiposDeServico().getBusinessModels() as List<BusinessModelCidade>;
 
     List<FeatureModelPesquisaCidade> listaCompletaFeatureModels =
         List.empty(growable: true);

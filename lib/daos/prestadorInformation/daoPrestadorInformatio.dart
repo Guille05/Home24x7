@@ -25,7 +25,7 @@ class DaoPrestadorInformation extends Dao<DataModelPrestadorInformation> {
     _instance = FirebaseFirestore.instance;
 
     CollectionReference dadosPrestador =
-        _instance!.collection('dadosPrestador');
+        _instance!.collection('workers');
 
     DocumentSnapshot snapshot =
         await dadosPrestador.doc(await getUserId()).get();

@@ -30,7 +30,7 @@ class BodySignUpPart2WorkerInformation extends StatefulWidget {
 class _BodySignUpPart2WorkerInformation extends State<BodySignUpPart2WorkerInformation> {
 
 
-  CollectionReference users = FirebaseFirestore.instance.collection('dadosPrestador');
+  CollectionReference users = FirebaseFirestore.instance.collection('workers');
   FirebaseFirestore firestore = FirebaseFirestore.instance;
   FirebaseStorage firebaseStorage = FirebaseStorage.instance;
 

@@ -153,11 +153,11 @@ class ViewActionsPerfilPrestadorDeServico
 
   updatePrestadorInformation(
       {required ViewModelPerfilPrestadorDeServico viewModel}) async {
-    await firestore.collection('dadosPrestador').doc(await getUserId()).update({
+    await firestore.collection('workers').doc(await getUserId()).update({
       'phone': viewModel.prestadorInformation.phone,
-      'city': viewModel.prestadorInformation.nome,
+      'City': viewModel.prestadorInformation.nome,
       'description': viewModel.prestadorInformation.description,
-      'roles': viewModel.prestadorInformation.nome,
+      'job': viewModel.prestadorInformation.nome,
       'workingHours': viewModel.prestadorInformation.nome,
       'profilePicture': viewModel.prestadorInformation.nome,
       'name': viewModel.prestadorInformation.nome,

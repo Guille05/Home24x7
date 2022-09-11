@@ -5,8 +5,7 @@ import '../../framework/viewModel.dart';
 
 class ViewModelHubUsuario extends ViewModel {
   final BusinessModelCidade cidade;
-  final BusinessModelPrincipaisTiposDeServicoCidade
-      principaisTiposDeServicoCidade;
+  final BusinessModelPrincipaisTiposDeServicoCidade principaisTiposDeServicoCidade;
 
   ViewModelHubUsuario({
     required this.cidade,

@@ -15,6 +15,9 @@ import 'package:home24x7/util/tipoDeServico.dart';
 
 
 import '../../businessModels/businessModelDadosPrestador.dart';
+import '../../provider/cidade/providerCidade.dart';
+import '../../provider/dadosPrestador/providerDadosPrestador.dart';
+import '../../provider/tiposDeServico/providerTiposDeServico.dart';
 import 'blocEventHub.dart';
 import 'viewModelHub.dart';
 
@@ -38,12 +41,54 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
     );
     return viewModel;
   }*/
+  List<BusinessModelDadosPrestador> listaTodosPrestadores = [];
+
+  Future<void> getPrestadores() async {
+    listaTodosPrestadores = await ProvideDadosPrestador().getBusinessModels();
+  }
+
+  Future<BusinessModelDadosPrestador> getPrestadorLogado() async {
+    final FirebaseAuth auth = FirebaseAuth.instance;
+    Future<String?> getUserId() async {
+      final User? user = await auth.currentUser;
+      final userId = user?.uid.toString();
+      return userId;
+    }
+
+    BusinessModelDadosPrestador prestadorRetorno = BusinessModelDadosPrestador(
+        name: 'name',
+        phone: 'phone',
+        workingHours: 'workingHours',
+        description: 'description',
+        profilePicture: 'profilePicture',
+        city: ['colatina - ES'],
+        roles: [1, 2],
+        numeroDeCliquesNoLigarOuWhatsApp: 0,
+        dataVencimentoPlano: DateTime.now(),
+        dataAberturaConta: DateTime.now(),
+        IdPrestador: 'IdPrestador',
+        tipoPlanoPrestador: 10,
+        cliquesNoWhatsApp: 0,
+        cliquesNoPerfil: 0,
+        identityVerified: '1');
+
+    String? userId = await getUserId();
+    if (userId != null) {
+      listaTodosPrestadores.forEach((element) {
+        if (element.IdPrestador == userId) {
+          prestadorRetorno = element;
+        }
+      });
+    }
+
+    return prestadorRetorno;
+  }
 
   void _inicializaViewModel(
       BlocEventHubInicializaViewModelPrestador blocEvent) async {
-    BusinessModelDadosPrestador prestador =
-        await Prestador().getPrestadorLogado();
-    ;
+    BusinessModelDadosPrestador prestador = await getPrestadorLogado();
+
+
     print(prestador);
     int newcodCidade =
         await GetCodCidade(nomeCidade: prestador.city[0]).action();
@@ -85,8 +130,14 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
     });
 
     String idCidadeDoprestador = "1"; // 1=colatina
+    List<BusinessModelCidade> listaDeTodasAsCidades = [];
 
-    List<BusinessModelCidade> cidades = Cidades().listaDeTodasAsCidades;
+    Future<List<BusinessModelCidade>> getCidades() async {
+      listaDeTodasAsCidades = await ProviderCidade().getBusinessModels();
+      return listaDeTodasAsCidades;
+    }
+
+    List<BusinessModelCidade> cidades = await getCidades();
     List<BusinessModelCidade> _cidades = [];
 
     cidades.forEach((element) {
@@ -96,7 +147,7 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
     });
 
     List<BusinessModelTiposDeServico> tiposServico =
-        TipoDeServico().listaTodosPrestadores;
+    await ProviderTiposDeServico().getBusinessModels();
     List<BusinessModelTiposDeServico> _tiposServico = [];
 
     tiposServico.forEach((element) {

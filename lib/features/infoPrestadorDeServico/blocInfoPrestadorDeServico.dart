@@ -9,6 +9,7 @@ import 'package:home24x7/util/prestador.dart';
 
 import '../../businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 import '../../framework/bloc.dart';
+import '../../provider/dadosPrestador/providerDadosPrestador.dart';
 import 'blocEventInfoPrestadorDeServico.dart';
 import 'viewModelInfoPrestadorDeServico.dart';
 
@@ -23,7 +24,7 @@ class BlocInfoPrestadorDeServico extends Bloc<ViewModelInfoPrestadorDeServico,
   void _inicializaViewModel(
       BlocEventInfoPrestadorDeServicoInicializaViewModel blocEvent) async {
     ViewModelInfoPrestadorDeServico viewModel;
-    await Prestador().getPrestadores();
+    await ProvideDadosPrestador().getBusinessModels();
     int newcodCidade =
         await GetCodCidade(nomeCidade: blocEvent.cidade.nome).action();
     BusinessModelPrestadoresDeServicoPorCidadeTipoDeServico businessModel =

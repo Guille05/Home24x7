@@ -1,18 +1,25 @@
+/*
 
+import 'package:flutter/cupertino.dart';
 import '../businessModels/businessModelTiposDeServico.dart';
 import '../provider/tiposDeServico/providerTiposDeServico.dart';
 
-class TipoDeServico {
-  static final TipoDeServico _singleton = TipoDeServico._internal();
+class ProviderService with ChangeNotifier {
+
+  static final ProviderService provider = ProviderService._internal();
+
   List<BusinessModelTiposDeServico> listaTodosPrestadores = [];
 
-  factory TipoDeServico() {
-    return _singleton;
+  factory ProviderService() {
+    return provider;
   }
 
   Future<void> getTiposDeServico() async {
     listaTodosPrestadores = await ProviderTiposDeServico().getBusinessModels();
   }
 
-  TipoDeServico._internal();
+  ProviderService._internal();
+
 }
+
+*/

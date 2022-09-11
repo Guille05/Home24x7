@@ -1,31 +1,33 @@
-
-
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get_it/get_it.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:home24x7/features/logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
-
+import 'package:home24x7/features/hubUsuario/presenterHub.dart';
+import 'package:home24x7/util/cidade.dart';
+import 'package:home24x7/util/prestador.dart';
+import 'package:home24x7/util/tipoDeServico.dart';
 import 'daos/firebase/authService.dart';
 import 'daos/firebase/updatePrestadorFirebase.dart';
-
+import 'features/hubPrestador/presenterHub.dart';
+import 'features/logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
-// final Storage storage = new Storage();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
+  final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+   //await firebaseAuth.signOut();
+  print(firebaseAuth.currentUser?.uid);
+
   final getIt = GetIt.instance;
-  // await Cidades().getCidades();
-  // await Prestador().getPrestadores();
-  // await TipoDeServico().getTiposDeServico();
+
+  //CitieProvider().getCidades();
+  //await PrestadorProvider().getPrestadores();
+  //await ProviderService().getTiposDeServico();
 
   getIt.registerLazySingleton(() => SetPrestadorInformationCompleta(
       name: '',
@@ -45,11 +47,6 @@ void main() async {
   runApp(MyApp());
 }
 
-
-
-GoogleSignInAccount? _usuarioAtual;
-
-FacebookAuth? _facebookAuthUsuarioAtual;
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -87,20 +84,20 @@ class MyApp extends StatelessWidget {
                 ),
               )),
         ),
-        home: ViewVeryFirstScreen()
-      /*StreamBuilder(
+        home:
+      StreamBuilder(
           stream: AuthService().firebaseAuth.authStateChanges(),
           builder: (context, AsyncSnapshot snapshot) {
-            if (snapshot.hasData ||_facebookAuthUsuarioAtual?.getUserData() != null) {
+            if (snapshot.hasData) {
               if(FirebaseAuth.instance.currentUser?.phoneNumber== null){
                 return PresenterHubUsuario.presenter();
               }else{
-                return PresenterHubPrestador.presenter();
+                return PresenterHubUsuario.presenter();
               }
 
             }
             return ViewVeryFirstScreen();
-          }),*/
+          }),
       //SingUpPart2WorkerInformation(),
       //SignUpPart1(),
       //ViewPesquisaCidadeBodya(),=

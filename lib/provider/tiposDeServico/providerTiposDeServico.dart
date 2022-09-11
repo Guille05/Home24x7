@@ -13,7 +13,7 @@ class ProviderTiposDeServico extends Provider<BusinessModelTiposDeServico> {
   @override
   Future<BusinessModelTiposDeServico> getBusinessModel(String id) async {
     List<BusinessModelTiposDeServico> listaTiposDeServico =
-        TipoDeServico().listaTodosPrestadores;
+    await ProviderTiposDeServico().getBusinessModels();
     return listaTiposDeServico[int.parse(id)];
   }
 
@@ -34,6 +34,7 @@ class ProviderTiposDeServico extends Provider<BusinessModelTiposDeServico> {
           qtdePrestadoresDeServico: 0));
     });
 
+    print(listaDeTiposDeServico);
     return listaDeTiposDeServico;
   }
 

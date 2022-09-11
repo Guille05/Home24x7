@@ -1,12 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:rounded_loading_button/rounded_loading_button.dart';
 
 class GenericLogSingUpButton extends StatelessWidget {
   final String buttonText;
-  final Future<dynamic> goNextScreen;
+  final RoundedLoadingButtonController controller;
+  final void Function() goNextScreen;
   const GenericLogSingUpButton({Key? key,
     required this.buttonText,
-    required this.goNextScreen
+    required this.goNextScreen,
+    required this.controller,
   }) : super(key: key);
 
   @override

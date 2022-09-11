@@ -15,4 +15,3 @@ class ViewBuilderHubPrestador extends ViewBuilder<ViewHubPrestador, ViewModelHub
   }
 }
 
-// toda view precisa de model e actions

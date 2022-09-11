@@ -9,7 +9,7 @@ GetQtdePrestadoresDeServicoPorTipoSeervicoECidade({required this.idCidade, requi
 
   Future<int> action() async {
     QuerySnapshot query = await _instance
-        .collection('worker')
+        .collection('workers')
         .where('City', arrayContainsAny: [idCidade]).get();
 
     List docs = query.docs;

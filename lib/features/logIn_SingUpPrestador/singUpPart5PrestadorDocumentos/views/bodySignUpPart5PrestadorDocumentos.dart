@@ -28,7 +28,7 @@ class BodySignUpPart5PrestadorDocumentos extends StatefulWidget{
 }
 class _BodySignUpPart5PrestadorDocumentos extends State<BodySignUpPart5PrestadorDocumentos> {
 
-  CollectionReference users = FirebaseFirestore.instance.collection('dadosPrestador');
+  CollectionReference users = FirebaseFirestore.instance.collection('workers');
   FirebaseFirestore firestore = FirebaseFirestore.instance;
   FirebaseStorage firebaseStorage = FirebaseStorage.instance;
 
@@ -244,25 +244,27 @@ class _BodySignUpPart5PrestadorDocumentos extends State<BodySignUpPart5Prestador
                                   if(await uploadFile() == null){
                                     mostrarErroEmailInvalido(context);
                                   } else if (form.validate()) {
-                                    await firestore.collection('dadosPrestador').doc(await getUserId()).set({
+                                    await firestore.collection('workers').doc(await getUserId()).set({
                                       'name': informacoesPrestador.name,
                                       'phone': informacoesPrestador.phone,
                                       'workingHours': informacoesPrestador.workingHours,
                                       'description': informacoesPrestador.description,
                                       'profilePicture': informacoesPrestador.profilePicture,
-                                      'comentarios': informacoesPrestador.comentarios,
-                                      'city': informacoesPrestador.cidades,
-                                      'roles': informacoesPrestador.servicos,
-                                      'numeroDeCliquesNoLigarOuWhatsApp': 0,
-                                      'dataVencimentoPlano': DateTime.now(),
-                                      'dataAberturaConta': DateTime.now(),
-                                      'brazilianIDPicture': await getUrlToImageFirebase(),
-                                      'IdPrestador': await getUserId(),
-                                      'tipoPlanoPrestador': 0,
-                                      'numeroDePessoasViramPerfilDessePrestador':0,
+                                      'City': informacoesPrestador.cidades,
+                                      'job': informacoesPrestador.servicos,
+                                      'clickWhatsApp': 0,
+                                      'dueDate': DateTime.now(),
+                                      'opendate': DateTime.now(),
+                                      'IdWorker': await getUserId(),
+                                      'typeOfPlan': 0,
+                                      'clickProfile':0,
+                                      'IdPicture':"dsdsdsf",
+                                      'identityVerified':"dsdsdsf",
+
                                       }
                                     );
-                                    await Prestador().getPrestadores();
+
+                                   // await Prestador().getPrestadores();
 
                                     Navigator.pushAndRemoveUntil(context,
                                       MaterialPageRoute(builder: (BuildContext context) {

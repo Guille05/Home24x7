@@ -9,6 +9,8 @@ import 'package:home24x7/util/cidade.dart';
 import 'package:home24x7/util/tipoDeServico.dart';
 
 
+import '../../provider/cidade/providerCidade.dart';
+import '../../provider/tiposDeServico/providerTiposDeServico.dart';
 import 'blocEventHub.dart';
 import 'viewModelHub.dart';
 
@@ -38,12 +40,19 @@ class BlocHub extends Bloc<ViewModelHubUsuario, BlocEventHubUsuario> {
       BlocEventHubInicializaViewModelUsuario blocEvent) async {
     String idCidadeDoUsuario = "1"; // 1=colatina
 
-    List<BusinessModelCidade> cidades = Cidades().listaDeTodasAsCidades;
+
+    Future<List<BusinessModelCidade> > getCidades() async {
+      List<BusinessModelCidade> listaDeTodasAsCidades = [];
+
+      listaDeTodasAsCidades = await ProviderCidade().getBusinessModels();
+      return listaDeTodasAsCidades;
+    }
+
+    List<BusinessModelCidade> cidades = await getCidades();
 
     BusinessModelPrincipaisTiposDeServicoCidade
         principaisTiposDeServicoCidades =
-        await ProviderPrincipaisTiposDeServicoCidade()
-            .getBusinessModel(cidades[0].id);
+        await ProviderPrincipaisTiposDeServicoCidade().getBusinessModel(cidades[0].id);
 
     ViewModelHubUsuario viewModelTmp = ViewModelHubUsuario(
       cidade: cidades[0],
@@ -57,10 +66,10 @@ class BlocHub extends Bloc<ViewModelHubUsuario, BlocEventHubUsuario> {
   }
 
   void _selecionaCidade(BlocEventHubSelecionaCidade blocEvent) async {
-    List<BusinessModelCidade> cidades = Cidades().listaDeTodasAsCidades;
+    List<BusinessModelCidade> cidades = ProviderTiposDeServico().getBusinessModels() as List<BusinessModelCidade>;
 
     List<BusinessModelTiposDeServico> tiposDeServico =
-        TipoDeServico().listaTodosPrestadores;
+    await ProviderTiposDeServico().getBusinessModels();
     ViewModelHubUsuario _viewModel = ViewModelHubUsuario(
       cidade: cidades[int.parse(blocEvent.codCidade.toString())],
       principaisTiposDeServicoCidade:

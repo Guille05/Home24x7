@@ -1,15 +1,24 @@
-import 'package:firebase_auth/firebase_auth.dart';
 
+
+/*
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
+
+import '../businessModels/businessModelCidade.dart';
 import '../businessModels/businessModelDadosPrestador.dart';
+import '../provider/cidade/providerCidade.dart';
 import '../provider/dadosPrestador/providerDadosPrestador.dart';
 
-class Prestador {
-  static final Prestador _singleton = Prestador._internal();
+class PrestadorProvider with ChangeNotifier {
+
+  static final PrestadorProvider provider = PrestadorProvider._internal();
+
   List<BusinessModelDadosPrestador> listaTodosPrestadores = [];
 
-  factory Prestador() {
-    return _singleton;
+  factory PrestadorProvider() {
+    return provider;
   }
+
 
   Future<void> getPrestadores() async {
     listaTodosPrestadores = await ProvideDadosPrestador().getBusinessModels();
@@ -53,5 +62,10 @@ class Prestador {
     return prestadorRetorno;
   }
 
-  Prestador._internal();
-}
+
+
+
+
+  PrestadorProvider._internal();
+
+}*/

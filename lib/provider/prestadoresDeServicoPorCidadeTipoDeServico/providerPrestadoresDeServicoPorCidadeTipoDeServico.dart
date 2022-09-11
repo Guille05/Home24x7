@@ -117,7 +117,7 @@ class ProviderPrestadoresDeServicoPorCidadeTipoDeServico
   Future getComentarios() async {
     List<BusinessModelDadosPrestador> prestadoresDeServico =
     await ProvideDadosPrestador().getBusinessModels();
-    Prestador().listaTodosPrestadores;
+    //ProvideDadosPrestador().getBusinessModels() as BusinessModelDadosPrestador ;
     for (int i = 0; i < prestadoresDeServico.length; i++) {
       BusinessModelDadosPrestador prestador = prestadoresDeServico[i];
       List<BusinessModelAvaliacaoPrestadorDeServico> comentarios =

@@ -459,7 +459,7 @@ class _SignUpUsuarioBody extends State<SignUpUsuarioBody> {
   }
 
   CollectionReference usuarios =
-      FirebaseFirestore.instance.collection('usuarios');
+      FirebaseFirestore.instance.collection('users');
 
   final FirebaseAuth auth = FirebaseAuth.instance;
   Future<String?> getUserId() async {

@@ -14,17 +14,21 @@ class DaoTipoDeServico extends Dao<DataModelTipoDeServico> {
 
   @override
   Future<DataModelTipoDeServico?> getDataModel(String id) async {
+
     await firebaseInterface
         .getDataModelsFromFirebase(DataModelBuilderTipoDeServico());
   }
 
   @override
   Future<List<DataModelTipoDeServico>> getDataModels() async {
+
     List<String> listaServicos =
         await GetListaServicosFirebase().getListaServicosFirebase();
     List<DataModelTipoDeServico> listaDatamodelsTipoDeServico = [];
 
     for (int i = 0; i < listaServicos.length; i++) {
+      print(listaServicos[i]);
+      print(i);
       listaDatamodelsTipoDeServico.add(DataModelTipoDeServico(
           codTipoServico: i, descricao: listaServicos[i]));
     }
