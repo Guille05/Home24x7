@@ -40,6 +40,7 @@ class ProvideDadosPrestador extends Provider<BusinessModelDadosPrestador> {
         identityVerified: element.identityVerified,
       ));
     });
+    //print(prestadores.);
 
     return prestadores;
   }

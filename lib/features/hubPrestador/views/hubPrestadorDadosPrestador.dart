@@ -291,46 +291,6 @@ class HubPrestadorDadosPrestador extends StatelessWidget {
               ),
             ),
           ]),
-          Divider(
-            thickness: .8,
-            color: Colors.blueAccent,
-          ),
-          Row(children: [
-            SizedBox(
-              width: 16,
-            ),
-            Icon(
-              Icons.star,
-            ),
-            Padding(
-              padding:
-                  const EdgeInsets.only(top: 4, bottom: 4, left: 16, right: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'My job title',
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16),
-                  ),
-                  SizedBox(
-                    height: 4,
-                  ),
-                  Text(
-                    getplanoPrestador(
-                        viewModel.prestadorDeServicos.tipoPlanoPrestador),
-                  ),
-                ],
-              ),
-            ),
-          ]),
-          Divider(
-            thickness: .8,
-            color: Colors.blueAccent,
-          ),
           SizedBox(
             height: 8,
           ),

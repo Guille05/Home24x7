@@ -6,7 +6,6 @@ import '../../businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeSer
 import '../../businessModels/businessModelTiposDeServico.dart';
 import '../../framework/provider.dart';
 import '../../util/getAvaliacoesPrestador.dart';
-import '../../util/prestador.dart';
 import '../../util/resposta_processamento.dart';
 import '../cidade/providerCidade.dart';
 import '../dadosPrestador/providerDadosPrestador.dart';

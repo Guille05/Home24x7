@@ -4,14 +4,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
-import 'package:home24x7/features/hubUsuario/presenterHub.dart';
-import 'package:home24x7/util/cidade.dart';
-import 'package:home24x7/util/prestador.dart';
-import 'package:home24x7/util/tipoDeServico.dart';
+
 import 'daos/firebase/authService.dart';
 import 'daos/firebase/updatePrestadorFirebase.dart';
 import 'features/hubPrestador/presenterHub.dart';
-import 'features/logIn_SingUpPrestador/veryFirstScreen/veryFirstScreenUserType.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 
@@ -19,9 +15,6 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
-  final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
-   //await firebaseAuth.signOut();
-  print(firebaseAuth.currentUser?.uid);
 
   final getIt = GetIt.instance;
 
@@ -90,13 +83,13 @@ class MyApp extends StatelessWidget {
           builder: (context, AsyncSnapshot snapshot) {
             if (snapshot.hasData) {
               if(FirebaseAuth.instance.currentUser?.phoneNumber== null){
-                return PresenterHubUsuario.presenter();
+                return PresenterHubPrestador.presenter();
               }else{
-                return PresenterHubUsuario.presenter();
+                return PresenterHubPrestador.presenter();
               }
 
             }
-            return ViewVeryFirstScreen();
+            return PresenterHubPrestador.presenter();
           }),
       //SingUpPart2WorkerInformation(),
       //SignUpPart1(),

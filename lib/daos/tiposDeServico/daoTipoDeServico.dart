@@ -27,11 +27,12 @@ class DaoTipoDeServico extends Dao<DataModelTipoDeServico> {
     List<DataModelTipoDeServico> listaDatamodelsTipoDeServico = [];
 
     for (int i = 0; i < listaServicos.length; i++) {
-      print(listaServicos[i]);
-      print(i);
+
       listaDatamodelsTipoDeServico.add(DataModelTipoDeServico(
           codTipoServico: i, descricao: listaServicos[i]));
     }
+    print(listaDatamodelsTipoDeServico.toString());
+
     return listaDatamodelsTipoDeServico;
   }
 

@@ -2,7 +2,6 @@
 import '../businessModels/businessModelCidade.dart';
 import '../provider/cidade/providerCidade.dart';
 import '../provider/tiposDeServico/providerTiposDeServico.dart';
-import 'cidade.dart';
 
 class GetCodCidade {
   String nomeCidade;

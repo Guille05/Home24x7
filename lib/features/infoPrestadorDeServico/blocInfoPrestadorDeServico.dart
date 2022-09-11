@@ -6,8 +6,6 @@ import 'package:home24x7/businessModels/businessModelPrestadorDeServicos.dart';
 import 'package:home24x7/provider/prestadoresDeServicoPorCidadeTipoDeServico/providerPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 import 'package:home24x7/util/getAvaliacoesPrestador.dart';
 import 'package:home24x7/util/getCodigoCidade.dart';
-import 'package:home24x7/util/prestador.dart';
-
 import '../../businessModels/businessModelDadosPrestador.dart';
 import '../../businessModels/businessModelPrestadoresDeServicoPorCidadeTipoDeServico.dart';
 import '../../framework/bloc.dart';

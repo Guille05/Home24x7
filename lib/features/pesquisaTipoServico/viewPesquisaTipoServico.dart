@@ -16,10 +16,10 @@ class ViewPesquisaTipoServico extends View<ViewModelPesquisaTipoServico, ViewAct
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:   AppBar(title: Text("Select service type",
+      appBar:   AppBar(title: const Text("Select service type",
         style: TextStyle(color: Colors.white),),
         backgroundColor: ColorAppBar,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,size: 30
         ),
       ),
@@ -29,7 +29,7 @@ class ViewPesquisaTipoServico extends View<ViewModelPesquisaTipoServico, ViewAct
 
   _buildBody(BuildContext context) {
     if (viewModel == null) {
-      return Center(
+      return const Center(
         child: CircularProgressIndicator(),
       );
     } else {

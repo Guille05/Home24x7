@@ -25,6 +25,9 @@ GetQtdePrestadoresDeServicoPorTipoSeervicoECidade({required this.idCidade, requi
         ': ' +
         docs.length.toString());*/
 
+    print(docs.length);
+    print('aaaa');
+
     return docs.length;
   }
 }

@@ -7,12 +7,8 @@ import 'package:home24x7/businessModels/businessModelPrestadoresDeServicoPorCida
 import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
 import 'package:home24x7/framework/bloc.dart';
 import 'package:home24x7/provider/prestadoresDeServicoPorCidadeTipoDeServico/providerPrestadoresDeServicoPorCidadeTipoDeServico.dart';
-import 'package:home24x7/util/cidade.dart';
 import 'package:home24x7/util/getAvaliacoesPrestador.dart';
 import 'package:home24x7/util/getCodigoCidade.dart';
-import 'package:home24x7/util/prestador.dart';
-import 'package:home24x7/util/tipoDeServico.dart';
-
 
 import '../../businessModels/businessModelDadosPrestador.dart';
 import '../../provider/cidade/providerCidade.dart';
@@ -41,13 +37,18 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
     );
     return viewModel;
   }*/
-  List<BusinessModelDadosPrestador> listaTodosPrestadores = [];
 
-  Future<void> getPrestadores() async {
+
+  Future<List<BusinessModelDadosPrestador>> getPrestadores() async {
+    List<BusinessModelDadosPrestador> listaTodosPrestadores = [];
     listaTodosPrestadores = await ProvideDadosPrestador().getBusinessModels();
+    return listaTodosPrestadores;
+
   }
 
   Future<BusinessModelDadosPrestador> getPrestadorLogado() async {
+    List<BusinessModelDadosPrestador> listaPrestadores = await getPrestadores();
+
     final FirebaseAuth auth = FirebaseAuth.instance;
     Future<String?> getUserId() async {
       final User? user = await auth.currentUser;
@@ -56,7 +57,7 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
     }
 
     BusinessModelDadosPrestador prestadorRetorno = BusinessModelDadosPrestador(
-        name: 'name',
+        name: 'namee',
         phone: 'phone',
         workingHours: 'workingHours',
         description: 'description',
@@ -67,21 +68,23 @@ class BlocHub extends Bloc<ViewModelHubPrestador, BlocEventHubPrestador> {
         dataVencimentoPlano: DateTime.now(),
         dataAberturaConta: DateTime.now(),
         IdPrestador: 'IdPrestador',
-        tipoPlanoPrestador: 10,
-        cliquesNoWhatsApp: 0,
-        cliquesNoPerfil: 0,
-        identityVerified: '1');
+        tipoPlanoPrestador: 10, cliquesNoWhatsApp: 0, cliquesNoPerfil: 0, identityVerified: '');
+    ;
 
     String? userId = await getUserId();
+
     if (userId != null) {
-      listaTodosPrestadores.forEach((element) {
+      print(listaPrestadores.length);
+      listaPrestadores.forEach((element) {
         if (element.IdPrestador == userId) {
+
           prestadorRetorno = element;
         }
       });
     }
 
     return prestadorRetorno;
+
   }
 
   void _inicializaViewModel(

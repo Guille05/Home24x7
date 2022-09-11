@@ -73,15 +73,15 @@ class ButtonGoSignUpScreenSelectCidade extends StatelessWidget {
                 ),
               ),
             ),
-            onPressed: () async  {
-
-
-
+            onPressed: () async   {
+              this.viewActions.savarListaSelecionadaFirebase(viewModel);
+              if(viewModel.cidadesSelecionadas.length < 1){
+                mostrarErroEmailInvalido(context);
+              }
+              else{
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>StepTwo(
-
-                    )));
-
+                    builder: (context) => StepTwo()));
+              }
               _btnController.reset();
             },
           ),

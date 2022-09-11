@@ -5,10 +5,6 @@ import 'package:home24x7/businessModels/businessModelPrincipaisTiposDeServicoCid
 import 'package:home24x7/businessModels/businessModelTiposDeServico.dart';
 import 'package:home24x7/framework/bloc.dart';
 import 'package:home24x7/provider/principaisTiposDeServicoCidade/providerPrincipaisTiposDeServicoCidade.dart';
-import 'package:home24x7/util/cidade.dart';
-import 'package:home24x7/util/tipoDeServico.dart';
-
-
 import '../../provider/cidade/providerCidade.dart';
 import '../../provider/tiposDeServico/providerTiposDeServico.dart';
 import 'blocEventHub.dart';

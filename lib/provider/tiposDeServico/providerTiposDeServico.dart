@@ -5,7 +5,6 @@ import '../../daos/tiposDeServico/dataModelTipoDeServico.dart';
 import '../../framework/provider.dart';
 import '../../util/getIconeTipoServico.dart';
 import '../../util/resposta_processamento.dart';
-import '../../util/tipoDeServico.dart';
 
 class ProviderTiposDeServico extends Provider<BusinessModelTiposDeServico> {
   DaoTipoDeServico dao = DaoTipoDeServico();

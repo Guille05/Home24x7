@@ -1,19 +1,25 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
+import 'package:home24x7/features/hubPrestador/presenterHub.dart';
+import 'package:home24x7/features/hubPrestador/views/viewHubBody.dart';
 import 'package:home24x7/features/logIn_SingUpPrestador/selectCities/viewHeaderPesquisaCidade.dart';
 import 'package:home24x7/features/logIn_SingUpPrestador/selectCities/viewListSelectCities.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
 import 'package:substring_highlight/substring_highlight.dart';
 
+import '../../../businessModels/businessModelDadosPrestador.dart';
 import '../../../businessModels/businessModelTiposDeServico.dart';
 import '../../../daos/firebase/updatePrestadorFirebase.dart';
+import '../../../provider/dadosPrestador/providerDadosPrestador.dart';
 import '../../../util/libraryComponents/buttons/genericLogSingUpButton.dart';
 import '../../../util/libraryComponents/circularProgressIndicatorPersonalizado.dart';
 import '../../../util/libraryComponents/colors/colors.dart';
 import '../../../util/libraryComponents/popUps/popUpListaSelectServicos.dart';
 import '../../../util/resposta_processamento.dart';
-import '../signUpEplicandoTelaDocumentos/viewSignUpEplicandoTelaDocumentos.dart';
 
 class StepTwo extends StatefulWidget {
 
@@ -24,6 +30,20 @@ class StepTwo extends StatefulWidget {
 }
 
 class _StepTwoState extends State<StepTwo> {
+
+  CollectionReference users = FirebaseFirestore.instance.collection('workers');
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
+  FirebaseStorage firebaseStorage = FirebaseStorage.instance;
+  SetPrestadorInformationCompleta informacoesPrestador = GetIt.instance<SetPrestadorInformationCompleta>();
+  //final firebase_storage.FirebaseStorage storage = firebase_storage.FirebaseStorage.instance;
+  final formKeyAuthentication = GlobalKey<FormState>();
+
+  final FirebaseAuth auth = FirebaseAuth.instance;
+  Future<String?> getUserId() async {
+    final User? user = await auth.currentUser;
+    final userId = user?.uid.toString();
+    return userId;
+  }
 
 
   List<String> jobs  =["Painter", "Plumber",
@@ -56,7 +76,7 @@ class _StepTwoState extends State<StepTwo> {
     double _ScreenWidth = MediaQuery.of(context).size.width;
     double screenWidth = MediaQuery.of(context).size.width-10;
     double screenHeight = MediaQuery.of(context).size.height/2;
-    TextEditingController searchTextFieldWorker = TextEditingController();
+    TextEditingController _searchTextFieldWorker = TextEditingController();
 
 
     return Scaffold(
@@ -89,11 +109,10 @@ class _StepTwoState extends State<StepTwo> {
               child: Column(
                 children: [
                   TextField(
-                    controller: searchTextFieldWorker,
-                    onChanged: (value) {
+                    controller: _searchTextFieldWorker,
+                    onChanged: (_searchTextFieldWorker) {
                       setState(() {
-                        applyFilter(searchTextFieldWorker.text);
-
+                        applyFilter(_searchTextFieldWorker);
                       });
 
                     },
@@ -252,17 +271,93 @@ class _StepTwoState extends State<StepTwo> {
                 ),
               ),
             ),
-            onPressed: () async  {
-              _savarListaSelecionadaFirebase(selectedJobs);
-              if(selectedJobs.length < 1){
-                mostrarErroEmailInvalido(context);
-              }
-              else{
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => ViewsignUpEplicandoTelaDocumentos()));
-              }
-              _btnController.reset();
-            },
+            onPressed: () async{
+            _savarListaSelecionadaFirebase(selectedJobs);
+
+
+            await firestore.collection('workers').doc(await getUserId()).set({
+              'name': informacoesPrestador.name,
+              'phone': informacoesPrestador.phone,
+              'workingHours': informacoesPrestador.workingHours,
+              'description': informacoesPrestador.description,
+              'profilePicture': informacoesPrestador.profilePicture,
+              'City': informacoesPrestador.cidades,
+              'job': informacoesPrestador.servicos,
+              'clickWhatsApp': 0,
+              'dueDate': DateTime.now(),
+              'opendate': DateTime.now(),
+              'IdWorker': await getUserId(),
+              'typeOfPlan': 0,
+              'clickProfile':0,
+              'IdPicture':"dsdsdsf",
+              'identityVerified':"dsdsdsf",
+            }
+            );
+
+
+
+            Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => PresenterHubPrestador.presenter()));
+
+
+                  List<BusinessModelDadosPrestador> listaTodosPrestadores = [];
+
+
+                  Future<void> getPrestadores() async {
+                    listaTodosPrestadores = await ProvideDadosPrestador().getBusinessModels();
+                  }
+
+                  Future<BusinessModelDadosPrestador> getPrestadorLogado() async {
+                    final FirebaseAuth auth = FirebaseAuth.instance;
+                    Future<String?> getUserId() async {
+                      final User? user = await auth.currentUser;
+                      final userId = user?.uid.toString();
+                      return userId;
+                    }
+
+                    BusinessModelDadosPrestador prestadorRetorno = BusinessModelDadosPrestador(
+                        name: 'name',
+                        phone: 'phone',
+                        workingHours: 'workingHours',
+                        description: 'description',
+                        profilePicture: 'profilePicture',
+                        city: ['colatina - ES'],
+                        roles: [1, 2],
+                        numeroDeCliquesNoLigarOuWhatsApp: 0,
+                        dataVencimentoPlano: DateTime.now(),
+                        dataAberturaConta: DateTime.now(),
+                        IdPrestador: 'IdPrestador',
+                        tipoPlanoPrestador: 10,
+                        cliquesNoWhatsApp: 0,
+                        cliquesNoPerfil: 0,
+                        identityVerified: '');
+                    ;
+
+                    String? userId = await getUserId();
+                    if (userId != null) {
+                      listaTodosPrestadores.forEach((element) {
+                        if (element.IdPrestador == userId) {
+                          prestadorRetorno = element;
+                        }
+                      });
+                    }
+
+                    return prestadorRetorno;
+                  }
+                  getPrestadorLogado();
+                  getPrestadores();
+
+                  Navigator.pushAndRemoveUntil(context,
+                    MaterialPageRoute(builder: (BuildContext context) {
+                      return PresenterHubPrestador.presenter();
+                    },
+                    ),
+                        (route)=> false,);
+
+                  _btnController.reset();
+              },
+
+
           ),
         ),
       ),
@@ -274,8 +369,14 @@ class _StepTwoState extends State<StepTwo> {
   List<String> filteredJobs = [];
 
   addJobsToSelectedList(String city){
-    selectedJobs.add(city);
+    if (selectedJobs.contains(city)){
+      selectedJobs.remove(city);
+    }
+    else {
+      selectedJobs.add(city);
+    }
   }
+
 
   isCityInTheList(String city){
     for(int i = 0; i< selectedJobs.length; i++){
@@ -287,35 +388,16 @@ class _StepTwoState extends State<StepTwo> {
   }
 
 
- void  loadData(BuildContext context )  {
-    jobs.clear();
+  applyFilter (String text){
+    text = text + '';
     filteredJobs.clear();
-    jobs.forEach((element) {
-      jobs.add(element);
-      filteredJobs.add(element);
-    });
-
-  }
-
-
-  void applyFilter(String value){
-    int i = 0;
-    filteredJobs.clear();
-    if(value == ""){
-      jobs.forEach((element) {
-        filteredJobs.add(element);
-
-      });
-    }else{
-      i++;
-      jobs.forEach((worker) {
-        if(jobs[i].toUpperCase().contains(value.toUpperCase())){
-          filteredJobs.add(worker);
-         }
-        }
-      );
+    for(int i = 0; i<filteredJobs.length; i++){
+      if(filteredJobs[i].contains(text)){
+        filteredJobs.add(filteredJobs[i]);
+      }
     }
   }
+
 
   void _savarListaSelecionadaFirebase(selectedCities) {
 
